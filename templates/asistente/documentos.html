@@ -18,6 +18,9 @@
   <!-- Custom styles for this template-->
   <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this page -->
+  <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -40,29 +43,30 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Inicio</span></a>
       </li>
 
-      <!-- Nav Item - Dashboard -->
+      <!-- Nav Item - Historial -->
       <li class="nav-item">
         <a class="nav-link" href="historial.html">
           <i class="fas fa-fw fa-list-alt"></i>
           <span>Historial</span></a>
       </li>
-
+      
       <!-- Divider -->
       <hr class="sidebar-divider">
 
+      
       <!-- Heading -->
       <div class="sidebar-heading">
         Formación Predoctoral
       </div>
 
       <!-- Nav Item - Curso 1 Menu -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="guia_docente.html">
           <i class="fas fa-fw fa-chalkboard"></i>
           <span>Curso 481 - 2011/2012</span>
@@ -86,9 +90,12 @@
         </a>
         <div id="collapseCurso2" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="guia_docente.html">Guía docente</a>
-            <a class="collapse-item" href="documentos.html">Documentos</a>
-            <a class="collapse-item" href=" trabajos.html">Trabajos</a>
+            <a class="collapse-item" href="login.html">Guía docente</a>
+            <a class="collapse-item" href="register.html">Documentos</a>
+            <a class="collapse-item" href="forgot-password.html">Asistentes</a>
+            <a class="collapse-item" href="forgot-password.html">Trabajos</a>
+            <a class="collapse-item" href="404.html">Analíticas</a>
+            <a class="collapse-item" href="blank.html">Gastos</a>
           </div>
         </div>
       </li>
@@ -298,55 +305,65 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">DATOS PERSONALES REGISTRADOS</h1>
+            <h1 class="h3 mb-0 text-gray-800">Curso 2011/2012 de "Bases para la creación de equipos de trabajo efectivos"</h1>
           </div>
 
-          <!-- Content Row -->
-          <div class="row">
-            <form>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Nombre</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Ramón" required>
-                </div>
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Apellidos</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Rico Muñoz" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">email</label>
-                  <input type="text" class="form-control" id="validationDefault01" value="ramon.rico@uam.es" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Usuario</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="rrico" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Teléfono</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="91 497 3244" required >
-                </div>
+          <!-- Page Navigation -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="guia_docente.html">Guía</a>
+            </li>
+            <li>
+              <a class="nav-link active disabled" href="documentos.html">Documentos</a>
+            </li>
+            <li>
+              <a class="nav-link" href="trabajos.html">Trabajos</a>
+            </li>
+          </ul>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Fecha Subida</th>
+                      <th>Descargar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Documento 1</td>
+                      <td>2011/04/25</td>
+                      <td>
+                        <i class="fas fa-fw fa-download"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Documento 2</td>
+                      <td>2011/07/25</td>
+                      <td>
+                        <i class="fas fa-fw fa-download"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Documento 3</td>
+                      <td>2009/01/12</td>
+                      <td>
+                        <i class="fas fa-fw fa-download"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <hr>
-              <div class="form-row">
-                <div class="col-12">
-                  <label for="validationDefault03">Facultad</label>
-                  <input type="text" class="form-control" id="validationDefault03" value="Psicología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Departamento</label>
-                  <input type="text" class="form-control" id="validationDefault04" value="Departamento de Psicología Social y Metodología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Categoria</label>
-                  <input type="text" class="form-control" id="validationDefault05" value="PAS" required>
-                </div>
-              </div>
-              <hr>
-              <button class="btn btn-dark" type="submit">Actualizar datos</button>
-            </form>
+            </div>
           </div>
 
-        </div>
         <!-- /.container-fluid -->
 
       </div>
@@ -403,11 +420,11 @@
   <script src="../../js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="../../vendor/chart.js/Chart.min.js"></script>
+  <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="../../js/demo/chart-area-demo.js"></script>
-  <script src="../../js/demo/chart-pie-demo.js"></script>
+  <script src="../../js/demo/datatables-demo.js"></script>
 
 </body>
 

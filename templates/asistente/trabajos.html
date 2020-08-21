@@ -18,6 +18,9 @@
   <!-- Custom styles for this template-->
   <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this page -->
+  <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -40,29 +43,31 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Inicio</span></a>
       </li>
 
-      <!-- Nav Item - Dashboard -->
+      <!-- Nav Item - Historial -->
       <li class="nav-item">
         <a class="nav-link" href="historial.html">
           <i class="fas fa-fw fa-list-alt"></i>
           <span>Historial</span></a>
       </li>
 
+
       <!-- Divider -->
       <hr class="sidebar-divider">
 
+      
       <!-- Heading -->
       <div class="sidebar-heading">
         Formación Predoctoral
       </div>
 
       <!-- Nav Item - Curso 1 Menu -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="guia_docente.html">
           <i class="fas fa-fw fa-chalkboard"></i>
           <span>Curso 481 - 2011/2012</span>
@@ -298,55 +303,114 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">DATOS PERSONALES REGISTRADOS</h1>
+            <h1 class="h3 mb-0 text-gray-800">Curso 2011/2012 de "Bases para la creación de equipos de trabajo efectivos"</h1>
           </div>
 
-          <!-- Content Row -->
-          <div class="row">
-            <form>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Nombre</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Ramón" required>
-                </div>
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Apellidos</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Rico Muñoz" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">email</label>
-                  <input type="text" class="form-control" id="validationDefault01" value="ramon.rico@uam.es" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Usuario</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="rrico" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Teléfono</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="91 497 3244" required >
-                </div>
-              </div>
-              <hr>
-              <div class="form-row">
-                <div class="col-12">
-                  <label for="validationDefault03">Facultad</label>
-                  <input type="text" class="form-control" id="validationDefault03" value="Psicología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Departamento</label>
-                  <input type="text" class="form-control" id="validationDefault04" value="Departamento de Psicología Social y Metodología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Categoria</label>
-                  <input type="text" class="form-control" id="validationDefault05" value="PAS" required>
-                </div>
-              </div>
-              <hr>
-              <button class="btn btn-dark" type="submit">Actualizar datos</button>
-            </form>
-          </div>
+          <!-- Page Navigation -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="guia_docente.html">Guía</a>
+            </li>
+            <li>
+              <a class="nav-link" href="documentos.html">Documentos</a>
+            </li>
+            <li>
+              <a class="nav-link active disabled" href="trabajos.html">Trabajos</a>
+            </li>
+          </ul>
 
+          <!-- Formulario subida trabajos -->
+          <table>
+            <tbody>
+              <tr><td class="negro12" align="left" colspan="2"><b>Anexar documentación a un curso</b></td></tr>
+              <tr><td colspan="3"><p><font color="red"><b>**Importante: tildes, 'ñ', o caracteres extraños en el nombre del fichero pueden generar problemas</b></font></p></td></tr>  
+            </tbody>
+          </table>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+          </div>
         </div>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Autor</th>
+                      <th>Documento</th>
+                      <th>Fecha Subida</th>
+                      <th>Estado</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Autor</th>
+                      <th>Documento</th>
+                      <th>Fecha Subida</th>
+                      <th>Estado</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
+                      <td>juanito.valderrama@uam.es</td>
+                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                      <td>2012/08/20</td>
+                      <td class="text-success">Apto</td>
+                    </tr>
+                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
+                      <td>manolo.caracol@uam.es</td>
+                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                      <td>2012/08/20</td>
+                      <td class="text-success">Apto</td>
+                    </tr>
+                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
+                      <td>antonio.marchena@uam.es</td>
+                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                      <td>2012/08/20</td>
+                      <td class="text-success">Apto</td>
+                    </tr>
+                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
+                      <td>nina.peines@uam.es</td>
+                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                      <td>2011/01/20</td>
+                      <td class="text-danger">No Apto</td>
+                    </tr>
+                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
+                      <td>lola.flores@uam.es</td>
+                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                      <td>2012/03/10</td>
+                      <td class="text-danger">No Apto</td>
+                    </tr>
+                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
+                      <td>jose.menese@uam.es</td>
+                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                      <td>2012/06/28</td>
+                      <td class="text-danger">No Apto</td>
+                    </tr>
+                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
+                      <td>elcabrero@uam.es</td>
+                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                      <td>2012/05/20</td>
+                      <td>Sin Corregir</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          
         <!-- /.container-fluid -->
 
       </div>
@@ -403,11 +467,11 @@
   <script src="../../js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="../../vendor/chart.js/Chart.min.js"></script>
+  <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="../../js/demo/chart-area-demo.js"></script>
-  <script src="../../js/demo/chart-pie-demo.js"></script>
+  <script src="../../js/demo/datatables-demo.js"></script>
 
 </body>
 

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>ASISTENTE - Dashboard</title>
+  <title>ASISTENTE - Revision</title>
 
   <!-- Custom fonts for this template-->
   <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -40,13 +43,13 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Inicio</span></a>
       </li>
 
-      <!-- Nav Item - Dashboard -->
+      <!-- Nav Item - Historial -->
       <li class="nav-item">
         <a class="nav-link" href="historial.html">
           <i class="fas fa-fw fa-list-alt"></i>
@@ -56,13 +59,14 @@
       <!-- Divider -->
       <hr class="sidebar-divider">
 
+      
       <!-- Heading -->
       <div class="sidebar-heading">
         Formación Predoctoral
       </div>
 
       <!-- Nav Item - Curso 1 Menu -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="guia_docente.html">
           <i class="fas fa-fw fa-chalkboard"></i>
           <span>Curso 481 - 2011/2012</span>
@@ -88,7 +92,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="guia_docente.html">Guía docente</a>
             <a class="collapse-item" href="documentos.html">Documentos</a>
-            <a class="collapse-item" href=" trabajos.html">Trabajos</a>
+            <a class="collapse-item" href="trabajos.html">Trabajos</a>
           </div>
         </div>
       </li>
@@ -298,55 +302,42 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">DATOS PERSONALES REGISTRADOS</h1>
+            <h1 class="h3 mb-0 text-gray-800">Curso 2011/2012 de "Bases para la creación de equipos de trabajo efectivos"</h1>
           </div>
 
-          <!-- Content Row -->
+          <!-- Page Navigation -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="guia_docente.html">Guía</a>
+            </li>
+            <li>
+              <a class="nav-link" href="documentos.html">Documentos</a>
+            </li>
+            <li>
+              <a class="nav-link active disabled" href="trabajos.html">Trabajos</a>
+            </li>
+            </li>
+          </ul>
+
           <div class="row">
-            <form>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Nombre</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Ramón" required>
-                </div>
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Apellidos</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Rico Muñoz" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">email</label>
-                  <input type="text" class="form-control" id="validationDefault01" value="ramon.rico@uam.es" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Usuario</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="rrico" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Teléfono</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="91 497 3244" required >
-                </div>
-              </div>
-              <hr>
-              <div class="form-row">
-                <div class="col-12">
-                  <label for="validationDefault03">Facultad</label>
-                  <input type="text" class="form-control" id="validationDefault03" value="Psicología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Departamento</label>
-                  <input type="text" class="form-control" id="validationDefault04" value="Departamento de Psicología Social y Metodología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Categoria</label>
-                  <input type="text" class="form-control" id="validationDefault05" value="PAS" required>
-                </div>
-              </div>
-              <hr>
-              <button class="btn btn-dark" type="submit">Actualizar datos</button>
-            </form>
-          </div>
-
-        </div>
+            <h3>Revisión Trabajo</h3>
+            <dl class="row">
+              <dt class="col-sm-3">Autor</dt>
+              <dd class="col-sm-9">Antonio Marchena</dd>
+              <dt class="col-sm-3">email</dt>
+              <dd class="col-sm-9"><a href="mailto:antonio.marchena@uam.es">antonio.marchena@uam.es</a></dd>
+              <dt class="col-sm-3">Nombre del Archivo</dt>
+              <dd class="col-sm-9">
+                <a href="#" download="#" title="Descargar Archivo">Bases para la creación de equipos de alto rendimiento.pdf <i class="fas fa-fw fa-download"></i></a>
+              </dd>
+              <dt class="col-sm-3">Fecha de Subida</dt>
+              <dd class="col-sm-9">2020/01/01</dd>
+              <dt class="col-sm-3">Estado</dt>
+              <dd class="col-sm-9">Apto</dd>
+              <dt class="col-sm-3">Comentarios</dt>
+              <dd class="col-sm-9">Suspendisse potenti. Nam a vehicula quam. Sed blandit, lorem vel ornare tincidunt, turpis elit cursus arcu, vel lobortis diam libero non dui. Integer et aliquam urna, vitae malesuada nisi. Phasellus laoreet dolor ut lorem condimentum efficitur. Curabitur gravida, lacus id elementum sollicitudin, est augue porta massa, sit amet hendrerit eros dui sed libero. Sed bibendum fermentum dolor, quis fermentum libero vehicula et.</dd>
+            </dl>
+          
         <!-- /.container-fluid -->
 
       </div>
@@ -403,11 +394,11 @@
   <script src="../../js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="../../vendor/chart.js/Chart.min.js"></script>
+  <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="../../js/demo/chart-area-demo.js"></script>
-  <script src="../../js/demo/chart-pie-demo.js"></script>
+  <script src="../../js/demo/datatables-demo.js"></script>
 
 </body>
 

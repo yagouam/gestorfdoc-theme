@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>ASISTENTE - Dashboard</title>
+  <title>ASISTENTE - Documentos</title>
 
   <!-- Custom fonts for this template-->
   <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -40,13 +43,13 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Inicio</span></a>
       </li>
 
-      <!-- Nav Item - Dashboard -->
+      <!-- Nav Item - Historial -->
       <li class="nav-item">
         <a class="nav-link" href="historial.html">
           <i class="fas fa-fw fa-list-alt"></i>
@@ -56,13 +59,14 @@
       <!-- Divider -->
       <hr class="sidebar-divider">
 
+      
       <!-- Heading -->
       <div class="sidebar-heading">
         Formación Predoctoral
       </div>
 
       <!-- Nav Item - Curso 1 Menu -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="guia_docente.html">
           <i class="fas fa-fw fa-chalkboard"></i>
           <span>Curso 481 - 2011/2012</span>
@@ -298,52 +302,147 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">DATOS PERSONALES REGISTRADOS</h1>
+            <h1 class="h3 mb-0 text-gray-800">Curso 2011/2012 de "Bases para la creación de equipos de trabajo efectivos"</h1>
           </div>
 
+          <!-- Page Navigation -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active disabled" href="guia_docente.html">Guía</a>
+            </li>
+            <li>
+              <a class="nav-link" href="documentos.html">Documentos</a>
+            </li>
+            <li>
+              <a class="nav-link" href="trabajos.html">Trabajos</a>
+            </li>
+            </li>
+          </ul>
+
+
           <!-- Content Row -->
+          <!-- Form Guia Docente -->
           <div class="row">
-            <form>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Nombre</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Ramón" required>
-                </div>
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Apellidos</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Rico Muñoz" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">email</label>
-                  <input type="text" class="form-control" id="validationDefault01" value="ramon.rico@uam.es" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Usuario</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="rrico" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Teléfono</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="91 497 3244" required >
-                </div>
-              </div>
-              <hr>
-              <div class="form-row">
-                <div class="col-12">
-                  <label for="validationDefault03">Facultad</label>
-                  <input type="text" class="form-control" id="validationDefault03" value="Psicología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Departamento</label>
-                  <input type="text" class="form-control" id="validationDefault04" value="Departamento de Psicología Social y Metodología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Categoria</label>
-                  <input type="text" class="form-control" id="validationDefault05" value="PAS" required>
-                </div>
-              </div>
-              <hr>
-              <button class="btn btn-dark" type="submit">Actualizar datos</button>
-            </form>
+            <h2 class="col-12">Título</h2>
+            <p class="col-12">Edición de recursos educativos audiovisuales: tratamiento de imágenes, captura de pantalla y edición de vídeo.ON-LINE.</p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Formador/res</h2>
+            <p class="col-12">Germán Montoro, Javier Gómez</p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Horas de formación</h2>
+            <p class="col-12">
+              0 horas presenciales
+              50 horas no presenciales
+            </p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Créditos ECTS</h2>
+            <p class="col-12">2</p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Horario y lugar</h2>
+            <p class="col-12">
+              2020-07-06 de 0:00 horas a 24:00 horas en CURSO ONLINE a través de la plataforma de UAMX
+              2021-07-31 de 0:00 horas a 24:00 horas en la plataforma de UAMX Finaliza el curso
+            </p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Objetivos del módulo</h2>
+            <p class="col-12">
+              En este curso aprenderemos los conceptos básicos del tratamiento o edición de imágenes, la captura de pantalla del ordenador y la edición de vídeos. El objetivo final será poder utilizar este aprendizaje en el proceso de creación y adaptación de recursos educativos audiovisuales.
+              Contenidos
+              El curso se compone de tres módulos:
+              <ol>
+                <li>
+                  Tratamiento de imágenes con PIXLR:
+                  <ul>
+                    <li>Formatos y resolución de las imágenes</li>
+                    <li>Panel de herramientas</li>
+                    <li>Trabajo con capas</li>
+                    <li>Crear una portada</li>
+                    <li>Crear un callout</li>
+                    <li>Recortar una imagen</li>
+                    <li>Eliminar elementos de una imagen</li>
+                    <li>Desenfoque parcial</li>
+                  </ul>
+                </li>
+                <li>
+                  Captura de pantalla con OBS Studio:
+                  <ul>
+                    <li>Configuración de la herramienta</li>
+                    <li>Ajustes de sonido</li>
+                    <li>Capturar la pantalla</li>
+                    <li>Insertar un título</li>
+                    <li>Insertar un fondo</li>
+                    <li>Insertar una imagen</li>
+                    <li>Insertar captura de webcam</li>
+                    <li>Insertar fuente de sonido</li>
+                  </ul>
+                </li>
+                <li>
+                  Edición de vídeo con Openshot:
+                    <ul>
+                      <li>Cargar vídeos</li>
+                      <li>Recortar vídeo</li>
+                      <li>Enlazar vídeos</li>
+                      <li>Efectos de sonido</li>
+                      <li>Añadir texto</li>
+                      <li>Añadir una imagen</li>
+                      <li>Añadir un callout</li>
+                    </ul>
+                </li>
+              </ol>
+            </p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Competencias que se van a adquirir</h2>
+            <p class="col-12">
+              <ul>
+                <li>Crear y retocar imágenes para su utilización como recurso docente</li>
+                <li>Capturar la pantalla del ordenador para ofrecer vídeos educativos</li>
+                <li>Editar vídeos para generar recursos educativos audiovisuales de calidad.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Metodología docente</h2>
+            <p class="col-12">
+              El curso está planteado para que se pueda realizar al ritmo de cada usuario. Se ofrecen ejemplos de cada elemento explicado y foros para resolver dudas.
+              Siguiendo los contenidos del curso se busca que los participantes sean capaces de crear y editar sus propios recursos educativos audiovisuales.
+            </p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Sistema de evaluación</h2>
+            <p class="col-12">Creación de recursos educativos audiovisuales que demuestren las competencias adquiridas.</p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Descripción de las actividades presenciales</h2>
+            <p class="col-12">No hay actividades presenciales</p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Descripción de las actividades no presenciales</h2>
+            <p class="col-12">Al ser un curso en línea todas las actividades serán no presenciales.</p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Referencia de consulta básica bibliografía, URL...</h2>
+            <p class="col-12">
+              <ul>
+                <li><a href="https://pixlr.com/es/" target="_blank" rel="noopener noreferrer">PIXLR</a></li>
+                <li><a href="https://obsproject.com/es" target="_blank" rel="noopener noreferrer">OBS Studio</a></li>
+                <li><a href="https://www.openshot.org/es/" target="_blank" rel="noopener noreferrer">Openshot</a></li>
+              </ul>
+            </p>
+          </div>
+          <div class="row">
+            <h2 class="col-12">Información de interés para los participantes</h2>
+            <p class="col-12">
+              Es un curso introductorio y por lo tanto no es necesario tener conocimientos previos sobre edición de recursos audiovisuales.
+              Solo es necesario disponer de un ordenador con conexión a internet. Se puede hacer tanto en Windows como en Mac.
+              El curso se encuentra alojado en la plataforma UAMx de la UAM.
+              Una vez inscrito en el curso, la o el participante recibirá un mensaje de la plataforma con indicaciones sobre cómo hacerse una cuenta en la misma. Cuando se solicite un correo electrónico de inscripción, ha de usarse el correo de la UAM. Como contraseña se ha de escoger la que se quiera.
+            </p>
           </div>
 
         </div>
@@ -403,11 +502,11 @@
   <script src="../../js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="../../vendor/chart.js/Chart.min.js"></script>
+  <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="../../js/demo/chart-area-demo.js"></script>
-  <script src="../../js/demo/chart-pie-demo.js"></script>
+  <script src="../../js/demo/datatables-demo.js"></script>
 
 </body>
 
