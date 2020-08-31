@@ -324,10 +324,10 @@
           <!-- Page Navigation -->
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active disabled" href="index.html">Consultar</a>
+              <a class="nav-link" href="index.html">Consultar</a>
             </li>
             <li>
-              <a class="nav-link" href="pagos.html">Gestión de pagos</a>
+              <a class="nav-link active disabled" href="pagos.html">Gestión de pagos</a>
             </li>
             <li>
               <a class="nav-link" href="propios.html">Gastos propios</a>
@@ -337,124 +337,159 @@
             </li>
           </ul>
           
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
-              <h6 class="m-0 font-weight-bold text-primary">PROPUESTA DE GASTOS</h6>
-              <a class="btn btn-primary" href="gasto/crear.html">Crear Propuesta de Gasto</a>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Código Curso</th>
-                      <th>Nombre Curso</th>
-                      <th>Ponente</th>
-                      <th>Fecha</th>
-                      <th>Importe</th>
-                      <th>Estado</th>
-                      <th>Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>123</td>
-                      <td>Crea tu SPOC</td>
-                      <td>Yago Bernabé García</td>
-                      <td>2019/02/11</td>
-                      <td>230€</td>
-                      <td class="text-success">Pagado</td>
-                      <td>
-                        <a href="">
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
           
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
-              <h6 class="m-0 font-weight-bold text-primary">GASTOS DE TRANSPORTE Y/O MANUTENCIÓN</h6>
-              <a class="btn btn-primary" href="gasto/crear.html">Añadir Gasto</a>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Ponente</th>
-                      <th>Concepto</th>
-                      <th>Fecha</th>
-                      <th>Importe</th>
-                      <th>Estado</th>
-                      <th>Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Yago Bernabé García</td>
-                      <td>Dietas</td>
-                      <td>2019/02/11</td>
-                      <td>230€</td>
-                      <td class="text-success">Pagado</td>
-                      <td>
-                        <a href="">
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+          <form oninput="x.value=parseInt(h.value)+parseInt(p.value)">
+            <div class="form-row">
+              <h5 class="col-12 mt-4 mb-3">Paso 0 - TIPO DE GASTO</h5>
+              <div class="form-group col-md-4">
+                <label for="asd">Tipo</label>
+                <select name="asd" id="asd" class="custom-select">
+                  <option value="a1">Propuesta de Gasto</option>
+                  <option value="a1">Gastos Extras (por concepto)</option>
+                  <option value="a1">Gastos Extras (por empresa)</option>
+                  <option value="a1">Gastos de Empresa</option>
+                </select>
               </div>
             </div>
-          </div>
-          
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
-              <h6 class="m-0 font-weight-bold text-primary">GASTOS DE EMPRESA</h6>
-              <a class="btn btn-primary" href="gasto/crear.html">Añadir Gasto</a>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Ponente</th>
-                      <th>Concepto</th>
-                      <th>Fecha</th>
-                      <th>Importe</th>
-                      <th>Estado</th>
-                      <th>Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Yago Bernabé García</td>
-                      <td>Dietas</td>
-                      <td>2019/02/11</td>
-                      <td>230€</td>
-                      <td class="text-success">Pagado</td>
-                      <td>
-                        <a href="">
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="form-row">
+              <h5 class="col-12 mt-4 mb-3">Paso 1 - SELECCIONAR CURSO</h5>
+              <div class="form-group col-md-2">
+                <label for="asd">Curso Académico</label>
+                <select name="asd" id="asd" class="custom-select">
+                  <option value="1">2020/2021</option>
+                  <option value="1">2019/2020</option>
+                  <option value="1">2018/2019</option>
+                  <option value="1">2017/2018</option>
+                  <option value="1">2016/2017</option>
+                </select>
+              </div>
+              <div class="form-group col-md-8">
+                <label for="inputPassword4">Curso</label>
+                <select name="curso" id="curso" class="custom-select">
+                  <option value="1">1234 - Guitarra Flamenca para principiantes</option>
+                  <option value="1">1235 - Cante Flamenco por soleares</option>
+                  <option value="1">1236 - El baile flamenco en el siglo XIX</option>
+                  <option value="1">1237 - Los flamencos y su circunstancia</option>
+                </select>
               </div>
             </div>
-          </div>
+            <div class="form-row">
+              <h5 class="col-12 mt-4 mb-3">Paso 2 - SELECCIONAR PONENTE</h5>
+              <div class="form-group col-md-4">
+                <label for="asd">Ponente</label>
+                <select name="asd" id="asd" class="custom-select">
+                  <option value="a1">Yago Bernabé García</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <h5 class="col-12 mt-4 mb-3">Paso 3 - SELECCIONAR CUENTA DE PAGO</h5>
+              <div class="form-group col-md-4">
+                <label for="asd">Cuenta de Pago</label>
+                <select name="asd" id="asd" class="custom-select">
+                  <option value="a1">ES97	2100	4133	24	2200171791</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <h5 class="col-12 mt-4 mb-3">Paso 4 - SELECCIONAR NÚMERO DE HORAS <b>(PROPUESTA DE GASTO)</b></h5>
+              <div class="form-group col-md-2">
+                <label for="horas">Nº Horas</label>
+                <input type="number" name="h" id="h" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="precio">Precio / hora</label>
+                <input type="number" name="p" id="p" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="total">TOTAL</label>
+                <output name="x" for="h p" class="form-control" readonly></output>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="fecha">Fecha para impresión</label>
+                <input type="date" name="fecha" id="fecha" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <h5 class="col-12 mt-4 mb-3">Paso 4 - ESPECIFICAR GASTOS <b>(GASTOS EXTRAS por concepto)</b></h5>
+              <div class="form-group col-md-2">
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="horas">Importe</label>
+                <input type="number" name="horas" id="horas" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="horas">Subtipo</label>
+                <select name="asd" id="er" class="custom-select">
+                  <option value="1">Transporte</option>
+                  <option value="1">Alojamiento</option>
+                  <option value="1">Transporte y Alojamiento</option>
+                </select>
+              </div>
+              <div class="w-100"></div>
+              <div class="form-group col-md-6">
+                <label for="concepto">Concepto</label>
+                <input type="text" name="concepto" id="concepto" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <h5 class="col-12 mt-4 mb-3">Paso 4 - ESPECIFICAR GASTOS <b>(GASTOS EXTRAS por empresa)</b></h5>
+              <div class="form-group col-md-2">
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="horas">Importe</label>
+                <input type="number" name="horas" id="horas" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="horas">Subtipo</label>
+                <select name="asd" id="er" class="custom-select">
+                  <option value="1">Transporte</option>
+                  <option value="1">Alojamiento</option>
+                  <option value="1">Transporte y Alojamiento</option>
+                </select>
+              </div>
+              <div class="w-100"></div>
+              <div class="form-group col-md-6">
+                <label for="empresa">Empresa</label>
+                <input type="text" name="empresa" id="empresa" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="concepto">Concepto</label>
+                <input type="text" name="concepto" id="concepto" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <h5 class="col-12 mt-4 mb-3">Paso 4 - ESPECIFICAR GASTOS <b>(GASTOS EMPRESA)</b></h5>
+              <div class="form-group col-md-2">
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="horas">Importe</label>
+                <input type="number" name="horas" id="horas" class="form-control">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="factura">Factura</label>
+                <input type="text" name="factura" id="factura" class="form-control">
+              </div>
+              <div class="w-100"></div>
+              <div class="form-group col-md-6">
+                <label for="empresa">Empresa</label>
+                <input type="text" name="empresa" id="empresa" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="descripcion">Descripción</label>
+                <input type="text" name="descripcion" id="descripcion" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
+          </form>
           
         </div>
         <!-- /.container-fluid -->
