@@ -357,17 +357,14 @@
           <div class="py-3 d-sm-flex  align-items-center justify-content-between ">
             <div class="btn-group">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Inicio
+                Seleccionados
               </button>
               <div class="dropdown-menu">
-                <a href="asistentes.html" class="dropdown-item disabled">Inicio</a>
-                <a href="asistentes2.html" class="dropdown-item">Seleccionados</a>
+                <a href="asistentes.html" class="dropdown-item">Inicio</a>
+                <a href="asistentes2.html" class="dropdown-item disabled">Seleccionados</a>
                 <a href="asistentes3.html" class="dropdown-item">Asistencia</a>
                 <a href="asistentes4.html" class="dropdown-item">Certificados</a>
               </div>
-            </div>
-            <div class="button-group">
-              <button class="btn btn-primary">Añadir Asistente</button>
             </div>
           </div>
           
@@ -377,7 +374,6 @@
               <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
               <div class="button-group">
                 <button class="btn btn-secondary disabled">Actualizar</button>
-                <button class="btn btn-danger disabled">Eliminar</button>
               </div>
             </div>
             <div class="card-body">
@@ -388,10 +384,14 @@
                       <th>Código</th>
                       <th>Nombre</th>
                       <th>Apellidos</th>
-                      <th>email</th>
-                      <th>Teléfono</th>
-                      <th>Facultad</th>
-                      <th>Categoría</th>
+                      <th>Seleccionado</th>
+                      <th>Confirmado</th>
+                      <th>Otras Ediciones</th>
+                      <th>ECTS Obtenido</th>
+                      <th>ECTS Metodología</th>
+                      <th>Inscripciones Realizadas</th>
+                      <th>Veces seleccinado</th>
+                      <th>Último curso</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -404,10 +404,14 @@
                       </th>
                       <td>José</td>
                       <td>Menese</td>
-                      <td>jose.menese@uam.es</td>
-                      <td>678901230</td>
-                      <td>Profesorado</td>
-                      <td>PDI</td>
+                      <td class="text-success">Sí</td>
+                      <td class="text-success">Sí</td>
+                      <td></td>
+                      <td>11.00</td>
+                      <td>7.5</td>
+                      <td>47</td>
+                      <td>20</td>
+                      <td>1</td>
                     </tr>
                     <tr class="lauam__selectable-tr" style="cursor: pointer;">
                       <th scope="row">
@@ -418,10 +422,14 @@
                       </th>
                       <td>Marina</td>
                       <td>Heredia</td>
-                      <td>marina.heredia@uam.es</td>
-                      <td>678123456</td>
-                      <td>Filosofía y Letras</td>
-                      <td>PAS</td>
+                      <td class="text-success">Sí</td>
+                      <td class="text-danger">No</td>
+                      <td>En Espera (-994-1138-)</td>
+                      <td>16.00</td>
+                      <td>13.00</td>
+                      <td>105</td>
+                      <td>32</td>
+                      <td>0</td>
                     </tr>
                   </tbody>
                 </table>
