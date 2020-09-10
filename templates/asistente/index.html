@@ -18,103 +18,61 @@
   <!-- Custom styles for this template-->
   <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this page -->
+  <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+  <!-- Sidebar - Brand -->
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <div class="sidebar-brand-icon">
+      <i class="fas fa-user-graduate"></i>
+    </div>
+    <div class="sidebar-brand-text mx-3">ASISTENTE</div>
+  </a>
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-          <i class="fas fa-user-graduate"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">ASISTENTE</div>
-      </a>
+  <!-- Divider -->
+  <hr class="sidebar-divider my-0">
 
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
+  <!-- Nav Item - Dashboard -->
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">
+      <i class="fas fa-fw fa-chalkboard"></i>
+      <span>Mis cursos</span>
+    </a>
+  </li>
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
+  <!-- Nav Item - Historial -->
+  <li class="nav-item">
+    <a class="nav-link" href="historial.html">
+      <i class="fas fa-fw fa-list-alt"></i>
+      <span>Historial</span></a>
+  </li>
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="historial.html">
-          <i class="fas fa-fw fa-list-alt"></i>
-          <span>Historial</span></a>
-      </li>
+  <!-- Nav Item - Inscripción -->
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+      <i class="fas fa-fw fa-user-plus"></i>
+      <span>Inscribirse</span></a>
+  </li>
 
-      <!-- Nav Item - Inscripción -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-fw fa-user-plus"></i>
-          <span>Inscribirse</span></a>
-      </li>
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
+  <!-- Sidebar Toggler (Sidebar) -->
+  <div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+  </div>
 
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        2011/2012
-      </div>
-
-      <!-- Nav Item - Curso 1 Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 481</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 562</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 473</span>
-        </a>
-      </li>
-      
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        2010/2011
-      </div>
-
-      <!-- Nav Item - Curso 2 Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 73 <span class="text-danger">(inactivo)</span></span>
-        </a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
-    <!-- End of Sidebar -->
+</ul>
+<!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -123,60 +81,130 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    
+          <!-- Topbar Title -->
+          <h5 class="mb-0 font-weight-light text-dark">Mis Cursos</h5>
+      
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+      
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+      
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+      
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">DATOS PERSONALES REGISTRADOS</h1>
-          </div>
-
           <!-- Content Row -->
           <div class="row">
-            <form>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Nombre</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Ramón" required>
-                </div>
-                <div class="col-sm-6">
-                  <label for="validationDefault02">Apellidos</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="Rico Muñoz" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">email</label>
-                  <input type="text" class="form-control" id="validationDefault01" value="ramon.rico@uam.es" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Usuario</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="rrico" required readonly>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault01">Teléfono</label>
-                  <input type="text" class="form-control" id="validationDefault00" value="91 497 3244" required >
-                </div>
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <div class="row">
+                <h6 class="col-9 m-0 font-weight-bold text-primary">Curso Académico 2020/2021</h6>
+                <select class="custom-select col-3">
+                  <option selected>Selecciona Curso Académico</option>
+                  <option value="1">2020/2021</option>
+                  <option value="2">2019/2020</option>
+                  <option value="3">2018/2019</option>
+                </select>
               </div>
-              <hr>
-              <div class="form-row">
-                <div class="col-12">
-                  <label for="validationDefault03">Facultad</label>
-                  <input type="text" class="form-control" id="validationDefault03" value="Psicología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Departamento</label>
-                  <input type="text" class="form-control" id="validationDefault04" value="Departamento de Psicología Social y Metodología" required>
-                </div>
-                <div class="col-12">
-                  <label for="validationDefault04">Categoria</label>
-                  <input type="text" class="form-control" id="validationDefault05" value="PAS" required>
-                </div>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" >
+                  <thead>
+                    <tr>
+                      <td>Código</td>
+                      <td>Título</td>
+                      <td>Primera Sesión</td>
+                      <td>Estado Curso</td>
+                      <td>Estado Inscripción</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>1369</td>
+                        <td><a href="guia_docente.html">Competencia digital del profesorado universitario.</a></td>
+                        <td>03/04/2020</td>
+                        <td class="border-left-success">En curso</td>
+                        <td><span class="badge badge-success">Confirmado</span></td>
+                      </tr>
+                      <tr><td>1370</td>
+                        <td><a href="guia_docente.html">Creación de Cuestionarios en Moodle</a></td>
+                        <td>22/06/2020</td>
+                        <td>Abierto</td>
+                        <td><span class="badge badge-success">Confirmado</span></td>
+                      </tr>
+                      <tr><td>1393</td>
+                        <td><a href="guia_docente.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a></td>
+                        <td>24/06/2020</td>
+                        <td>Abierto</td>
+                        <td><span class="badge badge-warning">Lista de Espera</span></td>
+                      </tr>
+                      <tr><td>1397</td>
+                        <td><a href="guia_docente.html">Edición de recursos educativos audiovisuales.</a></td>
+                        <td>06/07/2020</td>
+                        <td>Abierto</td>
+                        <td><span class="badge badge-danger">Denegado</span></td>
+                      </tr>
+                      <tr><td>1398</td>
+                        <td><a href="guia_docente.html">Tratamiento de imágenes digital.</a></td>
+                        <td>07/07/2020</td>
+                        <td class="border-left-success">En curso</td>
+                        <td><span class="badge badge-danger">Denegado</span></td>
+                      </tr>
+                      <tr><td>1400</td>
+                        <td><a href="guia_docente.html">Competencia digital del profesorado universitario. Herramientas de creación de contenidos.</a></td>
+                        <td>09/07/2020</td>
+                        <td>Abierto</td>
+                        <td><span class="badge badge-warning">Lista de Espera</span></td>
+                      </tr>
+                      <tr><td>1401</td>
+                        <td><a href="guia_docente.html">Competencia digital del profesorado universitario. Herramientas de gestión del tiempo.</a></td>
+                        <td>09/07/2020</td>
+                        <td class="border-left-success">En curso</td>
+                        <td><span class="badge badge-danger">Denegado</span></td>
+                      </tr>
+                </table>
               </div>
-              <hr>
-              <button class="btn btn-dark" type="submit">Actualizar datos</button>
-            </form>
+            </div>
+          </div>
           </div>
 
         </div>
@@ -238,9 +266,12 @@
   <!-- Page level plugins -->
   <script src="../../vendor/chart.js/Chart.min.js"></script>
 
+  <!-- Page level plugins -->
+  <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
   <!-- Page level custom scripts -->
-  <script src="../../js/demo/chart-area-demo.js"></script>
-  <script src="../../js/demo/chart-pie-demo.js"></script>
+  <script src="../../js/demo/datatables-demo.js"></script>
 
 </body>
 

@@ -24,98 +24,52 @@
 
   <!-- Page Wrapper -->
   <div id="wrapper">
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+  <!-- Sidebar - Brand -->
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <div class="sidebar-brand-icon">
+      <i class="fas fa-user-graduate"></i>
+    </div>
+    <div class="sidebar-brand-text mx-3">ASISTENTE</div>
+  </a>
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-          <i class="fas fa-user-graduate"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">ASISTENTE</div>
-      </a>
+  <!-- Divider -->
+  <hr class="sidebar-divider my-0">
 
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
+  <!-- Nav Item - Dashboard -->
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">
+      <i class="fas fa-fw fa-chalkboard"></i>
+      <span>Mis cursos</span>
+    </a>
+  </li>
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
+  <!-- Nav Item - Historial -->
+  <li class="nav-item">
+    <a class="nav-link" href="historial.html">
+      <i class="fas fa-fw fa-list-alt"></i>
+      <span>Historial</span></a>
+  </li>
 
-      <!-- Nav Item - Historial -->
-      <li class="nav-item active">
-        <a class="nav-link" href="historial.html">
-          <i class="fas fa-fw fa-list-alt"></i>
-          <span>Historial</span></a>
-      </li>
+  <!-- Nav Item - Inscripción -->
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+      <i class="fas fa-fw fa-user-plus"></i>
+      <span>Inscribirse</span></a>
+  </li>
 
-      <!-- Nav Item - Inscripción -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-fw fa-user-plus"></i>
-          <span>Inscribirse</span></a>
-      </li>
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
+  <!-- Sidebar Toggler (Sidebar) -->
+  <div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+  </div>
 
-      
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        2011/2012
-      </div>
-
-      <!-- Nav Item - Curso 1 Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 481</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 562</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 473</span>
-        </a>
-      </li>
-      
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        2010/2011
-      </div>
-
-      <!-- Nav Item - Curso 2 Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 73 <span class="text-danger">(inactivo)</span></span>
-        </a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
-    <!-- End of Sidebar -->
+</ul>
+<!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -124,27 +78,84 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    
+          <!-- Topbar Title -->
+          <h5 class="mb-0 font-weight-light text-dark">Mi Historial</h5>
+      
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+      
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+      
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+      
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">HISTORIAL PERSONAL EN FORMACIÓN DOCENTE DE LA UAM</h1>
-          </div>
+          <div class="card shadow mt-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
+              <h6 class="m-0 font-weight-bold text-primary">
+                Mi Historial
+              </h6>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Descargar
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">PDF</a>
+                  <a class="dropdown-item" href="#">Excel</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
 
-          <!-- Content Row -->
-          <div class="row">
-            <table class="gris_oscuro11" width="800">
-              <tbody>
-              <tr><td colspan="4"><b>DATOS PERSONALES</b></td></tr>
-              
-               <tr><td width="50"> </td><td colspan="3"> Página personal de Patricia Arias Careaga</td></tr> <tr><td width="50">&nbsp;</td><td colspan="3"> patricia.arias@uam.es</td></tr> <tr><td width="50">&nbsp;</td><td colspan="3">Categoría Docente: PAS</td></tr> <tr><td>&nbsp;</td><td colspan="3"> Facultad de Rectorado, Departamento de PAS Facultades/Rectorado </td></tr><tr><td colspan="4"><br><b>RESUMEN GENERAL SOBRE EL PROGRAMA ordenado por <i>Tipo de Formación</i></b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td colspan="2" bgcolor="#FFE88B">Formación realizada dentro del Programa de <b>Formación Predoctoral</b></td><td bgcolor="#FFE88B" valign="top"> </td></tr><tr class="azul_negro11"><td>&nbsp;</td><td colspan="2" bgcolor="#D4EFD0">Formación realizada dentro del Programa de <b>Formación Inicial</b></td><td width="250" bgcolor="#D4EFD0" valign="top"> 1.00 créditos ECTS</td></tr><tr class="azul_negro11"><td>&nbsp;</td><td colspan="2" bgcolor="#D0E0EF">Formación realizada dentro del Programa de <b>Formación Continua</b></td><td bgcolor="#D0E0EF" valign="top"> </td></tr><tr class="azul_negro11"><td>&nbsp;</td><td colspan="2" bgcolor="#ADB1AD">Formación realizada dentro del resto de Programas de <b>Formación</b></td><td width="250" bgcolor="#ADB1AD" valign="top"> </td></tr><tr><td colspan="4"><br><b>RESUMEN GENERAL SOBRE EL PROGRAMA ordenado por <i>Área de Conocimiento</i></b></td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Desarrollo docente general e investigación</b></td><td valign="top"> 1.00 créditos ECTS<br></td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Metodologías docentes</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Tecnologías de la información</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Idiomas</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Idiomas (Plan DOing)</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Cursos Moodle</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Tecnologías educativas para la docencia</b></td><td valign="top"> </td></tr><tr><td colspan="4"><br><b>DESCRIPCIÓN SOBRE EL PROGRAMA DE FORMACIÓN INICIAL</b></td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2011/2012 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 481)</td><td bgcolor="#D4EFD0">· Bases para la creación de equipos de trabajo efectivos </td><td bgcolor="#D4EFD0" valign="top">1  crédito ECTS</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 382)</td><td bgcolor="#D4EFD0">· Mapas conceptuales </td><td bgcolor="#D4EFD0" valign="top">8  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 478)</td><td bgcolor="#D4EFD0">· Elaboración de presentaciones digitales </td><td bgcolor="#D4EFD0" valign="top">8  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 491)</td><td bgcolor="#D4EFD0">· La expresión de ideas </td><td bgcolor="#D4EFD0" valign="top">9  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 520)</td><td bgcolor="#D4EFD0">· El papel de la ANECA en el desarrollo y evaluación de la carrera docente: Programa de Evaluación del Profesorado (PEP)  </td><td bgcolor="#D4EFD0" valign="top">10  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2010/2011 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 399)</td><td bgcolor="#D4EFD0">· Google y sus herramientas para la docencia e investigación (Calendar, gMail, Maps...) </td><td bgcolor="#D4EFD0" valign="top">8  horas presenciales</td></tr><tr><td colspan="4"><br><b>DESCRIPCIÓN SOBRE EL PROGRAMA DE FORMACIÓN CONTINUA</b></td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2016/2017 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 1039)</td><td bgcolor="#D0E0EF">· Gestión y corrección de exámenes con GEXCAT </td><td bgcolor="#D0E0EF" valign="top">2  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 1094)</td><td bgcolor="#D0E0EF">· Gestión Inteligente del Tiempo para Docentes </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2011/2012 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 521)</td><td bgcolor="#D0E0EF">· El papel de la ANECA en el desarrollo y evaluación de la carrera docente: Programa ACADEMIA para la Acreditación Nacional  </td><td bgcolor="#D0E0EF" valign="top">15  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2010/2011 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 413)</td><td bgcolor="#D0E0EF">· La palabra en acción  </td><td bgcolor="#D0E0EF" valign="top">9  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 407)</td><td bgcolor="#D0E0EF">· Herramientas informáticas de apoyo a la investigación  </td><td bgcolor="#D0E0EF" valign="top">12  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 447)</td><td bgcolor="#D0E0EF">· Desarrollo del pensamiento creativo  </td><td bgcolor="#D0E0EF" valign="top">8  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 422)</td><td bgcolor="#D0E0EF">· Gestión de conflictos en grupos y organizaciones universitarias </td><td bgcolor="#D0E0EF" valign="top">8  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2008/2009 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 163)</td><td bgcolor="#D0E0EF">· Calidad en las titulaciones </td><td bgcolor="#D0E0EF" valign="top">3  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 143)</td><td bgcolor="#D0E0EF">· Universidad y gestión del cambio </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 141)</td><td bgcolor="#D0E0EF">· Habilidades directivas en el entorno universitario: liderazgo situacional </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 142)</td><td bgcolor="#D0E0EF">· Introducción a la calidad en el ámbito universitario </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 158)</td><td bgcolor="#D0E0EF">· Sistemas de evaluación y recogidas de datos on-line </td><td bgcolor="#D0E0EF" valign="top">6  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2007/2008 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 49)</td><td bgcolor="#D0E0EF">· El estrés docente: métodos y estrategias de afrontamiento </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 35)</td><td bgcolor="#D0E0EF">· Dirección y desarrollo de reuniones eficaces </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr>
-              </tbody></table>
-          </div>
 
+            <!-- Content Row -->
+            <div class="row mx-3">
+              <table class="gris_oscuro11" width="800">
+                <tbody>
+                <tr><td colspan="4"><b>DATOS PERSONALES</b></td></tr>
+                
+                <tr><td width="50"> </td><td colspan="3"> Página personal de Patricia Arias Careaga</td></tr> <tr><td width="50">&nbsp;</td><td colspan="3"> patricia.arias@uam.es</td></tr> <tr><td width="50">&nbsp;</td><td colspan="3">Categoría Docente: PAS</td></tr> <tr><td>&nbsp;</td><td colspan="3"> Facultad de Rectorado, Departamento de PAS Facultades/Rectorado </td></tr><tr><td colspan="4"><br><b>RESUMEN GENERAL SOBRE EL PROGRAMA ordenado por <i>Tipo de Formación</i></b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td colspan="2" bgcolor="#FFE88B">Formación realizada dentro del Programa de <b>Formación Predoctoral</b></td><td bgcolor="#FFE88B" valign="top"> </td></tr><tr class="azul_negro11"><td>&nbsp;</td><td colspan="2" bgcolor="#D4EFD0">Formación realizada dentro del Programa de <b>Formación Inicial</b></td><td width="250" bgcolor="#D4EFD0" valign="top"> 1.00 créditos ECTS</td></tr><tr class="azul_negro11"><td>&nbsp;</td><td colspan="2" bgcolor="#D0E0EF">Formación realizada dentro del Programa de <b>Formación Continua</b></td><td bgcolor="#D0E0EF" valign="top"> </td></tr><tr class="azul_negro11"><td>&nbsp;</td><td colspan="2" bgcolor="#ADB1AD">Formación realizada dentro del resto de Programas de <b>Formación</b></td><td width="250" bgcolor="#ADB1AD" valign="top"> </td></tr><tr><td colspan="4"><br><b>RESUMEN GENERAL SOBRE EL PROGRAMA ordenado por <i>Área de Conocimiento</i></b></td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Desarrollo docente general e investigación</b></td><td valign="top"> 1.00 créditos ECTS<br></td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Metodologías docentes</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Tecnologías de la información</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Idiomas</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Idiomas (Plan DOing)</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Cursos Moodle</b></td><td valign="top"> </td></tr><tr><td>&nbsp;</td><td colspan="2"><b>Tecnologías educativas para la docencia</b></td><td valign="top"> </td></tr><tr><td colspan="4"><br><b>DESCRIPCIÓN SOBRE EL PROGRAMA DE FORMACIÓN INICIAL</b></td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2011/2012 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 481)</td><td bgcolor="#D4EFD0">· Bases para la creación de equipos de trabajo efectivos </td><td bgcolor="#D4EFD0" valign="top">1  crédito ECTS</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 382)</td><td bgcolor="#D4EFD0">· Mapas conceptuales </td><td bgcolor="#D4EFD0" valign="top">8  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 478)</td><td bgcolor="#D4EFD0">· Elaboración de presentaciones digitales </td><td bgcolor="#D4EFD0" valign="top">8  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 491)</td><td bgcolor="#D4EFD0">· La expresión de ideas </td><td bgcolor="#D4EFD0" valign="top">9  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 520)</td><td bgcolor="#D4EFD0">· El papel de la ANECA en el desarrollo y evaluación de la carrera docente: Programa de Evaluación del Profesorado (PEP)  </td><td bgcolor="#D4EFD0" valign="top">10  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2010/2011 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 399)</td><td bgcolor="#D4EFD0">· Google y sus herramientas para la docencia e investigación (Calendar, gMail, Maps...) </td><td bgcolor="#D4EFD0" valign="top">8  horas presenciales</td></tr><tr><td colspan="4"><br><b>DESCRIPCIÓN SOBRE EL PROGRAMA DE FORMACIÓN CONTINUA</b></td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2016/2017 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 1039)</td><td bgcolor="#D0E0EF">· Gestión y corrección de exámenes con GEXCAT </td><td bgcolor="#D0E0EF" valign="top">2  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 1094)</td><td bgcolor="#D0E0EF">· Gestión Inteligente del Tiempo para Docentes </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2011/2012 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 521)</td><td bgcolor="#D0E0EF">· El papel de la ANECA en el desarrollo y evaluación de la carrera docente: Programa ACADEMIA para la Acreditación Nacional  </td><td bgcolor="#D0E0EF" valign="top">15  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2010/2011 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 413)</td><td bgcolor="#D0E0EF">· La palabra en acción  </td><td bgcolor="#D0E0EF" valign="top">9  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 407)</td><td bgcolor="#D0E0EF">· Herramientas informáticas de apoyo a la investigación  </td><td bgcolor="#D0E0EF" valign="top">12  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 447)</td><td bgcolor="#D0E0EF">· Desarrollo del pensamiento creativo  </td><td bgcolor="#D0E0EF" valign="top">8  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 422)</td><td bgcolor="#D0E0EF">· Gestión de conflictos en grupos y organizaciones universitarias </td><td bgcolor="#D0E0EF" valign="top">8  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2008/2009 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 163)</td><td bgcolor="#D0E0EF">· Calidad en las titulaciones </td><td bgcolor="#D0E0EF" valign="top">3  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 143)</td><td bgcolor="#D0E0EF">· Universidad y gestión del cambio </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 141)</td><td bgcolor="#D0E0EF">· Habilidades directivas en el entorno universitario: liderazgo situacional </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 142)</td><td bgcolor="#D0E0EF">· Introducción a la calidad en el ámbito universitario </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 158)</td><td bgcolor="#D0E0EF">· Sistemas de evaluación y recogidas de datos on-line </td><td bgcolor="#D0E0EF" valign="top">6  horas presenciales</td></tr><tr><td>&nbsp;</td><td colspan="3"><b> 2007/2008 Curso académico</b></td></tr><tr class="azul_negro11"><td>&nbsp;</td><td width="50">&nbsp;</td><td colspan="2"><b>Realizados</b></td></tr><tr class="azul_negro11"><td colspan="2">(cod: 49)</td><td bgcolor="#D0E0EF">· El estrés docente: métodos y estrategias de afrontamiento </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr><tr class="azul_negro11"><td colspan="2">(cod: 35)</td><td bgcolor="#D0E0EF">· Dirección y desarrollo de reuniones eficaces </td><td bgcolor="#D0E0EF" valign="top">4  horas presenciales</td></tr>
+                </tbody></table>
+            </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
 

@@ -28,99 +28,52 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
 
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-          <i class="fas fa-user-graduate"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">ASISTENTE</div>
-      </a>
+  <!-- Sidebar - Brand -->
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <div class="sidebar-brand-icon">
+      <i class="fas fa-user-graduate"></i>
+    </div>
+    <div class="sidebar-brand-text mx-3">ASISTENTE</div>
+  </a>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
+  <!-- Divider -->
+  <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
+  <!-- Nav Item - Dashboard -->
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">
+      <i class="fas fa-fw fa-chalkboard"></i>
+      <span>Mis cursos</span>
+    </a>
+  </li>
 
-      <!-- Nav Item - Historial -->
-      <li class="nav-item">
-        <a class="nav-link" href="historial.html">
-          <i class="fas fa-fw fa-list-alt"></i>
-          <span>Historial</span></a>
-      </li>
+  <!-- Nav Item - Historial -->
+  <li class="nav-item">
+    <a class="nav-link" href="historial.html">
+      <i class="fas fa-fw fa-list-alt"></i>
+      <span>Historial</span></a>
+  </li>
 
-      <!-- Nav Item - Inscripción -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-fw fa-user-plus"></i>
-          <span>Inscribirse</span></a>
-      </li>
+  <!-- Nav Item - Inscripción -->
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+      <i class="fas fa-fw fa-user-plus"></i>
+      <span>Inscribirse</span></a>
+  </li>
 
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
+  <!-- Sidebar Toggler (Sidebar) -->
+  <div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+  </div>
 
-      
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        2011/2012
-      </div>
-
-      <!-- Nav Item - Curso 1 Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 481</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 562</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 473</span>
-        </a>
-      </li>
-      
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        2010/2011
-      </div>
-
-      <!-- Nav Item - Curso 2 Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 73 <span class="text-danger">(inactivo)</span></span>
-        </a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
-    <!-- End of Sidebar -->
-
+</ul>
+<!-- End of Sidebar -->
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
@@ -128,102 +81,77 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
         <!-- End of Topbar -->
+
+        <!-- Page Navigation -->
+        <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="guia_docente.html">Guía</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="documentos.html">Materiales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trabajos.html">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Certificados</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Curso 2011/2012 de "Bases para la creación de equipos de trabajo efectivos"</h1>
-          </div>
-
-          <!-- Page Navigation -->
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link" href="guia_docente.html">Guía</a>
-            </li>
-            <li>
-              <a class="nav-link" href="documentos.html">Documentos</a>
-            </li>
-            <li>
-              <a class="nav-link active disabled" href="trabajos.html">Trabajos</a>
-            </li>
-            <li>
-              <a class="nav-link disabled" href="#">Certificados</a>
-            </li>
-          </ul>
-
-          <!-- Formulario subida trabajos -->
-          <table>
-            <tbody>
-              <tr><td class="negro12" align="left" colspan="2"><b>Anexar documentación a un curso</b></td></tr>
-              <tr><td colspan="3"><p><font color="red"><b>**Importante: tildes, 'ñ', o caracteres extraños en el nombre del fichero pueden generar problemas</b></font></p></td></tr>  
-            </tbody>
-          </table>
-
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-            </div>
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-            </div>
-          </div>
-        </div>
-
           <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+          <div class="card shadow my-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
+              <h6 class="font-weight-bold text-primary">Mis trabajos</h6>
+              <div class="button-group">
+                <a class="btn btn-primary" href="nuevo_trabajo.html">Subir Trabajo</a>
+              </div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
                       <th>Documento</th>
-                      <th>Fecha Subida</th>
-                      <th>Estado</th>
+                      <th>Fecha</th>
+                      <th>Evaluación</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
-                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                    <tr>
+                      <td><a href="detalle_trabajo.html">Fuente y caudal.rar</a> <span class="badge badge-success float-right">Actualizado</span></td>
                       <td>2012/08/20</td>
                       <td class="text-success">Apto</td>
                     </tr>
-                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
-                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                    <tr>
+                      <td><a href="detalle_trabajo.html">Zyryab.zip</a> <span class="badge badge-secondary float-right">Pendiente de Revisión</span></td>
                       <td>2012/08/20</td>
                       <td class="text-success">Apto</td>
                     </tr>
-                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
-                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                    <tr>
+                      <td><a href="detalle_trabajo.html">Friday Night in San Francisco.zip</a> <span class="badge badge-warning float-right">Nuevo Comentario</span></td>
                       <td>2012/08/20</td>
                       <td class="text-success">Apto</td>
                     </tr>
-                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
-                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                    <tr>
+                      <td><a href="detalle_trabajo.html">Siroco.rar</a></td>
                       <td>2011/01/20</td>
                       <td class="text-danger">No Apto</td>
                     </tr>
-                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
-                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
+                    <tr>
+                      <td><a href="detalle_trabajo.html">Entre dos aguas.zip</a></td>
                       <td>2012/03/10</td>
                       <td class="text-danger">No Apto</td>
-                    </tr>
-                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
-                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
-                      <td>2012/06/28</td>
-                      <td class="text-danger">No Apto</td>
-                    </tr>
-                    <tr onclick="window.location='revision.html';" style="cursor: pointer;">
-                      <td>Bases para la creación de equipos de alto rendimiento.pdf</td>
-                      <td>2012/05/20</td>
-                      <td>Sin Corregir</td>
                     </tr>
                   </tbody>
                 </table>

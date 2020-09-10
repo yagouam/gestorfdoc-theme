@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>ASISTENTE - Dashboard</title>
+  <title>ASISTENTE - Revision</title>
 
   <!-- Custom fonts for this template-->
   <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -80,68 +80,59 @@
       <!-- Main Content -->
       <div id="content">
 
-      <!-- Topbar -->
-      <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
-      <!-- End of Topbar -->
+        <!-- Topbar -->
+        <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
+        <!-- End of Topbar -->
 
-      <!-- Page Navigation -->
-      <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="guia_docente.html">Guía</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="documentos.html">Materiales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="trabajos.html">Trabajos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Certificados</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <!-- Page Navigation -->
+        <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="guia_docente.html">Guía</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="documentos.html">Materiales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trabajos.html">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Certificados</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- DataTales Example -->
-          <div class="card shadow my-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Lista de documentos subidos por el docente</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Fecha Subida</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a href="detalle_documento.html">José Menese y el cante jondo.pdf</a> <span class="badge badge-success float-right">Nuevo</span></td>
-                      <td>2011/04/25</td>
-                    </tr>
-                    <tr>
-                      <td><a href="detalle_documento.html">La leyenda de la leyenda del tiempo.doc</a> <span class="badge badge-warning float-right">Actualizado</span></td>
-                      <td>2011/07/25</td>
-                    </tr>
-                    <tr>
-                      <td><a href="detalle_documento.html">Compases flamencos.xls</a></td>
-                      <td>2009/01/12</td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class="card shadow mt-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
+              <h6 class="m-0 font-weight-bold text-primary">Entre dos aguas.pdf</h6>
+              <div class="button-group">  
+                <button class="btn btn-primary">Descargar</button>
+                <button class="btn btn-secondary">Actualizar</button>
               </div>
             </div>
+            <div class="card-body">
+              <dl class="row">
+                <dt class="col-sm-3">Evaluación</dt>
+                <dd class="col-sm-9">Apto</dd>
+                <dt class="col-sm-3">Estado</dt>
+                <dd class="col-sm-9">Revisado</dd>
+                <dt class="col-sm-3">Comentarios del Ponente</dt>
+                <dd class="col-sm-9">Suspendisse potenti. Nam a vehicula quam. Sed blandit, lorem vel ornare tincidunt, turpis elit cursus arcu, vel lobortis diam libero non dui. Integer et aliquam urna, vitae malesuada nisi. Phasellus laoreet dolor ut lorem condimentum efficitur. Curabitur gravida, lacus id elementum sollicitudin, est augue porta massa, sit amet hendrerit eros dui sed libero. Sed bibendum fermentum dolor, quis fermentum libero vehicula et.</dd>
+                <dt class="col-sm-3">Fecha de Subida</dt>
+                <dd class="col-sm-9">2020/01/01</dd>
+                <dt class="col-sm-3">Última actualización</dt>
+                <dd class="col-sm-9">2020/01/01</dd>
+              </dl>
+            </div>
           </div>
-
+          
         <!-- /.container-fluid -->
 
       </div>

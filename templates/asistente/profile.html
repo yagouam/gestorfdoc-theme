@@ -18,9 +18,6 @@
   <!-- Custom styles for this template-->
   <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this page -->
-  <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
@@ -80,68 +77,64 @@
       <!-- Main Content -->
       <div id="content">
 
-      <!-- Topbar -->
-      <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
-      <!-- End of Topbar -->
-
-      <!-- Page Navigation -->
-      <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="guia_docente.html">Guía</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="documentos.html">Materiales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="trabajos.html">Trabajos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Certificados</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <!-- Topbar -->
+        <iframe src="../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- DataTales Example -->
-          <div class="card shadow my-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Lista de documentos subidos por el docente</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Fecha Subida</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a href="detalle_documento.html">José Menese y el cante jondo.pdf</a> <span class="badge badge-success float-right">Nuevo</span></td>
-                      <td>2011/04/25</td>
-                    </tr>
-                    <tr>
-                      <td><a href="detalle_documento.html">La leyenda de la leyenda del tiempo.doc</a> <span class="badge badge-warning float-right">Actualizado</span></td>
-                      <td>2011/07/25</td>
-                    </tr>
-                    <tr>
-                      <td><a href="detalle_documento.html">Compases flamencos.xls</a></td>
-                      <td>2009/01/12</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">DATOS PERSONALES REGISTRADOS</h1>
           </div>
 
+          <!-- Content Row -->
+          <div class="row">
+            <form>
+              <div class="form-row">
+                <div class="col-sm-6">
+                  <label for="validationDefault02">Nombre</label>
+                  <input type="text" class="form-control" id="validationDefault02" value="Ramón" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="validationDefault02">Apellidos</label>
+                  <input type="text" class="form-control" id="validationDefault02" value="Rico Muñoz" required>
+                </div>
+                <div class="col-12">
+                  <label for="validationDefault01">email</label>
+                  <input type="text" class="form-control" id="validationDefault01" value="ramon.rico@uam.es" required readonly>
+                </div>
+                <div class="col-12">
+                  <label for="validationDefault01">Usuario</label>
+                  <input type="text" class="form-control" id="validationDefault00" value="rrico" required readonly>
+                </div>
+                <div class="col-12">
+                  <label for="validationDefault01">Teléfono</label>
+                  <input type="text" class="form-control" id="validationDefault00" value="91 497 3244" required >
+                </div>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="col-12">
+                  <label for="validationDefault03">Facultad</label>
+                  <input type="text" class="form-control" id="validationDefault03" value="Psicología" required>
+                </div>
+                <div class="col-12">
+                  <label for="validationDefault04">Departamento</label>
+                  <input type="text" class="form-control" id="validationDefault04" value="Departamento de Psicología Social y Metodología" required>
+                </div>
+                <div class="col-12">
+                  <label for="validationDefault04">Categoria</label>
+                  <input type="text" class="form-control" id="validationDefault05" value="PAS" required>
+                </div>
+              </div>
+              <hr>
+              <button class="btn btn-dark" type="submit">Actualizar datos</button>
+            </form>
+          </div>
+
+        </div>
         <!-- /.container-fluid -->
 
       </div>
@@ -198,11 +191,11 @@
   <script src="../../js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="../../vendor/chart.js/Chart.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="../../js/demo/datatables-demo.js"></script>
+  <script src="../../js/demo/chart-area-demo.js"></script>
+  <script src="../../js/demo/chart-pie-demo.js"></script>
 
 </body>
 
