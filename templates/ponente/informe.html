@@ -28,282 +28,362 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
 
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-          <i class="fas fa-chalkboard-teacher"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">PONENTE</div>
-      </a>
+  <!-- Sidebar - Brand -->
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <div class="sidebar-brand-icon">
+      <i class="fas fa-chalkboard-teacher"></i>
+    </div>
+    <div class="sidebar-brand-text mx-3">PONENTE</div>
+  </a>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
+  <!-- Divider -->
+  <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
+  <!-- Nav Item - Dashboard -->
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">
+      <i class="fas fa-fw fa-chalkboard"></i>
+      <span>Mis cursos</span>
+    </a>
+  </li>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
+  <!-- Divider -->
+  <hr class="sidebar-divider">
 
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Formación Predoctoral
+  <!-- Heading -->
+  <div class="sidebar-heading">
+    Cursos
+  </div>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Curso 1369</span>
+    </a>
+    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <a class="collapse-item" href="guia_docente.html">Guía</a>
+        <a class="collapse-item" href="documentos.html">Materiales</a>
+        <a class="collapse-item" href="trabajos.html">Trabajos</a>
+        <a class="collapse-item" href="informe.html">Informe</a>
+        <a class="collapse-item" href="asistentes.html">Asistentes</a>
       </div>
+    </div>
+  </li>
 
-      <!-- Nav Item - Curso 1 Menu -->
-      <li class="nav-item active">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 481 - 2011/2012</span>
-        </a>
-      </li>
-      
+  <!-- Divider -->
+  <hr class="sidebar-divider d-none d-md-block">
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
+  <!-- Sidebar Toggler (Sidebar) -->
+  <div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+  </div>
 
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Formación Inicial
-      </div>
-
-      <!-- Nav Item - Curso 2 Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 451 - 2010/2011</span>
-        </a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
-    <!-- End of Sidebar -->
-
+</ul>
+<!-- End of Sidebar -->
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
       <div id="content">
 
-        <!-- Topbar -->
-        <iframe src="../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
-        <!-- End of Topbar -->
+      <!-- Topbar -->
+      <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
+      <!-- End of Topbar -->
+
+      <!-- Page Navigation -->
+      <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="guia_docente.html">Guía Docente</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documentos.html">Materiales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trabajos.html">Trabajos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="informe.html">Informe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="asistentes.html">Asistentes</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="mb-4">
-            <h1 class="mb-0 font-weight-light text-dark">Bases para la creación de equipos de trabajo efectivos</h1>
-            <h3><small class="text-muted">Curso 2011/2012</small></h3>
+          <!-- Pildoritas Resumen-->
+          <div class="row mt-4">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Encuestas / Asistentes</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">19 / 20</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Annual) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Valoración Media</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">3,72</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-chart-line fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tasks Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Aptos</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">70%</div>
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mr-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Comentarios</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-comments fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Page Navigation -->
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link" href="guia_docente.html">Guía</a>
-            </li>
-            <li>
-              <a class="nav-link" href="documentos.html">Materiales</a>
-            </li>
-            <li>
-              <a class="nav-link" href="trabajos.html">Trabajos</a>
-            </li>
-            <li>
-              <a class="nav-link active disabled" href="informe.html">Informe</a>
-            </li>
-            <li>
-              <a class="nav-link disabled" href="gastos.html">Gastos</a>
-            </li>
-            <li>
-              <a class="nav-link disabled" href="asistentes.html">Asistentes</a>
-            </li>
-          </ul>
-
-          <!-- Content Row-->
-          <div class="row"></div>
-            <h3>INFORME DE RESULTADOS PRODECEDENTE DE LAS ENCUESTAS DE OPINIÓN EN LOS CURSOS DE FORMACIÓN PARA EL PROFESORADO</h3>
-
-
-            <!-- Page Heading -->
-            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-              <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-              <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          <!-- Datos -->
+          <div class="card shadow my-4">
+            <div class="card-header mb-4 d-sm-flex align-items-center justify-content-between ">
+              <h6>Datos/Información</h6>
             </div>
-            
-            <h5>Datos/Información</h5>
-            <dl class="row">
-              <dt class="col-sm-3">Año</dt>
-              <dd class="col-sm-9">2011/2012</dd>
-              <dt class="col-sm-3">Tipo de formación</dt>
-              <dd class="col-sm-9">Formación Inicial</dd>
-              <dt class="col-sm-3">Ponente</dt>
-              <dd class="col-sm-9">Ramón Rico Muñoz</dd>
-              <dt class="col-sm-3">Curso</dt>
-              <dd class="col-sm-9">Bases para la creación de equipos de trabajo efectivos</dd>
-              <dt class="col-sm-3">Nº de Asisitentes</dt>
-              <dd class="col-sm-9">20</dd>
-              <dt class="col-sm-3">Nº de Encuestas</dt>
-              <dd class="col-sm-9">19</dd>
-            </dl>
- 
-            <h5>Resultados</h5>
-            <p class="lead">
-              A continuación se muestra la media aritmética y desviación estándar tanto de las respuestas sobre
-              el curso como de todas las acciones formativas del Programa. La escala de satisfacción es del 1 al
-              4, siendo 1 muy en desacuerdo y 4 muy de acuerdo.
-            </p>
+            <div class="card-body">  
+              <dl class="row">
+                <dt class="col-sm-3">Curso</dt>
+                <dd class="col-sm-9">Bases para la creación de equipos de trabajo efectivos</dd>
+                <dt class="col-sm-3">Año</dt>
+                <dd class="col-sm-9">2011/2012</dd>
+                <dt class="col-sm-3">Tipo de formación</dt>
+                <dd class="col-sm-9">Formación Inicial</dd>
+                <dt class="col-sm-3">Ponente</dt>
+                <dd class="col-sm-9">Ramón Rico Muñoz</dd>
+                <dt class="col-sm-3">Nº de Asistentes</dt>
+                <dd class="col-sm-9">20</dd>
+                <dt class="col-sm-3">Nº de Encuestas</dt>
+                <dd class="col-sm-9">19</dd>
+              </dl>
+            </div>
+          </div>
 
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Media Curso</th>
-                  <th scope="col">Desviación Curso</th>
-                  <th scope="col">Media UAM</th>
-                  <th scope="col">Desviación UAM</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table-secondary">
-                  <th>Planificación y desarrollo del curso</th>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr>
-                  <td>Para conseguir los objetivos propuestos en la guía docente se debe aumentar el
-                    Nº de horas presenciales (Esta pregunta NO computa para los cálculos globales)</td>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr>
-                  <td>Los contenidos se ajustan a la guía docente</td>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr>
-                  <td>La metodología permite adquirir las competencias planteadas</td>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr>
-                  <td>La documentación entregada es completa</td>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr>
-                  <td>Los recursos audiovisuales y materiales de apoyo son adecuados</td>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr class="table-secondary">
-                  <th>Impacto de la acción formativa</th>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr>
-                  <td>Los temas vistos han contribuido a desarrollar mis competencias docentes y/o
-                    investigadoras</td>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr class="table-secondary">
-                  <th>Valoración sobre el formador</th>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr>
-                  <td>El/La ponente ha demostrado buenas habilidades para impartir el curso</td>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-                <tr>
-                  <td>Recomendaría a este ponente para que siga impartiendo este curso en futuras
-                    ediciones</td>
-                  <td>3.72</td>
-                  <td>0.33</td>
-                  <td>3.55</td>
-                  <td>0.52</td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- Resultados -->
+          <div class="card shadow my-4">
+            <div class="card-header d-sm-flex align-items-center justify-content-between ">
+              <h6>Resultados</h6>
+            </div>
+            <div class="card-body"> 
+              <p>
+                A continuación se muestra la media aritmética y desviación estándar tanto de las respuestas sobre
+                el curso como de todas las acciones formativas del Programa. La escala de satisfacción es del 1 al
+                4, siendo 1 muy en desacuerdo y 4 muy de acuerdo.
+              </p>
 
-            <h5>Comentarios adicionales escritos en la pregunta abierta</h5>
-            <p class="lead">Nº de comentarios 9</p>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Media Curso</th>
+                    <th scope="col">Desviación Curso</th>
+                    <th scope="col">Media UAM</th>
+                    <th scope="col">Desviación UAM</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-secondary">
+                    <th>Planificación y desarrollo del curso</th>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr>
+                    <td>Para conseguir los objetivos propuestos en la guía docente se debe aumentar el
+                      Nº de horas presenciales (Esta pregunta NO computa para los cálculos globales)</td>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr>
+                    <td>Los contenidos se ajustan a la guía docente</td>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr>
+                    <td>La metodología permite adquirir las competencias planteadas</td>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr>
+                    <td>La documentación entregada es completa</td>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr>
+                    <td>Los recursos audiovisuales y materiales de apoyo son adecuados</td>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <th>Impacto de la acción formativa</th>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr>
+                    <td>Los temas vistos han contribuido a desarrollar mis competencias docentes y/o
+                      investigadoras</td>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <th>Valoración sobre el formador</th>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr>
+                    <td>El/La ponente ha demostrado buenas habilidades para impartir el curso</td>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                  <tr>
+                    <td>Recomendaría a este ponente para que siga impartiendo este curso en futuras
+                      ediciones</td>
+                    <td>3.72</td>
+                    <td>0.33</td>
+                    <td>3.55</td>
+                    <td>0.52</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
 
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Comentario 1</h5>
-                    <p class="card-text">Que se alargaran el nº de sesiones presenciales.</p>
+          <!-- Comentarios -->
+          <div class="card shadow my-4">
+            <div class="card-header d-sm-flex align-items-center justify-content-between ">
+              <h6>Comentarios</h6>
+            </div>
+            <div class="card-body"> 
+              <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <blockquote class="blockquote font-italic">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                      </blockquote>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Comentario 2</h5>
-                    <p class="card-text">Es muy interesante, y por tanto aumentaría las horas presenciales del curso.</p>
+                <div class="col mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <blockquote class="blockquote font-italic">
+                        <p>Quisque auctor justo quis diam condimentum, viverra ullamcorper elit posuere. Sed sit amet sagittis sapien, vel auctor justo. Integer eu eros congue lectus porttitor lobortis eu id nibh.</p>
+                      </blockquote>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Comentario 2</h5>
-                    <p class="card-text">Es muy interesante, y por tanto aumentaría las horas presenciales del curso.</p>
+                <div class="col mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <blockquote class="blockquote font-italic">
+                        <p>In maximus arcu enim, at dignissim turpis auctor ut.</p>
+                      </blockquote>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Comentario 2</h5>
-                    <p class="card-text">Es muy interesante, y por tanto aumentaría las horas presenciales del curso.</p>
+                <div class="col mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <blockquote class="blockquote font-italic">
+                        <p>Nam congue velit mauris, in sollicitudin magna rhoncus a. Nam egestas, est nec accumsan volutpat, urna urna lobortis felis, nec volutpat sapien ligula vel nisi.</p>
+                      </blockquote>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="row">
-              <img src="/img/ejemplo_grafica_informes.png" alt="" width="50%" class="mt-2 mx-auto">
-            </div>
-          
+          </div>
+        </div>
         <!-- /.container-fluid -->
 
       </div>
@@ -342,8 +422,8 @@
         </div>
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-secondary" href="login.html">Logout</a>
+          <button class="btn btn-dark" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-dark" href="login.html">Logout</a>
         </div>
       </div>
     </div>

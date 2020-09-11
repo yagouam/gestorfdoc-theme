@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>PONENTE - Dashboard</title>
+  <title>PONENTE - Documentos</title>
 
   <!-- Custom fonts for this template-->
   <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,9 @@
 
   <!-- Custom styles for this template-->
   <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -26,7 +29,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -42,41 +45,34 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
         <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Formación Predoctoral
-      </div>
-
-      <!-- Nav Item - Curso 1 Menu -->
-      <li class="nav-item active">
-        <a class="nav-link" href="guia_docente.html">
           <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 481 - 2011/2012</span>
+          <span>Mis cursos</span>
         </a>
       </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
-
+    
       <!-- Heading -->
       <div class="sidebar-heading">
-        Formación Inicial
+        Cursos
       </div>
-
-      <!-- Nav Item - Curso 2 Menu -->
+    
+      <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="guia_docente.html">
-          <i class="fas fa-fw fa-chalkboard"></i>
-          <span>Curso 451 - 2010/2011</span>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Curso 1369</span>
         </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="guia_docente.html">Guía</a>
+            <a class="collapse-item" href="documentos.html">Materiales</a>
+            <a class="collapse-item" href="trabajos.html">Mis trabajos</a>
+            <a class="collapse-item" href="informe.html">Informe</a>
+            <a class="collapse-item" href="asistentes.html">Asistentes</a>
+          </div>
+        </div>
       </li>
 
       <!-- Divider -->
@@ -97,187 +93,164 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
         <!-- End of Topbar -->
+
+        <!-- Page Navigation -->
+        <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="guia_docente.html">Guía Docente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="documentos.html">Materiales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trabajos.html">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="informe.html">Informe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="asistentes.html">Asistentes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="mb-4">
-            <h1 class="mb-0 font-weight-light text-dark">Bases para la creación de equipos de trabajo efectivos</h1>
-            <h3><small class="text-muted">Curso 2011/2012</small></h3>
+          <!-- Form Guia Docente -->
+          <div class="card shadow mt-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
+              <h6>Guía del curso</h6>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Más
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Editar</a>
+                  <a class="dropdown-item" href="#">Descargar como PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <dl class="row">
+                  <dt class="col-sm-3">Título</dt>
+                  <dd class="col-sm-9">Edición de recursos educativos audiovisuales: tratamiento de imágenes, captura de pantalla y edición de vídeo.ON-LINE.</dd>
+                  <dt class="col-sm-3">Formador/res</dt>
+                  <dd class="col-sm-9">
+                    <ul class="list-unstyled">
+                      <li>Germán Montoro</li>
+                      <li>Javier Gómez</li>
+                    </ul>
+                  </dd>
+                  <dt class="col-sm-3">Horas de formación</dt>
+                  <dd class="col-sm-9">
+                    <ul class="list-unstyled">
+                      <li>0 horas presenciales</li>
+                      <li>50 horas presenciales</li>
+                    </ul>
+                  </dd>
+                  <dt class="col-sm-3">Créditos ECTS</dt>
+                  <dd class="col-sm-9">2</dd>
+                  <dt class="col-sm-3">Horario y lugar</dt>
+                  <dd class="col-sm-9">
+                    <ul class="list-unstyled">
+                      <li><a href="#" data-toggle="tooltip" data-placement="top" title="Añadir al calendario"><i class="fas fa-fw fa-calendar"></i></a> 2020-07-06 de 0:00 horas a 24:00 horas en la plataforma de UAMX</li>
+                      <li><a href="#" data-toggle="tooltip" data-placement="top" title="Añadir al calendario"><i class="fas fa-fw fa-calendar"></i></a> 2021-07-31 de 0:00 horas a 24:00 horas en la plataforma de UAMX</li>
+                    </ul>
+                  </dd>
+                  <dt class="col-sm-3">Objetivos del módulo</dt>
+                  <dd class="col-sm-9">
+                    En este curso aprenderemos los conceptos básicos del tratamiento o edición de imágenes, la captura de pantalla del ordenador y la edición de vídeos. El objetivo final será poder utilizar este aprendizaje en el proceso de creación y adaptación de recursos educativos audiovisuales.
+                    Contenidos
+                    El curso se compone de tres módulos:
+                    <ol>
+                      <li>
+                        Tratamiento de imágenes con PIXLR:
+                        <ul>
+                          <li>Formatos y resolución de las imágenes</li>
+                          <li>Panel de herramientas</li>
+                          <li>Trabajo con capas</li>
+                          <li>Crear una portada</li>
+                          <li>Crear un callout</li>
+                          <li>Recortar una imagen</li>
+                          <li>Eliminar elementos de una imagen</li>
+                          <li>Desenfoque parcial</li>
+                        </ul>
+                      </li>
+                      <li>
+                        Captura de pantalla con OBS Studio:
+                        <ul>
+                          <li>Configuración de la herramienta</li>
+                          <li>Ajustes de sonido</li>
+                          <li>Capturar la pantalla</li>
+                          <li>Insertar un título</li>
+                          <li>Insertar un fondo</li>
+                          <li>Insertar una imagen</li>
+                          <li>Insertar captura de webcam</li>
+                          <li>Insertar fuente de sonido</li>
+                        </ul>
+                      </li>
+                      <li>
+                        Edición de vídeo con Openshot:
+                          <ul>
+                            <li>Cargar vídeos</li>
+                            <li>Recortar vídeo</li>
+                            <li>Enlazar vídeos</li>
+                            <li>Efectos de sonido</li>
+                            <li>Añadir texto</li>
+                            <li>Añadir una imagen</li>
+                            <li>Añadir un callout</li>
+                          </ul>
+                      </li>
+                    </ol>
+                  </dd>
+                  <dt class="col-sm-3">Competencias que se van a adquirir</dt>
+                  <dd class="col-sm-9">
+                    <ul>
+                      <li>Crear y retocar imágenes para su utilización como recurso docente</li>
+                      <li>Capturar la pantalla del ordenador para ofrecer vídeos educativos</li>
+                      <li>Editar vídeos para generar recursos educativos audiovisuales de calidad.</li>
+                    </ul>
+                  </dd>
+                  <dt class="col-sm-3">Metodología docente</dt>
+                  <dd class="col-sm-9">
+                    El curso está planteado para que se pueda realizar al ritmo de cada usuario. Se ofrecen ejemplos de cada elemento explicado y foros para resolver dudas.
+                    Siguiendo los contenidos del curso se busca que los participantes sean capaces de crear y editar sus propios recursos educativos audiovisuales.
+                  </dd>
+                  <dt class="col-sm-3">Sistema de evaluación</dt>
+                  <dd class="col-sm-9">Creación de recursos educativos audiovisuales que demuestren las competencias adquiridas.</dd>
+                  <dt class="col-sm-3">Descripción de las actividades presenciales</dt>
+                  <dd class="col-sm-9">No hay actividades presenciales</dd>
+                  <dt class="col-sm-3">Descripción de las actividades no presenciales</dt>
+                  <dd class="col-sm-9">Al ser un curso en línea todas las actividades serán no presenciales.</dd>
+                  <dt class="col-sm-3">Referencia de consulta básica bibliografía, URL...</dt>
+                  <dd class="col-sm-9">
+                    <ul>
+                      <li><a href="https://pixlr.com/es/" target="_blank" rel="noopener noreferrer">PIXLR</a></li>
+                      <li><a href="https://obsproject.com/es" target="_blank" rel="noopener noreferrer">OBS Studio</a></li>
+                      <li><a href="https://www.openshot.org/es/" target="_blank" rel="noopener noreferrer">Openshot</a></li>
+                    </ul>
+                  </dd>
+                  <dt class="col-sm-3">Información de interés para los participantes</dt>
+                  <dd class="col-sm-9">
+                    Es un curso introductorio y por lo tanto no es necesario tener conocimientos previos sobre edición de recursos audiovisuales.
+                    Solo es necesario disponer de un ordenador con conexión a internet. Se puede hacer tanto en Windows como en Mac.
+                    El curso se encuentra alojado en la plataforma UAMx de la UAM.
+                    Una vez inscrito en el curso, la o el participante recibirá un mensaje de la plataforma con indicaciones sobre cómo hacerse una cuenta en la misma. Cuando se solicite un correo electrónico de inscripción, ha de usarse el correo de la UAM. Como contraseña se ha de escoger la que se quiera.
+                  </dd>
+                </dl>
+              </div>
           </div>
-
-          <!-- Page Navigation -->
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active disabled" href="guia_docente.html">Guía</a>
-            </li>
-            <li>
-              <a class="nav-link" href="documentos.html">Materiales</a>
-            </li>
-            <li>
-              <a class="nav-link" href="trabajos.html">Trabajos</a>
-            </li>
-            <li>
-              <a class="nav-link" href="informe.html">Informe</a>
-            </li>
-            <li>
-              <a class="nav-link disabled" href="gastos.html">Gastos</a>
-            </li>
-            <li>
-              <a class="nav-link disabled" href="asistentes.html">Asistentes</a>
-            </li>
-          </ul>
-
-
-          <!-- Content Row -->
-          <div class="row">
           
-            <!-- Form Guia Docente -->
-            <table class="azul_negro11" width="900">
-              <tbody>
-                <tr> <td align="right" colspan="2"><a href="./print_acceso_coordinadores.php?codigo_modulo=481" target="_blank" class="azul_negro11">[ Quiero visualizar mi guía docente y poder imprimirla ]</a></td>
-                </tr> 
-                <tr valign="top">
-                <td>Guía docente </td>
-                <td><b>2011/2012</b> de <b>"Bases para la creación de equipos de trabajo efectivos" </b></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Título</td>
-                <td><textarea name="titulo_modulo" rows="1" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">Bases para la creación de equipos de trabajo efectivos</textarea>
-                </td></tr>
-                
-                <tr valign="top">
-                <td>Créditos ECTS</td>
-                <td class="gris_oscuro10"><input type="text" name="creditos_ects" style="width:50px;height:20px;font-size:8pt;font-family:Verdana;text_align:right;" value="1">&nbsp;&nbsp;(1 crédito ECTS = 25 horas de trabajo presencial y no presencial)</td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Horas presenciales</td>
-                <td><input size="3" type="text" name="horas_presenciales" style="width:50px;height:20px;font-size:8pt;font-family:Verdana;text_align:right;" value="8"></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Horas no presenciales</td>
-                <td><input size="3" type="text" name="horas_no_presenciales" style="width:50px;height:20px;font-size:8pt;font-family:Verdana;text_align:right;" value="17"></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Objetivos</td>
-                <td><textarea name="objetivos" rows="4" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">1) Conocer los parámetros básicos para la creación de equipos de trabajo efectivo.&lt;br&gt;
-                2) Vincular de forma práctica los contenidos del curso con ejercicios que permitan reflexionar sobre su aplicación al ámbito académico-investigador.</textarea></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Contenidos</td>
-                <td><textarea name="contenidos" rows="4" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">• ¿De verdad necesitamos los equipos?&lt;br&gt;
-                • Modelo de comportamiento grupal: procesos y dinámicas grupales que afectan al rendimiento y la satisfacción de los equipos de trabajo.&lt;br&gt;
-                • Ser capaces de comprometerse con un objetivo común: establecimiento de misiones y objetivos.&lt;br&gt;
-                • Cohesión y confianza grupal. &lt;br&gt;
-                • Complementariedad de roles y sinergia en el trabajo en equipo &lt;br&gt;
-                • Comunicación y eficacia colectiva &lt;br&gt;
-                • Creación y dirección de equipos: reflexiones para el ámbito académico-investigador</textarea></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Competencias a adquirir</td>
-                <td><textarea name="competencias" rows="4" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">1) Comprender y apreciar los aspectos fundamentales que afectan a los procesos y resultados de los equipos en el ámbito académico-investigador.&lt;br&gt;
-                2) Conocer el método de aprendizaje experiencial y su capacidad para facilitar la reflexión y el cambio en los equipos de trabajo
-                </textarea></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Metodología docente</td>
-                <td><textarea name="metodologia" rows="4" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">El método docente a seguir fomentará el aprendizaje experiencial y basado en problemas. Los distintos puntos a tratar contarán con una parte de aclaración de contenidos y estrategias de actuación, así como una parte de dinámica grupal en las que se promoverá la discusión y el análisis de los contenidos y estrategias y su aplicación a nuestro ámbito laboral.</textarea></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Sistema de evaluación</td>
-                <td><textarea name="evaluacion" rows="4" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">Participación en las dinámicas que componen el seminario y evaluación de trabajo no presencial.</textarea></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Descripción de las actividades presenciales</td>
-                <td><textarea name="descripcion_presencial" rows="4" cols="110" style="20px;font-size:8pt;font-family:Verdana;text_align:right;">El elemento esencial del seminario serán las dinámicas grupales que, trabajados por los asistentes, estarán orientados a profundizar, experimentar y aprender los contenidos del programa con el fin de que puedan aplicarlos a sus situaciones profesionales concretas. </textarea></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Descripción de las actividades no presenciales</td>
-                <td><textarea name="descripcion_no_presencial" rows="4" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">Identificación de un problema que amenaza la efectividad en su equipo investigador o docente y propuesta de un ejercicio que promueva la toma de consciencia del problema, su análisis y búsqueda de soluciones.</textarea></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Referencia de consultas básica (bibliografía, URL...)</td>
-                <td><textarea name="referencia_consultas" rows="4" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">West, M.A. (2003). El trabajo eficaz en equipo: 1+1=3. Barcelona: Paidós Plural.
-                West, M.A. (2004). Los secretos de la gestión de los equipos de trabajo. Barcelona: Blume Empresa.
-                Steward, G.L., Manz, C.M. &amp; Sims, H.P. (2003). Trabajo en Equipo y Dinámica de Grupos. Mexico:Limusa-Wiley.</textarea></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Nº de asistentes máximos</td>
-                <td><input type="text" name="num_asistentes" style="width:30px;height:20px;font-size:8pt;font-family:Verdana;text_align:right;" value="20"></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Recursos materiales necesarios para impartir el curso (pc, cañón, papelógrafo...)</td>
-                <td><textarea name="recursos_materiales" rows="4" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">Cañón, pc, pizarra blanca o similar, un aula en la que las mesas y las sillas puedan moverse con facilidad para hacer dinámicas grupales.</textarea></td>
-                </tr>
-                
-                <tr valign="top">
-                <td>Información de interés para los participantes</td>
-                <td><textarea name="info_interes" rows="4" cols="110" style="font-size:8pt;font-family:Verdana;text_align:right;">Asistir con ropa y calzado cómodo</textarea></td>
-                </tr>
-                
-                <tr>
-                <td colspan="2" align="middle"><input type="submit" value="Actualizar Guía Docente" style="width:240px;height:30px;font-size:10pt;font-family:Verdana;text_align:right;" name="operacion"></td>        
-                </tr> 
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Content Row -->
-          <div class="row">
-            <table class="azul_negro11" width="700">
-              <tbody>
-                <tr><td colspan="9">Fechas en las que se va a impartir la acción formativa</td></tr>
-                <tr>                 
-                    <th>&nbsp;</th>  
-                    <th align="left">Dia</th>                    
-                    <th align="left">Mes</th>
-                    <th align="left">Año</th>
-                    <th align="left">Hora inicio</th>
-                    <th align="left">Hora final</th>
-                    <th align="left">Lugar de realización</th>
-                    <th align="left">Facultad de realización</th>                
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>25</td>
-                  <td>1</td>
-                  <td>2012</td>
-                  <td>09:30</td>
-                  <td>13:30</td>
-                  <td>Sala D, 2ª entreplanta del edificio del </td>
-                  <td>Rectorado</td>
-                </tr>
-                <tr>
-                  <td>
-                  </td>
-                  <td>26</td>
-                  <td>1</td>
-                  <td>2012</td>
-                  <td>09:30</td>
-                  <td>13:30</td>
-                  <td>Sala D, 2ª entreplanta del edificio del </td>
-                  <td>Rectorado</td>
-                </tr>                 
-              </tbody>
-            </table>
-          </div>
-        </div>
         <!-- /.container-fluid -->
 
       </div>
@@ -316,8 +289,8 @@
         </div>
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-secondary" href="login.html">Logout</a>
+          <button class="btn btn-dark" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-dark" href="login.html">Logout</a>
         </div>
       </div>
     </div>
@@ -332,13 +305,14 @@
 
   <!-- Custom scripts for all pages-->
   <script src="../../js/sb-admin-2.min.js"></script>
+  <script src="../../js/lauam__custom.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="../../vendor/chart.js/Chart.min.js"></script>
+  <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="../../js/demo/chart-area-demo.js"></script>
-  <script src="../../js/demo/chart-pie-demo.js"></script>
+  <script src="../../js/demo/datatables-demo.js"></script>
 
 </body>
 
