@@ -135,73 +135,132 @@
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <div class="row">
-                <h6 class="col-9 m-0 font-weight-bold text-primary">Curso Académico 2020/2021</h6>
-                <select class="custom-select col-3">
-                  <option selected>Selecciona Curso Académico</option>
-                  <option value="1">2020/2021</option>
-                  <option value="2">2019/2020</option>
-                  <option value="3">2018/2019</option>
-                </select>
+                <h6 class="col-9 m-0 font-weight-bold text-dark">Paso 1: <small class="muted">Selecciona el curso que te interesa</small></h6>
+              </div>
+            </div>
+            <div class="collapse show" id="collapseCardExample">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" >
+                    <thead>
+                      <tr>
+                        <td>Código</td>
+                        <td>Título</td>
+                        <td>Primera Sesión</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" name="customRadio" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">1234</label>
+                          </div>
+                        </td>
+                        <td><a href="guia_docente.html">Competencia digital del profesorado universitario.</a></td>
+                        <td>03/04/2020</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" name="customRadio" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">1346</label>
+                          </div>
+                        </td>
+                        <td><a href="guia_docente.html">Creación de Cuestionarios en Moodle</a></td>
+                        <td>22/06/2020</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" name="customRadio" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">1345</label>
+                          </div>
+                        </td>
+                        <td><a href="guia_docente.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a></td>
+                        <td>24/06/2020</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" name="customRadio" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">1423</label>
+                          </div>
+                        </td>
+                        <td><a href="guia_docente.html">Edición de recursos educativos audiovisuales.</a></td>
+                        <td>06/07/2020</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" name="customRadio" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">1432</label>
+                          </div>
+                        </td>
+                        <td><a href="guia_docente.html">Tratamiento de imágenes digital.</a></td>
+                        <td>07/07/2020</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" name="customRadio" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label" for="customCheck6">1400</label>
+                          </div>
+                        </td>
+                        <td><a href="guia_docente.html">Competencia digital del profesorado universitario. Herramientas de creación de contenidos.</a></td>
+                        <td>09/07/2020</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" name="customRadio" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label" for="customCheck7">1401</label>
+                          </div>
+                        </td>
+                        <td><a href="guia_docente.html">Competencia digital del profesorado universitario. Herramientas de gestión del tiempo.</a></td>
+                        <td>09/07/2020</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#collapseCardExample" class="btn btn-primary mx-auto" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                Siguiente
+              </a>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <div class="row">
+                <h6 class="col-9 m-0 font-weight-bold text-dark">Paso 2: <small class="muted">Resumen y Confirmación</small></h6>
               </div>
             </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" >
-                  <thead>
-                    <tr>
-                      <td>Código</td>
-                      <td>Título</td>
-                      <td>Primera Sesión</td>
-                      <td>Estado Curso</td>
-                      <td>Estado Inscripción</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td>1369</td>
-                        <td><a href="guia_docente.html">Competencia digital del profesorado universitario.</a></td>
-                        <td>03/04/2020</td>
-                        <td class="border-left-success">En curso</td>
-                        <td><span class="badge badge-success">Confirmado</span></td>
-                      </tr>
-                      <tr><td>1370</td>
-                        <td><a href="guia_docente.html">Creación de Cuestionarios en Moodle</a></td>
-                        <td>22/06/2020</td>
-                        <td>Abierto</td>
-                        <td><span class="badge badge-success">Confirmado</span></td>
-                      </tr>
-                      <tr><td>1393</td>
-                        <td><a href="guia_docente.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a></td>
-                        <td>24/06/2020</td>
-                        <td>Abierto</td>
-                        <td><span class="badge badge-warning">Lista de Espera</span></td>
-                      </tr>
-                      <tr><td>1397</td>
-                        <td><a href="guia_docente.html">Edición de recursos educativos audiovisuales.</a></td>
-                        <td>06/07/2020</td>
-                        <td>Abierto</td>
-                        <td><span class="badge badge-danger">Denegado</span></td>
-                      </tr>
-                      <tr><td>1398</td>
-                        <td><a href="guia_docente.html">Tratamiento de imágenes digital.</a></td>
-                        <td>07/07/2020</td>
-                        <td>Cerrado</td>
-                        <td><span class="badge badge-danger">Denegado</span></td>
-                      </tr>
-                      <tr><td>1400</td>
-                        <td><a href="guia_docente.html">Competencia digital del profesorado universitario. Herramientas de creación de contenidos.</a></td>
-                        <td>09/07/2020</td>
-                        <td>Abierto</td>
-                        <td><span class="badge badge-warning">Lista de Espera</span></td>
-                      </tr>
-                      <tr><td>1401</td>
-                        <td><a href="guia_docente.html">Competencia digital del profesorado universitario. Herramientas de gestión del tiempo.</a></td>
-                        <td>09/07/2020</td>
-                        <td>Cerrado</td>
-                        <td><span class="badge badge-danger">Denegado</span></td>
-                      </tr>
-                    </tbody>
-                </table>
-              </div>
+              <dl class="row">
+                <dt class="col-sm-3">Título</dt>
+                <dd class="col-sm-9 text-dark lead">Competencia digital del profesorado universitario. Herramientas de creación de contenidos.</dd>
+                <dt class="col-sm-3">Formador/res</dt>
+                  <dd class="col-sm-9">
+                    <ul class="list-unstyled">
+                      <li>Germán Montoro</li>
+                      <li>Javier Gómez</li>
+                    </ul>
+                  </dd>
+                <dt class="col-sm-3">Fechas</dt>
+                <dd class="col-sm-9">
+                  <ul class="list-unstyled">
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Añadir al calendario"><i class="fas fa-fw fa-calendar"></i></a> 2020-07-06 de 0:00 horas a 24:00 horas en la plataforma de UAMX</li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Añadir al calendario"><i class="fas fa-fw fa-calendar"></i></a> 2021-07-31 de 0:00 horas a 24:00 horas en la plataforma de UAMX</li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-primary mx-auto" href="#" data-toggle="modal" data-target="#logoutModal">Enviar solicitud de inscripción</a>
             </div>
           </div>
 
@@ -237,15 +296,14 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title text-dark" id="exampleModalLabel">Solicitud confirmada</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">Recibirás un correo con instrucciones para confirmar o anular la solicitud</div>
         <div class="modal-footer">
-          <button class="btn btn-dark" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-dark" href="login.html">Logout</a>
+          <button class="btn btn-primary mx-auto" type="button" data-dismiss="modal">Aceptar</button>
         </div>
       </div>
     </div>
