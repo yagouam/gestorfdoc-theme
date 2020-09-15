@@ -131,7 +131,51 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    
+          <!-- Topbar Title -->
+          <h5 class="mb-0 font-weight-light text-dark">Cursos</h5>
+      
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+      
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+      
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+      
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
@@ -139,16 +183,20 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Cursos</h1>
-            <button class="btn btn-primary">Crear curso nuevo</button>
+            <button class="btn btn-primary"><i class="fas fa-folder-plus"></i> Crear curso nuevo</button>
           </div>
 
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <div class="row">
-                <h6 class="col-9 m-0 font-weight-bold text-primary">Curso Académico 2020/2021</h6>
-                <select class="custom-select col-3">
-                  <option selected>Selecciona Curso Académico</option>
+            <div class="card-header py-3 mb-4 d-sm-flex align-items-center justify-content-between">
+              <h6 class="m-0 font-weight-bold text-primary">Formacion Predoctoral 2020/2021</h6>
+              <div class="d-inline-flex w-50">
+                <select class="custom-select mr-2">
+                  <option value="1">Formacion Predoctoral</option>
+                  <option value="2">Título de Experto</option>
+                  <option value="3">Formacion Inicial</option>
+                  <option value="4">Formacion Continua</option>
+                </select>
+                <select class="custom-select">
                   <option value="1">2020/2021</option>
                   <option value="2">2019/2020</option>
                   <option value="3">2018/2019</option>
@@ -157,235 +205,257 @@
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table border="0" class="table table-bordered" id="dataTable" >
+                <table class="table table-bordered table-sm" id="dataTable" >
                   <thead>
-                    <tr bgcolor="#D0E0EF">
-                      <td>Código</td>
-                      <td align="left" width="530">Título</td><td>Primera<br>Sesión</td>
-                      <td>Nº<br>Solici<br>tudes</td>
-                      <td align="center">Nº <br>confir<br>mados</td>
-                      <td>Nº<br>Asis<br>tentes</td>
-                      <td width="150">Estado<br>Curso</td>
-                      <td>Nº<br>Traba<br>jos</td>
-                      <td>Trabajos<br>Corregidos</td>
-                      <td width="80">Estado<br>Pago</td>
-                      <td width="90">Certificados</td>
-                      <td width="120">UCF</td>
+                    <tr>
+                      <th>Código</th>
+                      <th>Título</th>
+                      <th>Primera Sesión</th>
+                      <th>Solicitudes</th>
+                      <th>Confirmados</th>
+                      <th>Asistentes</th>
+                      <th>Estado Curso</th>
+                      <th>Trabajos</th>
+                      <th>Trabajos Corregidos</th>
+                      <th>Pagos</th>
+                      <th>Certificados</th>
+                      <th>UCF</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr bgcolor="#D0E0EF"><td>1369</td>
-                        <td><a href="detalles.html">Competencia digital del profesorado universitario. Creación de R...</a></td>
-                        <td>03/04/2020</td>
-                        <td align="right">588</td>
-                        <td align="right">588</td>
-                        <td align="right">0</td>
-                        <td>En curso</td>
-                        <td align="right">334</td>
-                        <td align="right">328</td>
-                        <td align="right">pagado</td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1370</td>
-                        <td><a href="detalles.html">Competencia digital del profesorado universitario. Creación de R...</a></td>
-                        <td>22/06/2020</td>
-                        <td align="right">102</td>
-                        <td align="right">2</td>
-                        <td align="right">0</td>
-                        <td>Abierto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1393</td>
-                        <td><a href="detalles.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a></td>
-                        <td>24/06/2020</td>
-                        <td align="right">31</td>
-                        <td align="right">3</td>
-                        <td align="right">0</td>
-                        <td>Abierto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1397</td>
-                        <td><a href="detalles.html">Edición de recursos educativos audiovisuales: tratamiento de im�...</a></td>
-                        <td>06/07/2020</td>
-                        <td align="right">26</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td>Abierto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right">pagado</td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1398</td>
-                        <td><a href="detalles.html">Edición de recursos educativos audiovisuales: tratamiento de im�...</a></td>
-                        <td>07/07/2020</td>
-                        <td align="right">311</td>
-                        <td align="right">311</td>
-                        <td align="right">0</td>
-                        <td>En curso</td>
-                        <td align="right">142</td>
-                        <td align="right">135</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1400</td>
-                        <td><a href="detalles.html">Competencia digital del profesorado universitario. Herramientas d...</a></td>
-                        <td>09/07/2020</td>
-                        <td align="right">27</td>
-                        <td align="right">2</td>
-                        <td align="right">0</td>
-                        <td>Abierto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1401</td>
-                        <td><a href="detalles.html">Competencia digital del profesorado universitario. Herramientas d...</a></td>
-                        <td>09/07/2020</td>
-                        <td align="right">427</td>
-                        <td align="right">424</td>
-                        <td align="right">0</td>
-                        <td>En curso</td>
-                        <td align="right">32</td>
-                        <td align="right">7</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1402</td>
-                        <td><a href="detalles.html">Competencia digital del profesorado universitario. Herramientas d...</a></td>
-                        <td>09/07/2020</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td>Previsto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1392</td>
-                        <td><a href="detalles.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a></td>
-                        <td>22/07/2020</td>
-                        <td align="right">237</td>
-                        <td align="right">227</td>
-                        <td align="right">0</td>
-                        <td>En curso</td>
-                        <td align="right">61</td>
-                        <td align="right">39</td>
-                        <td align="right">pagado</td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1405</td>
-                        <td><a href="detalles.html">Gestión Inteligente del Tiempo para Docentes. (Plataforma Teams)</a></td>
-                        <td>15/09/2020</td>
-                        <td align="right">73</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td>Abierto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1403</td>
-                        <td><a href="detalles.html">Docencia en línea y propiedad intelectual: aspectos prácticos p...</a></td>
-                        <td>18/09/2020</td>
-                        <td align="right">30</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td>Abierto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1407</td>
-                        <td><a href="detalles.html">¿Funcionan bien mis actividades docentes? Bases para el análisi...</a></td>
-                        <td>22/09/2020</td>
-                        <td align="right">56</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td>Abierto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1420</td>
-                        <td><a href="detalles.html">Collaborative learning. (On line classes with Teams)</a></td>
-                        <td>22/09/2020</td>
-                        <td align="right">29</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td>Abierto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1411</td>
-                        <td><a href="detalles.html">Iniciación a Moodle. (Curso presencial en aula)</a></td>
-                        <td>29/09/2020</td>
-                        <td align="right">5</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td>Abierto</td>
-                        <td align="right">0</td>
-                        <td align="right">0</td>
-                        <td align="right"></td>
-                        <td align="right">No generado</td>
-                        <td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1412</td>
-                        <td><a href="detalles.html">Pon en marcha tu curso Moodle. (Curso presencial en aula)</a></td>
-                        <td>30/09/2020</td>
-                        <td align="right">4</td>
-                        <td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td>
-                      </tr>
-                      <tr bgcolor="#D0E0EF"><td>1410</td><td><a href="detalles.html">Effective presentations in English. (Classroom classes)</a></td><td>01/10/2020</td><td align="right">11</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td>
-                        </tr>
-                        <tr bgcolor="#D0E0EF"><td>1408</td><td><a href="detalles.html">Formación en red, Formación genial.ly. (Plataforma Teams)</a></td><td>02/10/2020</td><td align="right">43</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td>
-                        </tr>
-                        <tr bgcolor="#D0E0EF"><td>1425</td><td><a href="detalles.html">El respeto al derecho de propia imagen por el profesorado y el es...</a></td><td>06/10/2020</td><td align="right">7</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td>
-                        </tr>
-                        <tr bgcolor="#D0E0EF"><td>1417</td><td><a href="detalles.html">Enseñar ante la cámara: formación on line y grabaciones docent...</a></td><td>13/10/2020</td><td align="right">21</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td>
-                        </tr>
-                        <tr bgcolor="#D0E0EF"><td>1404</td><td><a href="detalles.html">La igualdad de género en la Ciencia  (Presencial en aula). Curso...</a></td><td>19/10/2020</td><td align="right">2</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td>
-                        </tr>
-                        <tr bgcolor="#D0E0EF"><td>1413</td><td><a href="detalles.html">Moodle - Actividades. (Curso presencial en aula)</a></td><td>19/10/2020</td><td align="right">6</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td>
-                        </tr>
-                        <tr bgcolor="#D0E0EF"><td>1414</td><td><a href="detalles.html">Moodle - Calificaciones. (Curso presencial en aula)</a></td><td>23/10/2020</td><td align="right">6</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1416</td><td><a href="detalles.html">Feedback eficaz al estudiantado en la competencia de comunicació...</a></td><td>26/10/2020</td><td align="right">22</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1415</td><td><a href="detalles.html">Moodle - Cuestionarios. (Curso presencial en aula)</a></td><td>27/10/2020</td><td align="right">5</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1406</td><td><a href="detalles.html">Gestión Inteligente del Tiempo para Docentes. (Plataforma Teams)</a></td><td>03/11/2020</td><td align="right">57</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1418</td><td><a href="detalles.html">Enseñar ante la cámara: formación on line y grabaciones docent...</a></td><td>03/11/2020</td><td align="right">11</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1421</td><td><a href="detalles.html">Academic Speaking: debates in English. (On line classes with Team...</a></td><td>03/11/2020</td><td align="right">19</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1422</td><td><a href="detalles.html">El estudio de casos como método de aprendizaje. (Plataforma Team...</a></td><td>10/11/2020</td><td align="right">25</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1409</td><td><a href="detalles.html">Formación en red, Formación genial.ly. (Plataforma Teams)</a></td><td>13/11/2020</td><td align="right">32</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1423</td><td><a href="detalles.html">El estudio de casos como método de aprendizaje. (Plataforma Team...</a></td><td>16/11/2020</td><td align="right">17</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1419</td><td><a href="detalles.html">Desing Thinking</a></td><td>08/02/2021</td><td align="right">28</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1426</td><td><a href="detalles.html">El uso del debate como metodología docente (pendiente determinar...</a></td><td>15/03/2021</td><td align="right">13</td><td align="right">0</td><td align="right">0</td><td>Abierto</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr>
-                        <tr bgcolor="#D0E0EF"><td>1424</td><td><a href="detalles.html">Edición de recursos educativos audiovisuales: tratamiento de im�...</a></td><td>00/00/2020</td><td align="right">2</td><td align="right">2</td><td align="right">2</td><td>En curso</td><td align="right">0</td><td align="right">0</td><td align="right"></td><td align="right">No generado</td><td align="right"></td></tr></tbody>
+                    <tr>
+                      <td>1369</td>
+                      <td>
+                        <a href="detalles.html">Competencia digital del profesorado universitario. Creación de R...</a>
+                      </td>
+                      <td>03/04/2020</td>
+                      <td>588</td>
+                      <td>588</td>
+                      <td>0</td>
+                      <td>En curso</td>
+                      <td>334</td>
+                      <td>328</td>
+                      <td>pagado</td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1370</td>
+                      <td>
+                        <a href="detalles.html">Competencia digital del profesorado universitario. Creación de R...</a>
+                      </td>
+                      <td>22/06/2020</td>
+                      <td>102</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1393</td>
+                      <td>
+                        <a href="detalles.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a>
+                      </td>
+                      <td>24/06/2020</td>
+                      <td>31</td>
+                      <td>3</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1397</td>
+                      <td>
+                        <a href="detalles.html">Edición de recursos educativos audiovisuales: tratamiento de imagenes</a>
+                      </td>
+                      <td>06/07/2020</td>
+                      <td>26</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>pagado</td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1398</td>
+                      <td>
+                        <a href="detalles.html">Edición de recursos educativos audiovisuales: tratamiento de imagenes</a>
+                      </td>
+                      <td>07/07/2020</td>
+                      <td>311</td>
+                      <td>311</td>
+                      <td>0</td>
+                      <td>En curso</td>
+                      <td>142</td>
+                      <td>135</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1400</td>
+                      <td>
+                        <a href="detalles.html">Competencia digital del profesorado universitario. Herramientas digitales</a>
+                      </td>
+                      <td>09/07/2020</td>
+                      <td>27</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1401</td>
+                      <td>
+                        <a href="detalles.html">Competencia digital del profesorado universitario. Herramientas digitales</a>
+                      </td>
+                      <td>09/07/2020</td>
+                      <td>427</td>
+                      <td>424</td>
+                      <td>0</td>
+                      <td>En curso</td>
+                      <td>32</td>
+                      <td>7</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1402</td>
+                      <td>
+                        <a href="detalles.html">Competencia digital del profesorado universitario. Herramientas digitales</a>
+                      </td>
+                      <td>09/07/2020</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>Previsto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1392</td>
+                      <td>
+                        <a href="detalles.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a>
+                      </td>
+                      <td>22/07/2020</td>
+                      <td>237</td>
+                      <td>227</td>
+                      <td>0</td>
+                      <td>En curso</td>
+                      <td>61</td>
+                      <td>39</td>
+                      <td>pagado</td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1405</td>
+                      <td>
+                        <a href="detalles.html">Gestión Inteligente del Tiempo para Docentes. (Plataforma Teams)</a>
+                      </td>
+                      <td>15/09/2020</td>
+                      <td>73</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1403</td>
+                      <td>
+                        <a href="detalles.html">Docencia en línea y propiedad intelectual: aspectos prácticos</a>
+                      </td>
+                      <td>18/09/2020</td>
+                      <td>30</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1407</td>
+                      <td><a href="detalles.html">¿Funcionan bien mis actividades docentes? Bases para el análisis</a></td>
+                      <td>22/09/2020</td>
+                      <td>56</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1420</td>
+                      <td><a href="detalles.html">Collaborative learning. (On line classes with Teams)</a></td>
+                      <td>22/09/2020</td>
+                      <td>29</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1411</td>
+                      <td><a href="detalles.html">Iniciación a Moodle. (Curso presencial en aula)</a></td>
+                      <td>29/09/2020</td>
+                      <td>5</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1412</td>
+                      <td><a href="detalles.html">Pon en marcha tu curso Moodle. (Curso presencial en aula)</a></td>
+                      <td>30/09/2020</td>
+                      <td>4</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>Abierto</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td>No generado</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
