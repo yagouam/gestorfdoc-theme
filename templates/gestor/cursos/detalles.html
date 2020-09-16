@@ -131,341 +131,175 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
         <!-- End of Topbar -->
+
+        <!-- Page Navigation -->
+        <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="detalles.html">Guía docente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calendario.html">Fechas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ponentes.html">Ponentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="asistentes.html">Asistentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trabajos.html">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="correos.html">Correos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gastos.html">Gastos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="encuestas.html">Encuestas</a>
+              </li>
+            </ul>
+            <button class="btn btn-light">
+              <i class="fas fa-fw fa-clone"></i> Replicar Curso
+            </button>
+          </div>
+        </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Curso 1369 2020/2021 <br> <small class="text-secondary">Competencia digital del profesorado universitario. Creación de R...</small></h1>
-            <button class="btn btn-secondary">Replicar Curso</button>
-          </div>
-
-          <!-- Page Navigation -->
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active disabled" href="detalles.html">Detalles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calendario.html">Calendario / Fechas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ponentes.html">Ponentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="asistentes.html">Asistentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="trabajos.html">Trabajos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="correos.html">Correos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gastos.html">Gastos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="encuestas.html">Encuestas</a>
-            </li>
+<!-- Form Guia Docente -->
+<div class="card shadow mt-4">
+  <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
+    <h6>Guía del curso</h6>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Más
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Editar</a>
+        <a class="dropdown-item" href="#">Descargar como PDF</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <dl class="row">
+        <dt class="col-sm-3">Título</dt>
+        <dd class="col-sm-9">Edición de recursos educativos audiovisuales: tratamiento de imágenes, captura de pantalla y edición de vídeo.ON-LINE.</dd>
+        <dt class="col-sm-3">Formador/res</dt>
+        <dd class="col-sm-9">
+          <ul class="list-unstyled">
+            <li>Germán Montoro</li>
+            <li>Javier Gómez</li>
           </ul>
+        </dd>
+        <dt class="col-sm-3">Horas de formación</dt>
+        <dd class="col-sm-9">
+          <ul class="list-unstyled">
+            <li>0 horas presenciales</li>
+            <li>50 horas presenciales</li>
+          </ul>
+        </dd>
+        <dt class="col-sm-3">Créditos ECTS</dt>
+        <dd class="col-sm-9">2</dd>
+        <dt class="col-sm-3">Horario y lugar</dt>
+        <dd class="col-sm-9">
+          <ul class="list-unstyled">
+            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Añadir al calendario"><i class="fas fa-fw fa-calendar"></i></a> 2020-07-06 de 0:00 horas a 24:00 horas en la plataforma de UAMX</li>
+            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Añadir al calendario"><i class="fas fa-fw fa-calendar"></i></a> 2021-07-31 de 0:00 horas a 24:00 horas en la plataforma de UAMX</li>
+          </ul>
+        </dd>
+        <dt class="col-sm-3">Objetivos del módulo</dt>
+        <dd class="col-sm-9">
+          En este curso aprenderemos los conceptos básicos del tratamiento o edición de imágenes, la captura de pantalla del ordenador y la edición de vídeos. El objetivo final será poder utilizar este aprendizaje en el proceso de creación y adaptación de recursos educativos audiovisuales.
+          Contenidos
+          El curso se compone de tres módulos:
+          <ol>
+            <li>
+              Tratamiento de imágenes con PIXLR:
+              <ul>
+                <li>Formatos y resolución de las imágenes</li>
+                <li>Panel de herramientas</li>
+                <li>Trabajo con capas</li>
+                <li>Crear una portada</li>
+                <li>Crear un callout</li>
+                <li>Recortar una imagen</li>
+                <li>Eliminar elementos de una imagen</li>
+                <li>Desenfoque parcial</li>
+              </ul>
+            </li>
+            <li>
+              Captura de pantalla con OBS Studio:
+              <ul>
+                <li>Configuración de la herramienta</li>
+                <li>Ajustes de sonido</li>
+                <li>Capturar la pantalla</li>
+                <li>Insertar un título</li>
+                <li>Insertar un fondo</li>
+                <li>Insertar una imagen</li>
+                <li>Insertar captura de webcam</li>
+                <li>Insertar fuente de sonido</li>
+              </ul>
+            </li>
+            <li>
+              Edición de vídeo con Openshot:
+                <ul>
+                  <li>Cargar vídeos</li>
+                  <li>Recortar vídeo</li>
+                  <li>Enlazar vídeos</li>
+                  <li>Efectos de sonido</li>
+                  <li>Añadir texto</li>
+                  <li>Añadir una imagen</li>
+                  <li>Añadir un callout</li>
+                </ul>
+            </li>
+          </ol>
+        </dd>
+        <dt class="col-sm-3">Competencias que se van a adquirir</dt>
+        <dd class="col-sm-9">
+          <ul>
+            <li>Crear y retocar imágenes para su utilización como recurso docente</li>
+            <li>Capturar la pantalla del ordenador para ofrecer vídeos educativos</li>
+            <li>Editar vídeos para generar recursos educativos audiovisuales de calidad.</li>
+          </ul>
+        </dd>
+        <dt class="col-sm-3">Metodología docente</dt>
+        <dd class="col-sm-9">
+          El curso está planteado para que se pueda realizar al ritmo de cada usuario. Se ofrecen ejemplos de cada elemento explicado y foros para resolver dudas.
+          Siguiendo los contenidos del curso se busca que los participantes sean capaces de crear y editar sus propios recursos educativos audiovisuales.
+        </dd>
+        <dt class="col-sm-3">Sistema de evaluación</dt>
+        <dd class="col-sm-9">Creación de recursos educativos audiovisuales que demuestren las competencias adquiridas.</dd>
+        <dt class="col-sm-3">Descripción de las actividades presenciales</dt>
+        <dd class="col-sm-9">No hay actividades presenciales</dd>
+        <dt class="col-sm-3">Descripción de las actividades no presenciales</dt>
+        <dd class="col-sm-9">Al ser un curso en línea todas las actividades serán no presenciales.</dd>
+        <dt class="col-sm-3">Referencia de consulta básica bibliografía, URL...</dt>
+        <dd class="col-sm-9">
+          <ul>
+            <li><a href="https://pixlr.com/es/" target="_blank" rel="noopener noreferrer">PIXLR</a></li>
+            <li><a href="https://obsproject.com/es" target="_blank" rel="noopener noreferrer">OBS Studio</a></li>
+            <li><a href="https://www.openshot.org/es/" target="_blank" rel="noopener noreferrer">Openshot</a></li>
+          </ul>
+        </dd>
+        <dt class="col-sm-3">Información de interés para los participantes</dt>
+        <dd class="col-sm-9">
+          Es un curso introductorio y por lo tanto no es necesario tener conocimientos previos sobre edición de recursos audiovisuales.
+          Solo es necesario disponer de un ordenador con conexión a internet. Se puede hacer tanto en Windows como en Mac.
+          El curso se encuentra alojado en la plataforma UAMx de la UAM.
+          Una vez inscrito en el curso, la o el participante recibirá un mensaje de la plataforma con indicaciones sobre cómo hacerse una cuenta en la misma. Cuando se solicite un correo electrónico de inscripción, ha de usarse el correo de la UAM. Como contraseña se ha de escoger la que se quiera.
+        </dd>
+      </dl>
+    </div>
+</div>
 
-          <div class="row">
-            <form name="formulario_unico" action="modificar_modulo.php?id=1364" method="POST">
-
-              <table class="azul_negro11" width="400">
-              <tbody><tr><td>Ponente 1:</td><td>Equipo Gestor de Formación Docente  </td></tr></tbody></table>
-                      
-              <table class="azul_negro11" width="900">
-              <tbody><tr><td>&nbsp;</td></tr>
-              <tr valign="top">
-              <td bgcolor="#E6E6E6">Título:</td>
-              </tr>
-              <tr>
-              <td><textarea name="titulo_modulo" rows="1" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">&lt;b&gt;TEDU: Fase 2B&lt;/B&gt; Proyecto de Cambio Docente CURSO 2020-2021
-              </textarea>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#E6E6E6">Tipo de Formación:</td>
-              </tr>
-              <tr>
-              <td><select name="tipo_formacion"><option>TÍTULO DE EXPERTO</option><option>FORMACIÓN PREDOCTORAL</option><option>FORMACIÓN INICIAL</option><option>FORMACIÓN CONTINUA</option><option>FORMACIÓN ESPECÍFICA DE LOS CENTROS Y ESCUELAS</option><option>FORMACIÓN EXTERNA</option><option>TÍTULO DE EXPERTO</option><option>PLAN DOING</option>
-              </select>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#E6E6E6">Área:</td>
-              </tr>
-              <tr>
-              <td><select name="area"><option>Título propio de Experto o Experta en Docencia Universitaria (TEDU)</option><option>Desarrollo docente general e investigación</option><option>Metodologías docentes</option><option>Competencia Digital</option><option>Tecnologías de la Información</option><option>Tecnologías educativas para la docencia</option><option>Especial Cursos Moodle</option><option>Idiomas</option><option>Idiomas (Plan DOing)</option><option>Título propio de Experto o Experta en Docencia Universitaria (TEDU)</option>
-              
-              
-              </select>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#E6E6E6">Código Base:</td>
-              </tr>
-              <tr>
-                <td>
-                  <input size="20" type="text" name="codigo_base" value="0269" style="font-size:8pt;height:20px;font-family:Verdana;text-align:right;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edición:
-                  <input size="3" type="text" name="edicion" value="15" style="width:50px;height:20px;font-size:8pt;font-family:Verdana;text-align:right;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Introducir código base si el módulo consta de varias 'ediciones'. Dejar en blanco si se trata de un módulo único.
-                </td>
-              </tr>
-              
-              
-              <tr valign="top">
-              <td bgcolor="#E6E6E6">Curso Académico:</td>
-              </tr>
-              <tr>
-              <td><select name="curso/academico">
-              
-              <option>2020/2021</option><option>2020/2021</option><option>2019/2020</option><option>2018/2019</option><option>2017/2018</option><option>2016/2017</option><option>2015/2016</option><option>2014/2015</option><option>2013/2014</option><option>2012/2013</option><option>2011/2012</option><option>2010/2011</option><option>2009/2010</option><option>2008/2009</option><option>2007/2008</option><option>2006/2007</option><option>2005/2006</option><option>2004/2005</option>
-              </select></td></tr>
-              
-                
-              <tr valign="top">
-              <td bgcolor="#E6E6E6">Convocado por:</td>
-              </tr>
-              <tr>
-              <td><select name="convocador"><option>UCF Central</option>
-              <option></option><option>C.A. Enfermería de la Comunidad de Madrid</option><option>C.A. Enfermería de la Cruz Roja</option><option>C.A. Enfermería de la Fundación Jiménez Díaz</option><option>C.A. Enfermería de La Paz</option><option>C.A. Enfermería de Puerta de Hierro</option><option>Escuela de Fisioterapia de la ONCE</option><option>Rectorado</option><option>UCF Central</option><option>UCF de Ciencias</option><option>UCF de Derecho</option><option>UCF de Económicas</option><option>UCF de F. de Profesorado</option><option>UCF de Filosofía y Letras</option><option>UCF de la Escuela Politécnica</option><option>UCF de Medicina</option><option>UCF de Psicología</option></select>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#E6E6E6">Visible en la web:</td>
-              </tr>
-              <tr>
-              <td><select name="visible_web"><option>No</option><option>Si</option><option>No</option>
-              </select>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#E6E6E6">Permitir solicitar Certificado Digital:</td>
-              </tr>
-              <tr>
-              <td><select name="solicitar_cert_dig"><option>Si</option><option>Si</option><option>No</option>
-              </select>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#E6E6E6">Estado en la web:</td>
-              </tr>
-              <tr>
-              <td><select name="estado_web"><option>Por determinar</option><option>Por determinar</option><option>Previsto</option><option>Próxima apertura</option><option>En espera</option><option>Abierto</option><option>En fase de selección</option><option>Selección finalizada</option><option>Inscripción cerrada</option><option>En curso</option><option>Realizado</option><option>Cancelado</option>
-              
-              </select>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#F7D358">Objetivos:</td>
-              </tr>
-              <tr>
-              <td><textarea name="objetivos" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">Los objetivos del Título Propio de Experto o Experta en Docencia Universitaria (TEDU) son:&lt;br&gt;
-              &lt;br&gt;
-              &lt;LI&gt;Potenciar la aplicación de los conocimientos, competencias y habilidades adquiridos en los cursos realizados en el Programa de Formación Docente en contextos educativos reales, llevándolos a la práctica con los estudiantes.&lt;/LI&gt;
-              &lt;LI&gt;Fomentar la integración de nuevas técnicas metodológicas y estrategias de enseñanza con los contenidos de sus materias de modo satisfactorio, tanto para el propio o la propia docente como para sus estudiantes.&lt;/LI&gt;
-              &lt;LI&gt;Poner en práctica de modo autónomo las propias capacidades y conocimientos profesionales adquiridos a lo largo de la formación.&lt;/LI&gt;
-              &lt;LI&gt;Facilitar la práctica de la reflexión, observación y exploración en lo que se refiere a metodologías y desarrollos educativos eficientes adaptados a la diversidad de estudiantes y a los distintos contextos. &lt;/LI&gt;
-              &lt;LI&gt;Potenciar el paso de reflexión sobre la propia práctica y al cambio en la forma de impartir la docencia</textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#F7D358">Contenidos:</td>
-              </tr>
-              <tr>
-              <td><textarea name="contenidos" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">El título consta de 2 partes: 10 ECTS optativos y 15 ECTS obligatorios, que se cursan en dos fases:&lt;BR&gt;
-              &lt;BR&gt;
-              En la &lt;b&gt;fase 1&lt;/B&gt; se deben completar 10 créditos ECTS OPTATIVOS realizando cursos ofrecidos en el Programa de Formación Docente de la UAM. 
-              
-              &lt;BR&gt;
-              Para pasar a la &lt;B&gt;FASE 2&lt;/B&gt; es necesario haber realizado previamente los 10 ECTS optativos.&lt;br&gt;
-              &lt;br&gt;
-              El proyecto de cambio docente (PCD) se desarrollará en una o varias asignaturas que esté impartiendo o haya impartido el o la participante, y que serán de su elección. Se tratará de asignaturas que se estén impartiendo en la Universidad Autónoma de Madrid.&lt;BR&gt;
-              
-              El proyecto consistirá en implementar en la asignatura o asignaturas elegidas los contenidos, metodologías, herramientas, etc. de un grupo representativo de los cursos realizados, de modo que quede constancia de la aplicación de los contenidos de esa formación en el aula o espacio formativo con los estudiantes. No se trata necesariamente, por tanto, de realizar una investigación académica o docente, o de llevar a cabo una innovación docente en el amplio sentido del término, sino de aplicar los contenidos adquiridos en la formación realizada.&lt;BR&gt;
-              El PCD podrá llevarse a cabo en un curso académico o irse implementando a medida que el o la participante va adquiriendo nuevas competencias y aprendiendo nuevas metodologías. En el trabajo escrito que documente los cambios tendrá que reflejar las modificaciones que ha ido realizando y las decisiones que le han llevado a mantener o cambiar las estrategias metodológicas.&lt;BR&gt;
-              
-              Si el o la participante no tiene responsabilidad docente sobre la asignatura y no puede implementar los cambios planteados, (como puede ser el caso de personal docente e investigador en formación o profesores ayudantes) no será obligatoria la implementación de los cambios, y será suficiente con diseñar la modificación de la asignatura de forma detallada, definiendo los objetivos que se buscaría conseguir con cada uno de los cambios y los resultados esperados. &lt;BR&gt;
-              
-              El proyecto de cambio docente consistirá en propuestas relacionadas con la didáctica, con los procesos de enseñanza y aprendizaje y con las metodologías educativas; siempre, en el ámbito de la docencia universitaria de su especialidad y fundamentado en la formación recibida en el Programa de Formación Docente. Y, en la medida de lo posible, los trabajos deben presentar una propuesta de mejora de la forma en que se está impartiendo la docencia en la asignatura. 
-              
-              </textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#F7D358">Competencias a adquirir:</td>
-              </tr>
-              <tr>
-              <td><textarea name="competencias" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">Las competencias a adquirir con el Título Propio de Experto o Experta en Docencia Universitaria son las siguientes:&lt;BR&gt;
-              &lt;BR&gt;
-              &lt;B&gt;Competencias generales:&lt;/B&gt;&lt;BR&gt;
-              1.	Desarrollar un estilo de docencia propio y versátil de modo que se adapte a las características de cada grupo&lt;BR&gt;
-              2.	Adaptar su forma de impartir la docencia a las nuevas necesidades, marcadas tanto por los estudiantes como por los cambios normativos y del entorno, y a los recursos disponibles&lt;BR&gt;
-              3.	Ser capaz de afrontar nuevos retos tanto en la docencia como en la gestión y en la investigación&lt;BR&gt;
-              4.	Adquirir estrategias para estimular el esfuerzo y los resultados de los estudiantes&lt;BR&gt;
-              5.	Diseñar entornos de aprendizaje dinámicos y participativos, que favorezcan la asimilación de contenidos y competencias&lt;BR&gt;
-              &lt;B&gt;Competencias específicas:&lt;/B&gt;&lt;BR&gt;
-              6.	Resolver problemas que surjan en el aula&lt;BR&gt;
-              7.	Utilizar las nuevas tecnologías como herramienta docente&lt;BR&gt;
-              8.	Llevar a cabo una comunicación eficaz&lt;BR&gt;
-              9.	Conocer la normativa que regula los derechos y deberes de los docentes y de los estudiantes en términos de producción intelectual y protección de la propia imagen&lt;BR&gt;
-              10.	Diseñar diferentes tareas e instrumentos que impliquen al alumno activamente en su aprendizaje y faciliten su evaluación.&lt;BR&gt;</textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#F7D358">Metodología docente:</td>
-              </tr>
-              <tr>
-              <td><textarea name="metodologia" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">El o la participante elegirá y contactará con el tutor o tutora para proponerle la realización de esta actividad y el seguimiento de la propuesta. La organización del trabajo se realizará de forma coordinada entre el participante y el tutor, según las necesidades de ambos.&lt;BR&gt;
-              &lt;BR&gt;
-              La labor de tutela de este trabajo debe ser desempeñada por un profesor o profesora permanente de universidad del mismo departamento que el o la participante.
-              Por tanto el tutor o tutora deberá tener conocimiento de la asignatura, bien porque la impartan conjuntamente o bien porque sean docentes de asignaturas afines y conozcan la materia y la guía docente de la asignatura, así como su desarrollo.&lt;BR&gt;
-              
-              </textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#BEF781">Sistema de evaluación:</td>
-              </tr>
-              <tr>
-              <td><textarea name="evaluacion" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">Los criterios de evaluación del PCD están referidos directamente a las competencias y experiencia docente directamente vinculadas con la puesta en práctica de la formación recibida en los cursos del programa.&lt;BR&gt;
-              &lt;BR&gt;
-              El participante redactará su trabajo escrito de un mínimo de 30 páginas, sin contar la portada, el índice y los anexos. En este trabajo que se detallaran, al menos los siguientes apartados: antecedentes (descripción de la asignatura y forma en que se impartía, cursos realizados), objetivos, metodología y actividades, evaluación o resultados y conclusiones. El participante deberá anexar la guía docente de la o las asignaturas en las que realizará el cambio y podrá anexar información complementaria si lo considera necesario.&lt;BR&gt;
-              &lt;BR&gt;
-              El PCD se defenderá en sesión pública ante un tribunal formado por 3 docentes permanentes, de los cuales uno debe estar adscrito al mismo departamento que el candidato o candidata a conseguir el título, el segundo tiene pertenecer a un centro de la UAM distinto al del participante, o bien a un centro similar al del participante pero de otra universidad (por ejemplo, para un participante de la Facultad de Psicología de la UAM, este miembro del tribunal podría ser de cualquier otro centro de la UAM o otra la Facultad de Psicología de otra universidad) y el tercero será propuesto por el equipo gestor del programa.&lt;BR&gt;
-              &lt;BR&gt;
-              Actuará como presidente o presidenta del tribunal el miembro de la UAM de mayor categoría académica y, en caso de coincidencia, el de mayor antigüedad. Corresponde al participante y su tutor o tutora el nombramiento de los dos miembros del tribunal que no son propuestos por el equipo gestor.
-              En la defensa del PCD, el o la participante presentará oralmente los aspectos fundamentales de su trabajo durante un periodo de tiempo máximo de 30 minutos y, a continuación, se producirá un debate con los miembros del tribunal, en el que cada miembro le planteará al participante las preguntas y consideraciones que estime oportuno sobre el proyecto presentado. &lt;br&gt;
-              Se considerará una falta grave el plagio total o parcial del PCD y el o la participante no podrá defenderlo ni obtener el título. &lt;br&gt;
-              Sistema de Calificación: El PCD será calificado como apto / no apto. No habrá calificación numérica.
-              </textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#BEF781">Descripción de las actividades presenciales:</td>
-              </tr>
-              <tr>
-              <td><textarea name="descripcion_presencial" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">Tutorías con el tutor o la tutora.</textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#BEF781">Descripción de las actividades no presenciales:</td>
-              </tr>
-              <tr>
-              <td><textarea name="descripcion_no_presencial" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">Trabajo personal.</textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#A9D0F5">Horas presenciales:</td>
-              </tr>
-              <tr>
-              <td class="gris_oscuro10"><input size="3" type="text" name="horas_presenciales" style="width:50px;height:20px;font-size:8pt;font-family:Verdana;text-align:right;" value="80"> *No admite el uso de comas</td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#A9D0F5">Horas no presenciales:</td>
-              </tr>
-              <tr>
-              <td class="gris_oscuro10"><input size="3" type="text" name="horas_no_presenciales" style="width:50px;height:20px;font-size:8pt;font-family:Verdana;text-align:right;" value="295"> *No admite el uso de comas</td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#A9D0F5">Créditos ECTS:</td>
-              </tr>
-              <tr>
-              <td class="gris_oscuro10"><input size="3" type="text" name="creditos_ects" style="width:50px;height:20px;font-size:8pt;font-family:Verdana;text-align:right;" value="0"> *No admite el uso de comas</td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#A9D0F5">Referencia de consultas básica (bibliografía, URL...):</td>
-              </tr>
-              <tr>
-              <td><textarea name="referencia_consultas" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">Bain, K. (2007). &lt;I&gt;Lo que hacen los mejores profesores universitarios&lt;/I&gt;. Valencia: Universidad de Valencia.&lt;BR&gt;
-              Berk, R. A., (2005) “Survey of 12 strategies to measure teaching effectiveness”, International Journal of Teaching and Learning in Higher Education, 17, 48-62.&lt;BR&gt;
-              Blanco, A. (coord) (2009). &lt;I&gt;Desarrollo y evaluación de competencias en educación superior.&lt;/I&gt; Narcea. Madrid.&lt;BR&gt;
-              Davies, J.P. &amp; Pachler, N. (2018) &lt;I&gt;Teaching and learning in higher education: perspectives from UCL&lt;/I&gt;. London: UCL institute of Education.&lt;BR&gt;
-              Hunt, L. &amp; Chalmers, D. (Eds.) (2013) &lt;I&gt;University Teaching in Focus. A learning-centred approach&lt;/I&gt;.  New York, NY: Routledge. &lt;BR&gt;
-              Sánchez, P. y Gairín, J. (2008). &lt;I&gt;Planificar la formación en el Espacio Europeo de Educación Superior. Títulos oficiales y materias&lt;/I&gt;. ICE de la Universidad Complutense de Madrid, Salamanca
-              </textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#A9D0F5">Nº de asistentes máximos:</td>
-              </tr>
-              <tr>
-              <td class="gris_oscuro10"><input size="3" type="text" name="num_asistentes" style="width:30px;height:20px;font-size:8pt;font-family:Verdana;text-align:right;" value="20"> *No admite el uso de comas</td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#A9D0F5">Recursos materiales necesarios para impartir el curso (pc, cañón, papelógrafo...):</td>
-              </tr>
-              <tr>
-              <td><textarea name="recursos_materiales" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;"></textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#A9D0F5">Información de interés para los participantes:</td>
-              </tr>
-              <tr>
-              <td><textarea name="info_interes" rows="4" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;">Página web del &lt;a href="http://www.uam.es/ss/Satellite/es/1242683716032/contenidoFinal/Titulo_de_Experto_en_Docencia_Universitaria.htm"&gt; Título Propio de Experto o Experta en Docencia Universitaria &lt;/a&gt;.&lt;br&gt; 
-              &lt;br&gt;
-              El participante deberá contactar con el equipo gestor del Programa de Formación Docente a través de la dirección de correo electrónico para completar un formulario con la propuesta de cambio docente a realizar. Esa propuesta será evaluada por el equipo gestor en términos de ajuste a los criterios establecidos para la realización del proyecto. La propuesta tendrá un período de vigencia de 2 cursos académicos. De no haberse llevado a cabo y defendido en ese plazo el o la participante tendrá que realizar una nueva propuesta de cambio docente.&lt;BR&gt;
-              &lt;BR&gt;
-              Hay &lt;B&gt;dos periodos&lt;/B&gt; para la defensa pública de los proyectos de cambio docente: primera quincena de diciembre y segunda quincena de mayo.&lt;BR&gt;
-              Para defender el proyecto en la &lt;B&gt;primera quincena de diciembre&lt;/B&gt; habrá que presentar la propuesta entre el 1 de julio y el 10 de octubre y el documento definitivo antes del 16 de noviembre.&lt;BR&gt;
-              Para defender el proyecto en la &lt;/B&gt;segunda quincena de mayo&lt;/B&gt; habrá que presentar la propuesta entre el 11 de octubre y el 15 de enero y el documento definitivo antes del 1 de mayo.</textarea></td>
-              </tr>
-              
-              <tr valign="top">
-              <td bgcolor="#F78181">Permiso:</td>
-              </tr>
-              <tr>
-              <td><select name="permiso"><option>No</option><option>Si</option><option>No</option>
-              </select>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#F78181">Certificado:</td>
-              </tr>
-              <tr>
-              <td><select name="certificado"><option>No generado</option><option>Generado</option><option>No generado</option>
-              </select>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#F78181">Universidad (*):</td>
-              </tr>
-              <tr>
-              <td><textarea name="universidad" rows="1" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;"></textarea>
-              </td></tr>
-              
-              <tr valign="top">
-              <td bgcolor="#F78181">Organizador (*):</td>
-              </tr>
-              <tr>
-              <td><textarea name="organizador" rows="1" cols="150" style="font-size:8pt;font-family:Verdana;text-align:right;"></textarea>
-              </td></tr>
-              
-              <tr valign="top">
-              <td align="left">ATENCIÓN (*): Sólo rellenar si se trata de un módulo de FORMACIÓN EXTERNA.
-              </td></tr>
-              
-              <tr>
-              <td align="middle"><input type="button" value="Avisar Suscriptores" onclick="window.location.href='aviso_suscriptores.php?id=1364'" style="width:240px;height:30px;font-size:10pt;font-family:Verdana;text-align:right;"></td>        
-              </tr>
-              <tr>
-              <td align="middle"><input type="submit" value="Modificar Módulo" style="width:240px;height:30px;font-size:10pt;font-family:Verdana;text-align:right;"></td>        
-              </tr> 
-              </tbody></table>	
-              </form>
-          </div>
-
-        </div>
         <!-- /.container-fluid -->
 
       </div>
@@ -520,6 +354,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="../../../js/sb-admin-2.min.js"></script>
+  <script src="../../../js/lauam__custom.min.js"></script>
 
   <!-- Page level plugins -->
   <script src="../../../vendor/datatables/jquery.dataTables.min.js"></script>

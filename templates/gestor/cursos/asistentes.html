@@ -131,81 +131,78 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
         <!-- End of Topbar -->
+
+        <!-- Page Navigation -->
+        <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="detalles.html">Guía docente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calendario.html">Fechas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ponentes.html">Ponentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="asistentes.html">Asistentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trabajos.html">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="correos.html">Correos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gastos.html">Gastos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="encuestas.html">Encuestas</a>
+              </li>
+            </ul>
+            <button class="btn btn-light">
+              <i class="fas fa-fw fa-clone"></i> Replicar Curso
+            </button>
+          </div>
+        </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Curso 1369 2020/2021 <br> <small class="text-secondary">Competencia digital del profesorado universitario. Creación de R...</small></h1>
-            <button class="btn btn-secondary">Replicar Curso</button>
-          </div>
-
-          <!-- Page Navigation -->
-          <ul class="nav nav-tabs my-4">
-            <li class="nav-item">
-              <a class="nav-link" href="detalles.html">Detalles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calendario.html">Calendario / Fechas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ponentes.html">Ponentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active disabled" href="asistentes.html">Asistentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="trabajos.html">Trabajos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="correos.html">Correos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gastos.html">Gastos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="encuestas.html">Encuestas</a>
-            </li>
-          </ul>
-
-          <!-- Asistentes Filter -->
-          <div class="py-3 d-sm-flex  align-items-center justify-content-between ">
-            <div class="btn-group">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Inicio
-              </button>
-              <div class="dropdown-menu">
-                <a href="asistentes.html" class="dropdown-item disabled">Inicio</a>
-                <a href="asistentes2.html" class="dropdown-item">Seleccionados</a>
-                <a href="asistentes3.html" class="dropdown-item">Asistencia</a>
-                <a href="asistentes4.html" class="dropdown-item">Certificados</a>
-              </div>
-            </div>
-            <div class="button-group">
-              <button class="btn btn-primary">Añadir Asistente</button>
-            </div>
-          </div>
           
           <!-- DataTales Example -->
-          <div class="card shadow mb-4">
+          <div class="card shadow my-4">
+
+            <!-- Asistentes Filter -->
             <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Vista
+                </button>
+                <div class="dropdown-menu">
+                  <a href="asistentes.html" class="dropdown-item disabled">Datos Personales</a>
+                  <a href="asistentes_seleccionados.html" class="dropdown-item">Seleccionados</a>
+                  <a href="asistentes_asistencia.html" class="dropdown-item">Asistencia</a>
+                  <a href="asistentes_certificados.html" class="dropdown-item">Certificados</a>
+                </div>
+              </div>
               <div class="button-group">
-                <button class="btn btn-secondary disabled">Actualizar</button>
-                <button class="btn btn-danger disabled">Eliminar</button>
+                <button class="btn btn-primary">Añadir Asistente</button>
               </div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-sm" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
                       <th>Código</th>
                       <th>Nombre</th>
-                      <th>Apellidos</th>
                       <th>email</th>
                       <th>Teléfono</th>
                       <th>Facultad</th>
@@ -215,28 +212,20 @@
                   <tbody>
                     <tr class="lauam__selectable-tr" style="cursor: pointer;">
                       <th scope="row">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="customCheck1">
-                          <label class="custom-control-label" for="customCheck1">1234</label>
-                        </div>
+                        1234
                       </th>
-                      <td>José</td>
-                      <td>Menese</td>
-                      <td>jose.menese@uam.es</td>
+                      <td><a href="#">José Menese</a></td>
+                      <td><a href="#">jose.menese@uam.es</a></td>
                       <td>678901230</td>
                       <td>Profesorado</td>
                       <td>PDI</td>
                     </tr>
                     <tr class="lauam__selectable-tr" style="cursor: pointer;">
                       <th scope="row">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="customCheck2">
-                          <label class="custom-control-label" for="customCheck2">1234</label>
-                        </div>
+                        1234
                       </th>
-                      <td>Marina</td>
-                      <td>Heredia</td>
-                      <td>marina.heredia@uam.es</td>
+                      <td><a href="#">Marina Heredia</a></td>
+                      <td><a href="#">marina.heredia@uam.es</a></td>
                       <td>678123456</td>
                       <td>Filosofía y Letras</td>
                       <td>PAS</td>

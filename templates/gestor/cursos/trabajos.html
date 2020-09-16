@@ -131,51 +131,55 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
         <!-- End of Topbar -->
+
+        <!-- Page Navigation -->
+        <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="detalles.html">Guía docente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calendario.html">Fechas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ponentes.html">Ponentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="asistentes.html">Asistentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trabajos.html">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="correos.html">Correos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gastos.html">Gastos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="encuestas.html">Encuestas</a>
+              </li>
+            </ul>
+            <button class="btn btn-light">
+              <i class="fas fa-fw fa-clone"></i> Replicar Curso
+            </button>
+          </div>
+        </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Curso 1369 2020/2021 <br> <small class="text-secondary">Competencia digital del profesorado universitario. Creación de R...</small></h1>
-            <button class="btn btn-secondary">Replicar Curso</button>
-          </div>
-
-          <!-- Page Navigation -->
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link" href="detalles.html">Detalles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calendario.html">Calendario / Fechas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ponentes.html">Ponentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="asistentes.html">Asistentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active disabled" href="trabajos.html">Trabajos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="correos.html">Correos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gastos.html">Gastos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="encuestas.html">Encuestas</a>
-            </li>
-          </ul>
-
           
           <!-- DataTales Example -->
-          <div class="card shadow mb-4">
+          <div class="card shadow my-4">
             <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Trabajos Entregados</h6>
               <button class="btn btn-primary">Subir Trabajo</button>
             </div>
             <div class="card-body">
@@ -187,93 +191,38 @@
                       <th>Asistente</th>
                       <th>Fecha Subida</th>
                       <th>Estado</th>
-                      <th>Acciones</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Documento 1.pdf</td>
-                      <td>Pepito Grillo</td>
+                      <td><a href="#">El barón del tango.pdf</a></td>
+                      <td><a href="#">Pepito Grillo</a></td>
                       <td>2012/08/20</td>
                       <td class="text-success">Apto</td>
-                      <td>
-                        <a href="" title="Descargar">
-                          <i class="fas fa-fw fa-download"></i>
-                        </a>
-                        <a href="" title="Borrar" class="text-danger">
-                          <i class="fas fa-fw fa-trash"></i>
-                        </a>
-                      </td>
                     </tr>
                     <tr>
-                      <td>Documento 2.pdf</td>
-                      <td>Gallo Claudio</td>
+                      <td><a href="#">Goyeneche.pdf</a></td>
+                      <td><a href="#">Gallo Claudio</a></td>
                       <td>2012/08/20</td>
                       <td class="text-success">Apto</td>
-                      <td>
-                        <a href="" title="Descargar">
-                          <i class="fas fa-fw fa-download"></i>
-                        </a>
-                        <a href="" title="Borrar" class="text-danger">
-                          <i class="fas fa-fw fa-trash"></i>
-                        </a>
-                      </td>
                     </tr>
                     <tr>
-                      <td>Documento 3.pdf</td>
-                      <td>Pepe Gotera</td>
+                      <td><a href="#">Carlos Gardel.pdf</a></td>
+                      <td><a href="#">Pepe Gotera</a></td>
                       <td>2012/08/20</td>
                       <td class="text-success">Apto</td>
-                      <td>
-                        <a href="" title="Descargar">
-                          <i class="fas fa-fw fa-download"></i>
-                        </a>
-                        <a href="" title="Borrar" class="text-danger">
-                          <i class="fas fa-fw fa-trash"></i>
-                        </a>
-                      </td>
                     </tr>
                     <tr>
-                      <td>Documento 4.pdf</td>
-                      <td>Otilio</td>
+                      <td><a href="#">A Adriana Varela.pdf</a></td>
+                      <td><a href="#">Otilio</a></td>
                       <td>2011/01/20</td>
                       <td class="text-danger">No Apto</td>
-                      <td>
-                        <a href="" title="Descargar">
-                          <i class="fas fa-fw fa-download"></i>
-                        </a>
-                        <a href="" title="Borrar" class="text-danger">
-                          <i class="fas fa-fw fa-trash"></i>
-                        </a>
-                      </td>
                     </tr>
                     <tr>
-                      <td>Documento 5.pdf</td>
-                      <td>Mortadelo</td>
+                      <td><a href="#">Lo llaman el Matador.pdf</a></td>
+                      <td><a href="#">Mortadelo</a></td>
                       <td>2012/03/10</td>
                       <td class="text-danger">No Apto</td>
-                      <td>
-                        <a href="" title="Descargar">
-                          <i class="fas fa-fw fa-download"></i>
-                        </a>
-                        <a href="" title="Borrar" class="text-danger">
-                          <i class="fas fa-fw fa-trash"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Documento 6.pdf</td>
-                      <td>Filemón</td>
-                      <td>2012/06/28</td>
-                      <td class="text-danger">No Apto</td>
-                      <td>
-                        <a href="" title="Descargar">
-                          <i class="fas fa-fw fa-download"></i>
-                        </a>
-                        <a href="" title="Borrar" class="text-danger">
-                          <i class="fas fa-fw fa-trash"></i>
-                        </a>
-                      </td>
                     </tr>
                   </tbody>
                 </table>
