@@ -42,29 +42,6 @@
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="/index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Cursos
-      </div>
-
-      <!-- Nav Item - Calendario -->
-      <li class="nav-item">
-        <a class="nav-link" href="../calendario/">
-          <i class="fas fa-fw fa-calendar"></i>
-          <span>Calendario</span>
-        </a>
-      </li>
-
       <!-- Nav Item - Cursos -->
       <li class="nav-item">
         <a class="nav-link" href="../cursos/">
@@ -131,123 +108,205 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <nav class="navbar navbar-expand navbar-light bg-white topbar static-top">
+    
+          <!-- Topbar Title -->
+          <h5 class="mb-0 font-weight-light text-dark">Asistentes: <b>Yago Bernabé García</b></h5>
+      
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+      
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+      
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+      
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Yago Bernabé García (Asistente)</h1>
-            <button class="btn btn-secondary">Actualizar Datos</button>
-          </div>
-      
+          <a href="#" class="btn btn-primary btn-icon-split mt-4">
+            <span class="icon text-white-50">
+              <i class="fas fa-edit"></i>
+            </span>
+            <span class="text">Editar Datos</span>
+          </a>
+
           <div class="row">
-            <h6 class="col-12 mt-2">DATOS PERSONALES</h6>
-            <dl class="row col-12">
-              <dt class="col-md-3">Nombre</dt>
-              <dd class="col-md-9">Yago</dd>
-              <dt class="col-md-3">Primer Apellido</dt>
-              <dd class="col-md-9">Bernabé</dd>
-              <dt class="col-md-3">Segundo Apellido</dt>
-              <dd class="col-md-9">García</dd>
-              <dt class="col-md-3">Email</dt>
-              <dd class="col-md-9">yago.bernabe@uam.es</dd>
-              <dt class="col-md-3">NIF</dt>
-              <dd class="col-md-9">12312312H</dd>
-              <dt class="col-md-3">Teléfono</dt>
-              <dd class="col-md-9">666 666 666</dd>
-            </dl>
+
+            <!-- Datos Personales -->
+            <div class="col-xl-6 col-md-6 mb-4">
+              <div class="card shadow mt-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="font-weight-bold">Datos Personales</h6>
+                </div>
+                <div class="card-body">
+                  <dl class="row">
+                    <dt class="col-md-4">Nombre</dt>
+                    <dd class="col-md-8">Yago</dd>
+                    <dt class="col-md-4">Apellidos</dt>
+                    <dd class="col-md-8">Bernabé García</dd>
+                    <dt class="col-md-4">NIF</dt>
+                    <dd class="col-md-8">12312312H</dd>
+                    <dt class="col-md-4">email</dt>
+                    <dd class="col-md-8"><a href="#">yago.bernabe@uam.es</a></dd>
+                    <dt class="col-md-4">Teléfono</dt>
+                    <dd class="col-md-8"><a href="#"><i class="fas fa-phone"></i> 666 666 666</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+            <!-- Datos Académicos -->
+            <div class="col-xl-6 col-md-6 mb-4">
+              <div class="card shadow mt-4">
+                <div class="card-header">
+                  <h6 class="font-weight-bold">Datos Académicos</h6>
+                </div>
+                <div class="card-body">
+                  <dl class="row">
+                    <dt class="col-md-4">Universidad</dt>
+                    <dd class="col-md-8">Universidad Autónoma de Madrid</dd>
+                    <dt class="col-md-4">Facultad</dt>
+                    <dd class="col-md-8">Rectorado</dd>
+                    <dt class="col-md-4">Departamento</dt>
+                    <dd class="col-md-8">UTED</dd>
+                    <dt class="col-md-4">Tipo de Empleado</dt>
+                    <dd class="col-md-8">Público</dd>
+                    <dt class="col-md-4">Datos de Interés</dt>
+                    <dd class="col-md-8">.......</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="row">
-            <h6 class="col-12 mt-2">DATOS ACADÉMICOS</h6>
-            <dl class="row col-12">
-              <dt class="col-md-3">Universidad</dt>
-              <dd class="col-md-9">Universidad Autónoma de Madrid</dd>
-              <dt class="col-md-3">Facultad</dt>
-              <dd class="col-md-9">Rectorado</dd>
-              <dt class="col-md-3">Departamento</dt>
-              <dd class="col-md-9">UTED</dd>
-              <dt class="col-md-3">Tipo de Empleado</dt>
-              <dd class="col-md-9">Público</dd>
-              <dt class="col-md-3">Datos de Interés</dt>
-              <dd class="col-md-9">.......</dd>
-            </dl>
+
+            <!-- Domicilio -->
+            <div class="col-xl-6 col-md-6 mb-4">
+              <div class="card shadow mt-4">
+                <div class="card-header">
+                  <h6 class="font-weight-bold">Dirección</h6>
+                </div>
+                <div class="card-body">
+                  <dl class="row">
+                    <dt class="col-md-3">Calle</dt>
+                    <dd class="col-md-9">c/ Tomás y Valiente</dd>
+                    <dt class="col-md-3">Localidad</dt>
+                    <dd class="col-md-9">Madrid</dd>
+                    <dt class="col-md-3">Provincia</dt>
+                    <dd class="col-md-9">Madrid</dd>
+                    <dt class="col-md-3">CP</dt>
+                    <dd class="col-md-9">28000</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cuenta Bancaria -->
+            <div class="col-xl-6 col-md-6 mb-4">
+              <div class="card shadow mt-4">
+                <div class="card-header">
+                  <h6 class="font-weight-bold">Cuenta Bancaria</h6>
+                </div>
+                <div class="card-body">
+                  <dl class="row">
+                    <dt class="col-md-3">Nombre de la Entidad</dt>
+                    <dd class="col-md-9">ING Direct</dd>
+                    <dt class="col-md-3">Número de Cuenta</dt>
+                    <dd class="col-md-9">ES45 ...........</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <h6 class="col-12 mt-2">DOMICILIO</h6>
-            <dl class="row col-12">
-              <dt class="col-md-3">Dirección</dt>
-              <dd class="col-md-9">c/ Tomás y Valiente</dd>
-              <dt class="col-md-3">Localidad</dt>
-              <dd class="col-md-9">Madrid</dd>
-              <dt class="col-md-3">Provincia</dt>
-              <dd class="col-md-9">Madrid</dd>
-              <dt class="col-md-3">CP</dt>
-              <dd class="col-md-9">28000</dd>
-            </dl>
-          </div>
-          <div class="row">
-            <h6 class="col-12 mt-2">CUENTA BANCARIA</h6>
-            <dl class="row col-12">
-              <dt class="col-md-3">Nombre de la Entidad</dt>
-              <dd class="col-md-9">ING Direct</dd>
-              <dt class="col-md-3">Número de Cuenta</dt>
-              <dd class="col-md-9">ES45 ...........</dd>
-            </dl>
-          </div>
-          <div class="card shadow mb-4 col-12">
+
+          <!-- Cursos -->
+          <div class="card shadow mt-4">
             <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
-              <h6 class="m-0 font-weight-bold text-primary">Cursos Asociados</h6>
+              <h6 class="m-0 font-weight-bold">Cursos Asociados</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table border="0" class="table table-bordered" id="dataTable" >
                   <thead>
                     <tr>
-                      <td>Código</td>
-                      <td>Título</td>
-                      <td>Curso Académico</td>
-                      <td>Estado</td>
+                      <th>Código</th>
+                      <th>Título</th>
+                      <th>Curso Académico</th>
+                      <th>Estado</th>
                     </tr>
                   </thead>
                   <tbody>
                       <tr>
-                        <td>1369</td>
+                        <th scope="row">1369</th>
                         <td><a href="curso/detalles.html">Competencia digital del profesorado universitario. Creación de R...</a></td>
                         <td>2020/2021</td>
-                        <td>En curso</td>
+                        <td class="border-left-success">En curso</td>
                       </tr>
                       <tr>
-                        <td>1402</td>
+                        <th scope="row">1402</th>
                         <td><a href="curso/detalles.html">Competencia digital del profesorado universitario. Herramientas d...</a></td>
                         <td>2019/2020</td>
-                        <td>Previsto</td>
+                        <td class="border-left-secondary">Previsto</td>
                       </tr>
                       <tr>
-                        <td>1392</td>
+                        <th scope="row">1392</th>
                         <td><a href="curso/detalles.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a></td>
                         <td>2017/2018</td>
-                        <td>En curso</td>
+                        <td class="border-left-success">En curso</td>
                       </tr>
                       <tr>
-                        <td>1405</td>
+                        <th scope="row">1405</th>
                         <td><a href="curso/detalles.html">Gestión Inteligente del Tiempo para Docentes. (Plataforma Teams)</a></td>
                         <td>2015/2016</td>
-                        <td>Abierto</td>
+                        <td class="border-left-warning">Abierto</td>
                       </tr>
                       <tr>
-                        <td>1403</td>
+                        <th scope="row">1403</th>
                         <td><a href="curso/detalles.html">Docencia en línea y propiedad intelectual: aspectos prácticos p...</a></td>
                         <td>2016/2017</td>
-                        <td>Abierto</td>
+                        <td class="border-left-warning">Abierto</td>
                       </tr>
                       <tr>
-                        <td>1407</td>
+                        <th scope="row">1407</th>
                         <td><a href="curso/detalles.html">¿Funcionan bien mis actividades docentes? Bases para el análisi...</a></td>
                         <td>2019/2020</td>
-                        <td>Abierto</td>
+                        <td class="border-left-warning">Abierto</td>
                       </tr>
                 </table>
               </div>
