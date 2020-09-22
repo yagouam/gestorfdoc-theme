@@ -42,32 +42,9 @@
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Cursos
-      </div>
-
-      <!-- Nav Item - Calendario -->
-      <li class="nav-item">
-        <a class="nav-link" href="../calendario/">
-          <i class="fas fa-fw fa-calendar"></i>
-          <span>Calendario</span>
-        </a>
-      </li>
-
       <!-- Nav Item - Cursos -->
       <li class="nav-item">
-        <a class="nav-link" href="../cursos/">
+        <a class="nav-link" href="../cursos/index.html">
           <i class="fas fa-fw fa-chalkboard"></i>
           <span>Cursos</span>
         </a>
@@ -75,7 +52,7 @@
 
       <!-- Nav Item - Ponentes -->
       <li class="nav-item">
-        <a class="nav-link" href="../ponentes/">
+        <a class="nav-link" href="../ponentes/index.html">
           <i class="fas fa-fw fa-chalkboard-teacher"></i>
           <span>Ponentes</span>
         </a>
@@ -83,7 +60,7 @@
 
       <!-- Nav Item - Asistentes -->
       <li class="nav-item">
-        <a class="nav-link" href="../asistentes/">
+        <a class="nav-link" href="../asistentes/index.html">
           <i class="fas fa-fw fa-user-graduate"></i>
           <span>Asistentes</span>
         </a>
@@ -91,7 +68,7 @@
 
       <!-- Nav Item - Gastos -->
       <li class="nav-item active">
-        <a class="nav-link" href="../gastos/">
+        <a class="nav-link" href="../gastos/index.html">
           <i class="fas fa-fw fa-dollar-sign"></i>
           <span>Gastos</span>
         </a>
@@ -99,7 +76,7 @@
 
       <!-- Nav Item - Correos -->
       <li class="nav-item">
-        <a class="nav-link" href="../correos/">
+        <a class="nav-link" href="../correos/index.html">
           <i class="fas fa-fw fa-envelope"></i>
           <span>Correos</span>
         </a>
@@ -107,7 +84,7 @@
 
       <!-- Nav Item - Encuestas -->
       <li class="nav-item">
-        <a class="nav-link" href="../encuestas/">
+        <a class="nav-link" href="../encuestas/index.html">
           <i class="fas fa-fw fa-poll"></i>
           <span>Encuestas</span>
         </a>
@@ -131,302 +108,193 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <nav class="navbar navbar-expand navbar-light bg-white topbar static-top">
+    
+          <!-- Topbar Title -->
+          <h5 class="mb-0 font-weight-light text-dark">Nuevo Gasto</h5>
+      
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+      
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+      
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+      
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- End of Topbar -->
+
+        <!-- Page Navigation -->
+        <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Gastos</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="presupuestos.html">Presupuestos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+          <!-- DataTales Example -->
+          <div class="card shadow my-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Gestor económico</h1>
-          </div>
-
-          <!-- Page Navigation -->
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Consultar</a>
-            </li>
-            <li>
-              <a class="nav-link" href="pagos.html">Gestión de pagos</a>
-            </li>
-            <li>
-              <a class="nav-link" href="propios.html">Gastos propios</a>
-            </li>
-            <li>
-              <a class="nav-link active disabled" href="presupuestos.html">Presupuestos</a>
-            </li>
-          </ul>
-
-          <div class="row">
-            <form action="" class="col-12 form-inline">
-              <div class="form-group">
-                <label for="year" class="mr-2 my-4">Selecciona Curso Académico</label>
-                <select name="year" id="year" class="mr-2 my-4 custom-select">
-                  <option value="2019">2019</option>
-                  <option value="2018">2018</option>
-                  <option value="2017">2017</option>
-                  <option value="2016">2016</option>
+              <div class="d-inline-flex w-50 d-sm-flex">
+                <select class="custom-select mr-2">
+                  <option>Desarrollo docente general e investigación</option>
+                  <option>Metodologías docentes</option>
+                  <option>Competencia Digital</option>
+                  <option>Tecnologías de la información</option>
+                  <option>Tecnologías educativas para la docencia</option>
+                  <option>Especial Cursos Moodle</option>
+                  <option>Idiomas</option>
+                  <option>Idiomas (Plan DOing)</option>
                 </select>
-                <input type="submit" value="Actualizar" class="btn btn-primary">
+                <select class="custom-select mr-2 w-25">
+                  <option value="1">2021</option>
+                  <option value="2">2020</option>
+                  <option value="3">2019</option>
+                </select>
               </div>
-            </form>
-          </div>
-          
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 d-sm-flex bg-warning align-items-center justify-content-between ">
-              <h6 class="m-0 font-weight-bold text-primary">Presupuestos para los cursos de FORMACIÓN PREDOCTORAL del año '2019'</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Cod.<br>Mód.</th>
-                      <th>Título</th>
-                      <th>Horas<br> presen<br>ciales</th>
-                      <th>Precio<br>/hora</th>
-                      <th>Gasto<br>total</th>
-                      <th>Moda<br>lidad</th>
-                      <th>Gasto<br>real</th>
+                      <th>Cod. Mód.</th>
+                      <th>Curso</th>
+                      <th>Horas presenciales</th>
+                      <th>Precio/hora</th>
+                      <th>Gasto total</th>
+                      <th>Modalidad</th>
+                      <th>Gasto real</th>
                       <th>Inclusión</th>
                       <th>Estado real</th>
                       <th>Estado curso</th>
-                      <th>&nbsp;</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>1212</td>
-                      <td>Introducción a la edición de textos con LaTeX para documentos académicos y científicos</td>
+                      <th scope="row">1212</th>
+                      <td><a href="#">Introducción a la edición de textos con LaTeX para documentos académicos y científicos</a></td>
                       <td>8</td>
                       <td></td>
                       <td></td>
                       <td>Pagar</td>
                       <td></td>
-                      <td>No Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
+                      <td class="border-left-danger">No Incluido</td>
+                      <td><span class="badge badge-success">Pagado</span></td>
+                      <td class="border-left-success">Realizado</td>
                     </tr>
                     <tr>
-                      <td>1219</td>
-                      <td>Qué es el Aprendizaje-Servicio y cómo poner en marcha un proyecto</td>
+                      <th scope="row">1219</th>
+                      <td><a href="#">Qué es el Aprendizaje-Servicio y cómo poner en marcha un proyecto</a></td>
                       <td>10</td>
                       <td>110</td>
                       <td>1100</td>
                       <td>Pagar</td>
                       <td>1100</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
+                      <td class="border-left-success">Incluido</td>
+                      <td><span class="badge badge-success">Pagado</span></td>
+                      <td class="border-left-success">Realizado</td>
                     </tr>
-                      <td>1228</td>
-                      <td>Presentaciones de éxito: exposición eficaz en el aula</td>
+                      <th scope="row">1228</th>
+                      <td><a href="#">Presentaciones de éxito: exposición eficaz en el aula</a></td>
                       <td>8</td>
                       <td>110</td>
                       <td>880</td>
                       <td>Pagar</td>
                       <td>880</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
+                      <td class="border-left-success">Incluido</td>
+                      <td><span class="badge badge-success">Pagado</span></td>
+                      <td class="border-left-success">Realizado</td>
                     </tr>
-                      <td>1248</td>
-                      <td>Desarrollo del pensamiento creativo</td>
+                      <th scope="row">1248</th>
+                      <td><a href="#">Desarrollo del pensamiento creativo</a></td>
                       <td>8</td>
                       <td>110</td>
                       <td>880</td>
                       <td>Pagar</td>
                       <td>880</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
+                      <td class="border-left-success">Incluido</td>
+                      <td><span class="badge badge-success">Pagado</span></td>
+                      <td class="border-left-success">Realizado</td>
                     </tr>
-                      <td>1255</td>
-                      <td>Liderazgo y comunicación en el aula</td>
+                      <th scope="row">1255</th>
+                      <td><a href="#">Liderazgo y comunicación en el aula</a></td>
                       <td>8</td>
                       <td>110</td>
                       <td>880</td>
                       <td>Pagar</td>
                       <td>880</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
+                      <td class="border-left-success">Incluido</td>
+                      <td><span class="badge badge-success">Pagado</span></td>
+                      <td class="border-left-success">Realizado</td>
                     </tr>
-                      <td>1265</td>
-                      <td>¡Lleva tus materiales docentes a una nueva dimensión con Genially!</td>
+                      <th scope="row">1265</th>
+                      <td><a href="#">¡Lleva tus materiales docentes a una nueva dimensión con Genially!</a></td>
                       <td>12</td>
                       <td>60</td>
                       <td>720</td>
                       <td>Pagar</td>
                       <td>720</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
+                      <td class="border-left-success">Incluido</td>
+                      <td><span class="badge badge-success">Pagado</span></td>
+                      <td class="border-left-success">Realizado</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item font-italic bg-light">Gasto asociado a cursos ya realizados: <b>4460 €</b></li>
-              <li class="list-group-item font-italic bg-light">Gasto asociado a cursos incluidos y no cancelados: <b>4460 €</b></li>
-              <li class="list-group-item font-italic bg-light">Gasto simulado: <b>4460 €</b></li>
-            </ul>
-          </div>
-          
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 d-sm-flex bg-success align-items-center justify-content-between ">
-              <h6 class="m-0 font-weight-bold text-primary">Presupuestos para los cursos de FORMACIÓN INICIAL del año '2019'</h6>
+            <div class="card-footer">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item font-italic bg-light">Gasto asociado a cursos ya realizados: <b>4460 €</b></li>
+                <li class="list-group-item font-italic bg-light">Gasto asociado a cursos incluidos y no cancelados: <b>4460 €</b></li>
+                <li class="list-group-item font-italic bg-light">Gasto simulado: <b>4460 €</b></li>
+              </ul>
             </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Cod.<br>Mód.</th>
-                      <th>Título</th>
-                      <th>Horas<br> presen<br>ciales</th>
-                      <th>Precio<br>/hora</th>
-                      <th>Gasto<br>total</th>
-                      <th>Moda<br>lidad</th>
-                      <th>Gasto<br>real</th>
-                      <th>Inclusión</th>
-                      <th>Estado real</th>
-                      <th>Estado curso</th>
-                      <th>&nbsp;</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1212</td>
-                      <td>Introducción a la edición de textos con LaTeX para documentos académicos y científicos</td>
-                      <td>8</td>
-                      <td></td>
-                      <td></td>
-                      <td>Pagar</td>
-                      <td></td>
-                      <td>No Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1219</td>
-                      <td>Qué es el Aprendizaje-Servicio y cómo poner en marcha un proyecto</td>
-                      <td>10</td>
-                      <td>110</td>
-                      <td>1100</td>
-                      <td>Pagar</td>
-                      <td>1100</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
-                    </tr>
-                      <td>1228</td>
-                      <td>Presentaciones de éxito: exposición eficaz en el aula</td>
-                      <td>8</td>
-                      <td>110</td>
-                      <td>880</td>
-                      <td>Pagar</td>
-                      <td>880</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
-                    </tr>
-                      <td>1248</td>
-                      <td>Desarrollo del pensamiento creativo</td>
-                      <td>8</td>
-                      <td>110</td>
-                      <td>880</td>
-                      <td>Pagar</td>
-                      <td>880</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
-                    </tr>
-                      <td>1255</td>
-                      <td>Liderazgo y comunicación en el aula</td>
-                      <td>8</td>
-                      <td>110</td>
-                      <td>880</td>
-                      <td>Pagar</td>
-                      <td>880</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
-                    </tr>
-                      <td>1265</td>
-                      <td>¡Lleva tus materiales docentes a una nueva dimensión con Genially!</td>
-                      <td>12</td>
-                      <td>60</td>
-                      <td>720</td>
-                      <td>Pagar</td>
-                      <td>720</td>
-                      <td>Incluido</td>
-                      <td>pagado</td>
-                      <td>Realizado</td>
-                      <td>
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item font-italic bg-light">Gasto asociado a cursos ya realizados: <b>4460 €</b></li>
-              <li class="list-group-item font-italic bg-light">Gasto asociado a cursos incluidos y no cancelados: <b>4460 €</b></li>
-              <li class="list-group-item font-italic bg-light">Gasto simulado: <b>4460 €</b></li>
-            </ul>
           </div>
-          
         </div>
         <!-- /.container-fluid -->
 

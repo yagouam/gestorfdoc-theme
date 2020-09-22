@@ -32,7 +32,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/index.html">
         <div class="sidebar-brand-icon">
           <i class="fas fa-globe"></i>
         </div>
@@ -41,29 +41,6 @@
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Cursos
-      </div>
-
-      <!-- Nav Item - Calendario -->
-      <li class="nav-item">
-        <a class="nav-link" href="../calendario/">
-          <i class="fas fa-fw fa-calendar"></i>
-          <span>Calendario</span>
-        </a>
-      </li>
 
       <!-- Nav Item - Cursos -->
       <li class="nav-item">
@@ -131,68 +108,89 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <nav class="navbar navbar-expand navbar-light bg-white topbar static-top">
+    
+          <!-- Topbar Title -->
+          <h5 class="mb-0 font-weight-light text-dark">Gastos: <b>12345</b></h5>
+      
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+      
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+      
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+      
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Gestor económico</h1>
-          </div>
+          <a href="#" class="btn btn-primary btn-icon-split mt-4">
+            <span class="icon text-white-50">
+              <i class="fas fa-edit"></i>
+            </span>
+            <span class="text">Editar Gasto</span>
+          </a>
 
-          <!-- Page Navigation -->
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Consultar</a>
-            </li>
-            <li>
-              <a class="nav-link" href="pagos.html">Gestión de pagos</a>
-            </li>
-            <li>
-              <a class="nav-link active disabled" href="propios.html">Gastos propios</a>
-            </li>
-            <li>
-              <a class="nav-link" href="presupuestos.html">Presupuestos</a>
-            </li>
-          </ul>
-          
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
-              <h6 class="m-0 font-weight-bold text-primary">Gastos Propios</h6>
-              <a class="btn btn-primary" href="gasto/crear.html">Añadir Gasto</a>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Factura</th>
-                      <th>Concepto</th>
-                      <th>Descripción</th>
-                      <th>Fecha</th>
-                      <th>Importe</th>
-                      <th>Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>C- 29534</td>
-                      <td>OSESA</td>
-                      <td>Cámara de video, trípode, tarjeta de memoria y bolsa</td>
-                      <td>2013/08/10</td>
-                      <td>303€</td>
-                      <td>
-                        <a href="">
-                          <i class="fas fa-fw fa-trash text-danger"></i>
-                          <i class="fas fa-fw fa-sync-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class="row">
+
+            <!-- Datos Personales -->
+            <div class="col-xl-6 col-md-6 mb-4">
+              <div class="card shadow mt-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="font-weight-bold">Datos</h6>
+                </div>
+                <div class="card-body">
+                  <dl class="row">
+                    <dt class="col-md-4">Ponente</dt>
+                    <dd class="col-md-8"><a href="../ponentes/detalle.html">Yago Bernabé García</a></dd>
+                    <dt class="col-md-4">Concepto</dt>
+                    <dd class="col-md-8">Dietas</dd>
+                    <dt class="col-md-4">Fecha</dt>
+                    <dd class="col-md-8">20/05/2020</dd>
+                    <dt class="col-md-4">Importe</dt>
+                    <dd class="col-md-8">230€</dd>
+                    <dt class="col-md-4">Nombre de la Entidad</dt>
+                    <dd class="col-md-8">ING Direct</dd>
+                    <dt class="col-md-4">Número de Cuenta</dt>
+                    <dd class="col-md-8">ES45 ...........</dd>
+                    <dt class="col-md-4">Estado</dt>
+                    <dd class="col-md-8"><span class="badge badge-success">Pagado</span></dd>
+                  </dl>
+                </div>
               </div>
             </div>
           </div>
