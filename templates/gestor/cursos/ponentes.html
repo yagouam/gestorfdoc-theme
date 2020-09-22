@@ -42,29 +42,6 @@
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Cursos
-      </div>
-
-      <!-- Nav Item - Calendario -->
-      <li class="nav-item">
-        <a class="nav-link" href="../calendario.html">
-          <i class="fas fa-fw fa-calendar"></i>
-          <span>Calendario</span>
-        </a>
-      </li>
-
       <!-- Nav Item - Cursos -->
       <li class="nav-item active">
         <a class="nav-link" href="../cursos/">
@@ -107,7 +84,7 @@
 
       <!-- Nav Item - Encuestas -->
       <li class="nav-item">
-        <a class="nav-link" href="../encuestas/">
+        <a class="nav-link" href="/encuestas/">
           <i class="fas fa-fw fa-poll"></i>
           <span>Encuestas</span>
         </a>
@@ -142,20 +119,11 @@
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="detalles.html">Guía docente</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="calendario.html">Fechas</a>
-              </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="ponentes.html">Ponentes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="asistentes.html">Asistentes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="trabajos.html">Trabajos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="correos.html">Correos</a>
@@ -178,19 +146,28 @@
           
           <!-- DataTales Example -->
           <div class="card shadow my-4">
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+
+            <!-- Asistentes Filter -->
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
+
+              <h6>Lista de Ponentes</h6>
+
+              <!-- Añadir Ponente -->
               <div class="button-group">
-                <button class="btn btn-primary">Añadir ponente</button>
+                <a href="#" class="btn btn-primary btn-icon-split">
+                  <span class="icon text-white-50">
+                  <i class="fas fa-user-plus"></i>
+                  </span>
+                  <span class="text">Añadir Ponente</span>
+                </a>
               </div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="dataTable">
                   <thead>
                     <tr>
-                      <th>Nombre</th>
-                      <th>Apellidos</th>
+                      <th>Nombre y Apellidos</th>
                       <th>email</th>
                       <th>Teléfono</th>
                       <th>Facultad / Servicio</th>
@@ -200,17 +177,17 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Yago</td>
-                      <td>Bernabé García</td>
-                      <td>yago.bernabe@uam.es</td>
-                      <td>666666666</td>
-                      <th>Rectorado</th>
-                      <th>UTED</th>
-                      <th>Programador</th>
+                      <td><a href="../ponentes/detalle.html">Yago Bernabé García</a></td>
+                      <td><a href="#">yago.bernabe@uam.es</a></td>
+                      <td><a href="tel:+"><i class="fas fa-phone"></i> 666 666 666</a></td>
+                      <td>Rectorado</td>
+                      <td>UTED</td>
+                      <td>Programador</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+
             </div>
           </div>
           
@@ -269,6 +246,9 @@
 
   <!-- Custom scripts for all pages-->
   <script src="../../../js/sb-admin-2.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../../../js/lauam__custom.min.js"></script>
 
   <!-- Page level plugins -->
   <script src="../../../vendor/datatables/jquery.dataTables.min.js"></script>
