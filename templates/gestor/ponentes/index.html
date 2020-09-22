@@ -42,29 +42,6 @@
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Cursos
-      </div>
-
-      <!-- Nav Item - Calendario -->
-      <li class="nav-item">
-        <a class="nav-link" href="../calendario.html">
-          <i class="fas fa-fw fa-calendar"></i>
-          <span>Calendario</span>
-        </a>
-      </li>
-
       <!-- Nav Item - Cursos -->
       <li class="nav-item">
         <a class="nav-link" href="../cursos/index.html">
@@ -131,46 +108,86 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <nav class="navbar navbar-expand navbar-light bg-white topbar static-top">
+    
+          <!-- Topbar Title -->
+          <h5 class="mb-0 font-weight-light text-dark">Ponentes</h5>
+      
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+      
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+      
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+      
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Listado Ponentes</h1>
-            <a class="btn btn-primary" href="crear.html">Crear Ponente</a>
-          </div>
           
           <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+          <div class="card shadow my-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-end">
+
+              <a href="crear.html" class="btn btn-primary btn-icon-split mt-4">
+                <span class="icon text-white-50">
+                  <i class="fas fa-user-plus"></i>
+                </span>
+                <span class="text">Crear Ponente</span>
+              </a>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Nombre</th>
-                      <th>Apellidos</th>
+                      <th>Nombre y apellidos</th>
                       <th>email</th>
                       <th>Teléfono</th>
                       <th>Facultad / Servicio</th>
                       <th>Departamento</th>
-                      <th>Datos de Interés</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><a href="detalle.html">Yago</a></td>
-                      <td>Bernabé García</td>
-                      <td>yago.bernabe@uam.es</td>
-                      <td>666666666</td>
-                      <th>Rectorado</th>
-                      <th>UTED</th>
-                      <th>Programador</th>
+                      <td><a href="detalle.html">Yago Bernabé García</a></td>
+                      <td><a href="#">yago.bernabe@uam.es</a></td>
+                      <td><a href="#"><i class="fas fa-phone"></i> 666666666</a></td>
+                      <td>Rectorado</td>
+                      <td>UTED</td>
                     </tr>
                   </tbody>
                 </table>

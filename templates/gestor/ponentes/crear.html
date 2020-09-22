@@ -42,29 +42,6 @@
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="/index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Inicio</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Cursos
-      </div>
-
-      <!-- Nav Item - Calendario -->
-      <li class="nav-item">
-        <a class="nav-link" href="../calendario/">
-          <i class="fas fa-fw fa-calendar"></i>
-          <span>Calendario</span>
-        </a>
-      </li>
-
       <!-- Nav Item - Cursos -->
       <li class="nav-item">
         <a class="nav-link" href="../cursos/">
@@ -131,131 +108,218 @@
       <div id="content">
 
         <!-- Topbar -->
-        <iframe src="../../topbar.html" width="100%" height="95px" style="border: none;"></iframe>
+        <nav class="navbar navbar-expand navbar-light bg-white topbar static-top">
+    
+          <!-- Topbar Title -->
+          <h5 class="mb-0 font-weight-light text-dark">Ponentes: <b>Crear Ponente</b></h5>
+      
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+      
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+      
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+      
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Yago Bernabé García (Ponente)</h1>
-          </div>
-          
           <form>
-            <div class="form-row">
-              <h6 class="col-12 mt-2">DATOS PERSONALES</h6>
-              <div class="form-group col-md-4">
-                  <label for="inputEmail4">Nombre</label>
-                  <input type="text" class="form-control" id="nombre">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputPassword4">Primer Apellido</label>
-                <input type="text" class="form-control" id="inputPassword4">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputPassword4">Segundo Apellido</label>
-                <input type="text" class="form-control" id="inputPassword4">
-              </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-7">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+            <div class="row">
+              <!-- Datos Personales -->
+              <div class="col-xl-6 col-md-6 mb-4">
+                <div class="card shadow mt-4">
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="font-weight-bold">Datos Personales</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group row">
+                      <label for="firstname" class="col-sm-2 col-form-label">Nombre</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="firstname" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="surname" class="col-sm-2 col-form-label">Apellidos</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="surname" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="email" class="col-sm-2 col-form-label">email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="telephone_number" class="col-sm-2 col-form-label">Teléfono</label>
+                      <div class="col-sm-4">
+                        <input type="tel" class="form-control" id="telephone_number" placeholder="">
+                      </div>
+                      <label for="nif" class="col-sm-2 col-form-label">NIF</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="nif" placeholder="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group col-md-3">
-                  <label for="inputPassword4">NIF</label>
-                  <input type="text" class="form-control" id="inputPassword4">
+              </div>
+
+              <!-- Datos Académicos -->
+              <div class="col-xl-6 col-md-6 mb-4">
+                <div class="card shadow mt-4">
+                  <div class="card-header">
+                    <h6 class="font-weight-bold">Datos Académicos</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group row">
+                      <label for="universidad" class="col-sm-3 col-form-label">Universidad</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="universidad" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="facultad" class="col-sm-3 col-form-label">Facultad</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="facultad" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
+                      <div class="col-sm-9">
+                        <input type="email" class="form-control" id="departamento" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="tipo_empleado" class="col-sm-3 col-form-label">Tipo de Empleado</label>
+                      <div class="col-sm-9">
+                        <input type="tel" class="form-control" id="tipo_empleado" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="datos_interes" class="col-sm-3 col-form-label">Datos de Interés</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="datos_interes" placeholder="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group col-md-2">
-                  <label for="inputPassword4">Teléfono</label>
-                  <input type="tel" class="form-control" id="inputPassword4">
+              </div>
+            </div>
+
+            <div class="row">
+
+              <!-- Domicilio -->
+              <div class="col-xl-6 col-md-6 mb-4">
+                <div class="card shadow mt-4">
+                  <div class="card-header">
+                    <h6 class="font-weight-bold">Dirección</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group row">
+                      <label for="calle" class="col-sm-2 col-form-label">Calle</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="calle" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="localidad" class="col-sm-2 col-form-label">Localidad</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="localidad" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="provincia" class="col-sm-2 col-form-label">Provincia</label>
+                      <div class="col-sm-6">
+                        <select class="custom-select" id="provincia" name="provincia">
+                          <option selected>Madrid</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <label for="codigo_postal" class="col-sm-1 col-form-label">CP</label>
+                      <div class="col-sm-3">
+                        <input type="number" class="form-control" id="codigo_postal" placeholder="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-3">
-                  <label for="inputPassword4">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
               </div>
-            </div>
-            <div class="form-row">
-                <h6 class="col-12 mt-3">DATOS ACADÉMICOS</h6>
-              <div class="form-group col-md-4">
-                <label for="inputEmail4">Universidad</label>
-                <input type="text" class="form-control" id="inputEmail4">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputPassword4">Facultad</label>
-                <input type="text" class="form-control" id="inputPassword4">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputPassword4">Departamento</label>
-                <input type="text" class="form-control" id="inputPassword4">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-4">
-                <label for="inputEmail4">Tipo de empleado</label>
-                <select name="tipo" id="tipo1" class="custom-select">
-                    <option value="publico">Publico</option>
-                    <option value="publico UAM">Publico UAM</option>
-                    <option value="no publico">No Publico</option>
-                </select>
-              </div>
-              <div class="form-group col-md-8">
-                <label for="inputPassword4">Datos de Interés</label>
-                <input type="text" class="form-control" id="inputPassword4">
-              </div>
-            </div>
-            <div class="form-row">
-                <h6 class="col-12 mt-3">DOMICILIO</h6>
-                <div class="form-group col-12">
-                  <label for="inputAddress">Dirección</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="c/ ...">
+
+              <!-- Cuenta Bancaria -->
+              <div class="col-xl-6 col-md-6 mb-4">
+                <div class="card shadow mt-4">
+                  <div class="card-header">
+                    <h6 class="font-weight-bold">Cuenta Bancaria</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group row">
+                      <label for="entidad" class="col-sm-3 col-form-label">Entidad</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="entidad" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="numero_cuenta" class="col-sm-3 col-form-label">Número de Cuenta</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="numero_cuenta" placeholder="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-6">
-                  <label for="inputAddress">Localidad</label>
-                  <input type="text" class="form-control" id="inputAddress">
-                </div>
-                <div class="form-group col-4">
-                  <label for="inputAddress">Provincia</label>
-                  <input type="text" class="form-control" id="inputAddress">
-                </div>
-                <div class="form-group col-2">
-                  <label for="inputAddress">CP</label>
-                  <input type="number" class="form-control" id="inputAddress">
-                </div>
-            </div>
-            <div class="form-row">
-              <h6 class="col-12 mt-3">CUENTA BANCARIA</h6>
-              <div class="form-group col-md-12">
-                <label for="inputCity">Nombre de la Entidad</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputState">IBAN</label>
-                <input type="number" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputState">C. Banco</label>
-                <input type="number" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputState">C. Sucursal</label>
-                <input type="number" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputState">DC</label>
-                <input type="number" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputState">Número Cuenta</label>
-                <input type="number" class="form-control" id="inputCity">
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Guardar</button>
+
+            <div class="d-flex mb-5 justify-content-center">
+              <a href="#" class="btn btn-primary btn-icon-split mt-4 mr-2">
+                <span class="icon text-white-50">
+                  <i class="fas fa-edit"></i>
+                </span>
+                <span class="text">Guardar Datos</span>
+              </a>
+
+              <a href="#" class="btn btn-danger btn-icon-split mt-4">
+                <span class="icon text-white-50">
+                  <i class="fas fa-trash"></i>
+                </span>
+                <span class="text">Descartar</span>
+              </a>
+            </div>
+
           </form>
           
         </div>
