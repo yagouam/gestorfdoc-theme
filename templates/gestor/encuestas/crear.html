@@ -51,7 +51,7 @@
       </li>
 
       <!-- Nav Item - Ponentes -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="../ponentes/">
           <i class="fas fa-fw fa-chalkboard-teacher"></i>
           <span>Ponentes</span>
@@ -59,7 +59,7 @@
       </li>
 
       <!-- Nav Item - Asistentes -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="../asistentes/">
           <i class="fas fa-fw fa-user-graduate"></i>
           <span>Asistentes</span>
@@ -111,7 +111,7 @@
         <nav class="navbar navbar-expand navbar-light bg-white topbar static-top">
     
           <!-- Topbar Title -->
-          <h5 class="mb-0 font-weight-light text-dark">Asistentes: <b>Crear Asistente</b></h5>
+          <h5 class="mb-0 font-weight-light text-dark">Encuestas: <b>Ponentes 01</b></h5>
       
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -157,171 +157,121 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+
           <form>
-            <div class="row">
-              <!-- Datos Personales -->
-              <div class="col-xl-6 col-md-6 mb-4">
-                <div class="card shadow mt-4">
-                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                    <h6 class="font-weight-bold">Datos Personales</h6>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group row">
-                      <label for="firstname" class="col-sm-2 col-form-label">Nombre</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id="firstname" placeholder="">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="surname" class="col-sm-2 col-form-label">Apellidos</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id="surname" placeholder="">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="email" class="col-sm-2 col-form-label">email</label>
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="telephone_number" class="col-sm-2 col-form-label">Teléfono</label>
-                      <div class="col-sm-4">
-                        <input type="tel" class="form-control" id="telephone_number" placeholder="">
-                      </div>
-                      <label for="nif" class="col-sm-2 col-form-label">NIF</label>
-                      <div class="col-sm-4">
-                        <input type="text" class="form-control" id="nif" placeholder="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <!-- Datos Académicos -->
-              <div class="col-xl-6 col-md-6 mb-4">
-                <div class="card shadow mt-4">
-                  <div class="card-header">
-                    <h6 class="font-weight-bold">Datos Académicos</h6>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group row">
-                      <label for="universidad" class="col-sm-3 col-form-label">Universidad</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" id="universidad" placeholder="">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="card my-4">
+                <div class="card-header">
+                  Datos
+                </div>
+                <div class="card-body">
+                  <dl class="row">
+                    <dt class="col-sm-2">Nombre</dt>
+                    <dd class="col-sm-5">
+                      <div class="form-group">
+                        <input class="form-control" type="text" name="nombre" id="nombre">
+                        <small id="nombreExplanation" class="form-text text-muted">
+                          Máximo 50 caracteres
+                        </small>
                       </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="facultad" class="col-sm-3 col-form-label">Facultad</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" id="facultad" placeholder="">
+                    </dd>
+                    <div class="w-100"></div>
+                    <dt class="col-sm-2">Descripción</dt>
+                    <dd class="col-sm-10">
+                      <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <small id="nombreExplanation" class="form-text text-muted">
+                          Máximo 500 caracteres
+                        </small>
                       </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="departamento" class="col-sm-3 col-form-label">Departamento</label>
-                      <div class="col-sm-9">
-                        <input type="email" class="form-control" id="departamento" placeholder="">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="tipo_empleado" class="col-sm-3 col-form-label">Tipo de Empleado</label>
-                      <div class="col-sm-9">
-                        <input type="tel" class="form-control" id="tipo_empleado" placeholder="">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="datos_interes" class="col-sm-3 col-form-label">Datos de Interés</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" id="datos_interes" placeholder="">
-                      </div>
-                    </div>
-                  </div>
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="row">
-
-              <!-- Domicilio -->
-              <div class="col-xl-6 col-md-6 mb-4">
-                <div class="card shadow mt-4">
-                  <div class="card-header">
-                    <h6 class="font-weight-bold">Dirección</h6>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group row">
-                      <label for="calle" class="col-sm-2 col-form-label">Calle</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id="calle" placeholder="">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="localidad" class="col-sm-2 col-form-label">Localidad</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id="localidad" placeholder="">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="provincia" class="col-sm-2 col-form-label">Provincia</label>
-                      <div class="col-sm-6">
-                        <select class="custom-select" id="provincia" name="provincia">
-                          <option selected>Madrid</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <label for="codigo_postal" class="col-sm-1 col-form-label">CP</label>
-                      <div class="col-sm-3">
-                        <input type="number" class="form-control" id="codigo_postal" placeholder="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Cuenta Bancaria -->
-              <div class="col-xl-6 col-md-6 mb-4">
-                <div class="card shadow mt-4">
-                  <div class="card-header">
-                    <h6 class="font-weight-bold">Cuenta Bancaria</h6>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group row">
-                      <label for="entidad" class="col-sm-3 col-form-label">Entidad</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" id="entidad" placeholder="">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="numero_cuenta" class="col-sm-3 col-form-label">Número de Cuenta</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" id="numero_cuenta" placeholder="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="card my-4">
+            <div class="card-header">
+              Preguntas y Respuestas
             </div>
-
-            <div class="d-flex mb-5 justify-content-center">
-              <a href="#" class="btn btn-primary btn-icon-split mt-4 mr-2">
-                <span class="icon text-white-50">
-                  <i class="fas fa-edit"></i>
-                </span>
-                <span class="text">Guardar</span>
-              </a>
-
-              <a href="#" class="btn btn-danger btn-icon-split mt-4">
-                <span class="icon text-white-50">
-                  <i class="fas fa-trash"></i>
-                </span>
-                <span class="text">Descartar</span>
-              </a>
+            <div class="card-body">
+              <dl class="row">
+                <dt class="col-sm-8 mb-2"></dt>
+                <dd class="col-sm-2">
+                  <div class="btn-group colors" data-toggle="buttons">
+                    <span class="ml-3 mr-1">1</span>
+                    <span class="ml-4 mr-1">2</span>
+                    <span class="ml-4 mr-1">3</span>
+                    <span class="ml-4">4</span>
+                  </div>
+                </dd>
+                <dt class="col-sm-8 mb-2">
+                  <div class="form-group row">
+                    <label for="pregunta1" class="col-sm-1 col-form-label">1. </label>
+                    <div class="col-sm-11">
+                      <input class="form-control" type="text" name="pregunta1" id="pregunta1">
+                      <small id="nombreExplanation" class="form-text text-muted">
+                        Máximo 50 caracteres
+                      </small>
+                    </div>
+                  </div>
+                </dt>
+                <dd class="col-sm-2">
+                  <div class="btn-group colors" data-toggle="buttons">
+                    <label class="btn btn-light">
+                      <input type="radio" name="options" value="1" autocomplete="off">
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="radio" name="options" value="2" autocomplete="off">
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="radio" name="options" value="3" autocomplete="off">
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="radio" name="options" value="4" autocomplete="off">
+                    </label>
+                  </div>
+                </dd>
+                <dd class="col-sm-12">
+                  <a href="#" class="btn btn-primary btn-icon-split">
+                    <span class="icon text-white-50">
+                      <i class="fas fa-plus"></i>
+                    </span>
+                    <span class="text">Añadir Pregunta</span>
+                  </a>
+                </dd>
+              </dl>
             </div>
+          </div>
 
-          </form>
+
+          <div class="card my-4">
+            <div class="card-header">
+              Comentarios
+            </div>
+            <div class="card-body">
+              <dl class="row">
+                  <dt class="col-sm-3">Respecto al Curso</dt>
+                  <dd class="col-sm-9">
+                    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+                  </dd>
+                  <dt class="col-sm-3">Respecto al Programa en General</dt>
+                  <dd class="col-sm-9">
+                    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+                  </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="d-flex mb-5 justify-content-center">
+            <a href="#" class="btn btn-primary mt-4 mr-2">Guardar</a>
+            <a href="#" class="btn btn-danger mt-4 mr-2">Descartar</a>
+          </div>
           
+        </form>
         </div>
         <!-- /.container-fluid -->
 
