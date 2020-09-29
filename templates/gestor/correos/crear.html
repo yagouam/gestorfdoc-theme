@@ -51,7 +51,7 @@
       </li>
 
       <!-- Nav Item - Ponentes -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="../ponentes/">
           <i class="fas fa-fw fa-chalkboard-teacher"></i>
           <span>Ponentes</span>
@@ -75,7 +75,7 @@
       </li>
 
       <!-- Nav Item - Correos -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="../correos/">
           <i class="fas fa-fw fa-envelope"></i>
           <span>Correos</span>
@@ -111,7 +111,7 @@
         <nav class="navbar navbar-expand navbar-light bg-white topbar static-top">
     
           <!-- Topbar Title -->
-          <h5 class="mb-0 font-weight-light text-dark">Correos: <b>Ponentes 01</b></h5>
+          <h5 class="mb-0 font-weight-light text-dark">Correos: <b>Crear Plantilla Correo</b></h5>
       
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -159,16 +159,50 @@
         <div class="container-fluid">
 
           <form>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card my-4">
+                  <div class="card-header">
+                    Descripción de la plantilla
+                  </div>
+                  <div class="card-body">
+                    <dl class="row">
+                      <dt class="col-sm-2">Nombre de la plantilla</dt>
+                      <dd class="col-sm-10">
+                        <div class="form-group">
+                          <input class="form-control" type="text" name="nombre" id="nombre">
+                        </div>
+                      </dd>
+                      <div class="w-100"></div>
+                      <dt class="col-sm-2">Caso de uso</dt>
+                      <dd class="col-sm-10">
+                        <div class="form-group">
+                          <input class="form-control" type="text" name="nombre" id="nombre">
+                        </div>
+                      </dd>
+                      <dt class="col-sm-2">Envío automático</dt>
+                      <dd class="col-sm-10">
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                          <label class="custom-control-label" for="customSwitch2"></label>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
 
           <div class="row">
             <div class="col-sm-12">
               <div class="card my-4">
                 <div class="card-header">
-                  Datos
+                  Asunto y cuerpo del correo
                 </div>
                 <div class="card-body">
                   <dl class="row">
-                    <dt class="col-sm-2">Nombre</dt>
+                    <dt class="col-sm-2">Asunto</dt>
                     <dd class="col-sm-10">
                       <div class="form-group">
                         <input class="form-control" type="text" name="nombre" id="nombre">
@@ -178,7 +212,7 @@
                       </div>
                     </dd>
                     <div class="w-100"></div>
-                    <dt class="col-sm-2">Descripción</dt>
+                    <dt class="col-sm-2">Cuerpo del mensaje</dt>
                     <dd class="col-sm-10">
                       <div class="form-group">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -187,52 +221,18 @@
                         </small>
                       </div>
                     </dd>
+                    <dt class="col-sm-2">Adjuntos</dt>
+                    <dd class="col-sm-10">
+                      <a href="#" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                          <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="text">Añadir Adjunto</span>
+                      </a>
+                    </dd>
                   </dl>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="card my-4">
-            <div class="card-header">
-              Adjuntos
-            </div>
-            <div class="card-body">
-              <dl class="row">
-                <dd>
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
-                  </div>
-                </dd>
-                <dd class="col-sm-12">
-                  <a href="#" class="btn btn-primary btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-plus"></i>
-                    </span>
-                    <span class="text">Añadir Adjunto</span>
-                  </a>
-                </dd>
-              </dl>
-            </div>
-          </div>
-
-
-          <div class="card my-4">
-            <div class="card-header">
-              Comentarios
-            </div>
-            <div class="card-body">
-              <dl class="row">
-                  <dt class="col-sm-3">Respecto al Curso</dt>
-                  <dd class="col-sm-9">
-                    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-                  </dd>
-                  <dt class="col-sm-3">Respecto al Programa en General</dt>
-                  <dd class="col-sm-9">
-                    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-                  </dd>
-              </dl>
             </div>
           </div>
 
