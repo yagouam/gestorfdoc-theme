@@ -43,8 +43,8 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Cursos -->
-      <li class="nav-item">
-        <a class="nav-link" href="../cursos/index.html">
+      <li class="nav-item active">
+        <a class="nav-link" href="../cursos/">
           <i class="fas fa-fw fa-chalkboard"></i>
           <span>Cursos</span>
         </a>
@@ -52,7 +52,7 @@
 
       <!-- Nav Item - Ponentes -->
       <li class="nav-item">
-        <a class="nav-link" href="../ponentes/index.html">
+        <a class="nav-link" href="../ponentes/">
           <i class="fas fa-fw fa-chalkboard-teacher"></i>
           <span>Ponentes</span>
         </a>
@@ -60,7 +60,7 @@
 
       <!-- Nav Item - Asistentes -->
       <li class="nav-item">
-        <a class="nav-link" href="../asistentes/index.html">
+        <a class="nav-link" href="../asistentes/">
           <i class="fas fa-fw fa-user-graduate"></i>
           <span>Asistentes</span>
         </a>
@@ -68,15 +68,15 @@
 
       <!-- Nav Item - Gastos -->
       <li class="nav-item">
-        <a class="nav-link" href="../gastos/index.html">
+        <a class="nav-link" href="../gastos/">
           <i class="fas fa-fw fa-dollar-sign"></i>
           <span>Gastos</span>
         </a>
       </li>
 
       <!-- Nav Item - Correos -->
-      <li class="nav-item active">
-        <a class="nav-link" href="../correos/index.html">
+      <li class="nav-item">
+        <a class="nav-link" href="../correos/">
           <i class="fas fa-fw fa-envelope"></i>
           <span>Correos</span>
         </a>
@@ -84,7 +84,7 @@
 
       <!-- Nav Item - Encuestas -->
       <li class="nav-item">
-        <a class="nav-link" href="../encuestas/index.html">
+        <a class="nav-link" href="../encuestas/">
           <i class="fas fa-fw fa-poll"></i>
           <span>Encuestas</span>
         </a>
@@ -108,88 +108,88 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar static-top">
-    
-          <!-- Topbar Title -->
-          <h5 class="mb-0 font-weight-light text-dark">Correos</h5>
-      
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
-      
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-dark" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
-      
-            <!-- Nav Item - Alerts -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3+</span>
-              </a>
-      
-            <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
         <!-- End of Topbar -->
+
+        <!-- Page Navigation -->
+        <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="ponentes.html">Ponentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="asistentes.html">Asistentes</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="correos.html">Correos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gastos.html">Gastos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="encuestas.html">Encuestas</a>
+              </li>
+            </ul>
+            <button class="btn btn-light">
+              <i class="fas fa-fw fa-clone"></i> Replicar Curso
+            </button>
+          </div>
+        </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
           
           <!-- DataTales Example -->
           <div class="card shadow my-4">
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center  justify-content-between">
 
-              <h6>Plantillas de correos</h6>
+            <!-- Asistentes Filter -->
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
 
-              <a href="crear.html" class="btn btn-primary btn-icon-split">
-                <span class="icon text-white-50">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span class="text">Nueva Plantilla de Correo</span>
-              </a>
+              <h6>Lista de Plantillas de Correos</h6>
+
+              <!-- Añadir Ponente -->
+              <div class="button-group">
+                <a href="#" class="btn btn-primary btn-icon-split">
+                  <span class="icon text-white-50">
+                  <i class="fas fa-user-plus"></i>
+                  </span>
+                  <span class="text">Añadir Plantilla de Correo</span>
+                </a>
+              </div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="dataTable">
                   <thead>
                     <tr>
                       <th>Código</th>
                       <th>Nombre</th>
                       <th>Caso de uso</th>
+                      <th>Estado</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row">1234</th>
-                      <td><a href="detalle.html">Confirmación de Inscripción</a></td>
-                      <td>Correo que se envía a todos los asistentes para confirmar la inscripción.</td>
+                      <td><a href="../correos/detalle.html">Confirmación de Inscripción</a></td>
+                      <td>Correo que se envía a todos los asistentes válidos para confirmar la inscripción.</td>
+                      <td class="border-left-success">Enviado</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1234</th>
+                      <td><a href="../correos/detalle.html">Aviso Comienzo de Curso</a></td>
+                      <td>Correo que se envía a todos los asistentes que han confirmado para avisar del comienzo de curso.</td>
+                      <td><button class="btn btn-primary">Enviar</button></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+
             </div>
           </div>
           
@@ -248,6 +248,9 @@
 
   <!-- Custom scripts for all pages-->
   <script src="../../../js/sb-admin-2.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../../../js/lauam__custom.min.js"></script>
 
   <!-- Page level plugins -->
   <script src="../../../vendor/datatables/jquery.dataTables.min.js"></script>
