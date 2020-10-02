@@ -128,8 +128,12 @@
               <li class="nav-item active">
                 <a class="nav-link" href="asistentes.html">Asistentes</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="correos.html">Correos</a>
+              <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="correos.html" role="button" aria-haspopup="true" aria-expanded="false">Correos</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="correos.html">Plantillas</a>
+                  <a class="dropdown-item" href="correos_envio.html">Realizar Envío</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="gastos.html">Gastos</a>
@@ -162,10 +166,7 @@
                   <a class="nav-link" id="pills-selected-tab" data-toggle="pill" href="#pills-selected" role="tab" aria-controls="pills-selected" aria-selected="false">Selección</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="pills-attendance-tab" data-toggle="pill" href="#pills-attendance" role="tab" aria-controls="pills-attendance" aria-selected="false">¿¿ Asistencia ??</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="pills-certificates-tab" data-toggle="pill" href="#pills-certificates" role="tab" aria-controls="pills-certificates" aria-selected="false">Certificados</a>
+                  <a class="nav-link" id="pills-attendance-tab" data-toggle="pill" href="#pills-attendance" role="tab" aria-controls="pills-attendance" aria-selected="false">Asistencia</a>
                 </li>
               </ul>
 
@@ -197,7 +198,7 @@
                   <tbody>
                     <tr>
                       <th scope="row"><a href="inscripcion.html">1234</a></th>
-                      <td><a href="#">José Menese</a></td>
+                      <td><a href="../asistentes/detalle.html">José Menese</a></td>
                       <td><a href="#">jose.menese@uam.es</a></td>
                       <td><a href="tel:+"><i class="fas fa-phone"></i> 678901230</a></td>
                       <td>Profesorado</td>
@@ -205,7 +206,7 @@
                     </tr>
                     <tr>
                       <th scope="row"><a href="inscripcion.html">1234</a></th>
-                      <td><a href="#">Marina Heredia</a></td>
+                      <td><a href="../asistentes/detalle.html">Marina Heredia</a></td>
                       <td><a href="#">marina.heredia@uam.es</a></td>
                       <td><a href="tel:+"><i class="fas fa-phone"></i> 678123456</a></td>
                       <td>Filosofía y Letras</td>
@@ -225,7 +226,6 @@
                       <th>Asistencia</th>
                       <th>A. Final</th>
                       <th>Tarea ECTS</th>
-                      <th>Envío Certificado</th>
                       <th>Estado Final</th>
                     </tr>
                   </thead>
@@ -240,8 +240,7 @@
                       </td>
                       <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
                       <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
-                      <td>0000-00-00</td>
-                      <td>Realizado</td>
+                      <td class="border-left-success">Realizado</td>
                     </tr>
                     <tr>
                       <th scope="row"><a href="inscripcion.html">2345</a></th>
@@ -253,8 +252,7 @@
                       </td>
                       <td class="text-center"><i class="fas fa-times-circle text-danger"></i></td>
                       <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
-                      <td>0000-00-00</td>
-                      <td>Realizado</td>
+                      <td class="border-left-danger">No Realizado</td>
                     </tr>
                   </tbody>
                 </table>
@@ -267,11 +265,11 @@
                     <tr>
                       <th>Inscripción</th>
                       <th>Asistente</th>
+                      <th>Categoría</th>
                       <th>Seleccionado</th>
                       <th>Confirmado</th>
                       <th>Otras Ediciones</th>
-                      <th>ECTS Obtenido</th>
-                      <th>ECTS Metodología</th>
+                      <th><a href="#" data-toggle="tooltip" title="Obtenido / Metodología">ECTS</a></th>
                       <th>Inscripciones Realizadas</th>
                       <th>Veces seleccinado</th>
                       <th>Último curso</th>
@@ -280,24 +278,24 @@
                   <tbody>
                     <tr>
                       <th scope="row"><a href="inscripcion.html">1234</a></th>
-                      <td>José Menese</td>
+                      <td><a href="../asistentes/detalle.html">José Menese</a></td>
+                      <td>PDI</td>
                       <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
                       <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
                       <td></td>
-                      <td>11.00</td>
-                      <td>7.5</td>
+                      <td>11.00 / 7.5</td>
                       <td>47</td>
                       <td>20</td>
                       <td>1</td>
                     </tr>
                     <tr>
                       <th scope="row"><a href="inscripcion.html">2345</a></th>
-                      <td>Marina Heredia</td>
+                      <td><a href="../asistentes/detalle.html">Marina Heredia</a></td>
+                      <td>PAS</td>
                       <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
                       <td class="text-center"><i class="fas fa-times-circle text-danger"></i></td>
                       <td>En Espera (-994-1138-)</td>
-                      <td>16.00</td>
-                      <td>13.00</td>
+                      <td>16.00 / 13.00</td>
                       <td>105</td>
                       <td>32</td>
                       <td>0</td>
@@ -321,7 +319,7 @@
                   <tbody>
                     <tr>
                       <th scope="row"><a href="inscripcion.html">1234</a></th>
-                      <td>José Menese</td>
+                      <td><a href="../asistentes/detalle.html">José Menese</a></td>
                       <td>
                         <div class="progress">
                           <div class="progress-bar bg-success w-100" aria-valuemin="0" aria-valuemax="100">4/4</div>
@@ -332,7 +330,7 @@
                     </tr>
                     <tr>
                       <th scope="row"><a href="inscripcion.html">2345</a></th>
-                      <td>Marina Heredia</td>
+                      <td><a href="../asistentes/detalle.html">Marina Heredia</a></td>
                       <td>
                         <div class="progress">
                           <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">3/4</div>

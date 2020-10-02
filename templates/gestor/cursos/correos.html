@@ -128,8 +128,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="asistentes.html">Asistentes</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="correos.html">Correos</a>
+              <li class="nav-item dropdown no-arrow active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="correos.html" role="button" aria-haspopup="true" aria-expanded="false">Correos</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="correos.html">Plantillas</a>
+                  <a class="dropdown-item" href="correos_envio.html">Realizar Envío</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="gastos.html">Gastos</a>
@@ -181,18 +185,17 @@
                       <th scope="row">1234</th>
                       <td><a href="../correos/detalle.html">Confirmación de Inscripción</a></td>
                       <td>Correo que se envía a todos los asistentes válidos para confirmar la inscripción.</td>
-                      <td class="border-left-success">Enviado</td>
+                      <td class="border-left-success">Enviado 20/10/2020</td>
                     </tr>
                     <tr>
                       <th scope="row">1234</th>
                       <td><a href="../correos/detalle.html">Aviso Comienzo de Curso</a></td>
                       <td>Correo que se envía a todos los asistentes que han confirmado para avisar del comienzo de curso.</td>
-                      <td><button class="btn btn-primary">Enviar</button></td>
+                      <td>No Enviado</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-
             </div>
           </div>
           

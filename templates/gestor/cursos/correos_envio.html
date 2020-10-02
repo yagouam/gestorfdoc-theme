@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GESTOR - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="../../../css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="../../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">GESTOR</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Cursos -->
+      <li class="nav-item active">
+        <a class="nav-link" href="../cursos/">
+          <i class="fas fa-fw fa-chalkboard"></i>
+          <span>Cursos</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Ponentes -->
+      <li class="nav-item">
+        <a class="nav-link" href="../ponentes/">
+          <i class="fas fa-fw fa-chalkboard-teacher"></i>
+          <span>Ponentes</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Asistentes -->
+      <li class="nav-item">
+        <a class="nav-link" href="../asistentes/">
+          <i class="fas fa-fw fa-user-graduate"></i>
+          <span>Asistentes</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Gastos -->
+      <li class="nav-item">
+        <a class="nav-link" href="../gastos/">
+          <i class="fas fa-fw fa-dollar-sign"></i>
+          <span>Gastos</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Correos -->
+      <li class="nav-item">
+        <a class="nav-link" href="../correos/">
+          <i class="fas fa-fw fa-envelope"></i>
+          <span>Correos</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Encuestas -->
+      <li class="nav-item">
+        <a class="nav-link" href="../encuestas/">
+          <i class="fas fa-fw fa-poll"></i>
+          <span>Encuestas</span>
+        </a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <iframe src="topbar_curso.html" width="100%" height="60px" style="border: none;"></iframe>
+        <!-- End of Topbar -->
+
+        <!-- Page Navigation -->
+        <nav class="pl-5 navbar navbar-expand-lg navbar-dark bg-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="detalle.html">Detalle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ponentes.html">Ponentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="asistentes.html">Asistentes</a>
+              </li>
+              <li class="nav-item dropdown no-arrow active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="correos.html" role="button" aria-haspopup="true" aria-expanded="false">Correos</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="correos.html">Plantillas</a>
+                  <a class="dropdown-item" href="correos_envio.html">Realizar Envío</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gastos.html">Gastos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="encuestas.html">Feedback</a>
+              </li>
+            </ul>
+            <button class="btn btn-light">
+              <i class="fas fa-fw fa-clone"></i> Replicar Curso
+            </button>
+          </div>
+        </nav>
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+          <form>
+
+            <!-- Content Row -->
+          <div class="card shadow my-4">
+            <div class="card-header py-3">
+              <div class="row">
+                <h6 class="col-9 m-0 font-weight-bold text-dark">Paso 1: <small class="muted">Seleccionar plantilla</small></h6>
+              </div>
+            </div>
+            <div class="collapse show" id="collapseCardPaso2">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" >
+                    <thead>
+                      <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Caso de uso</th>
+                        <th>Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                          <div class="custom-control custom-radio">
+                            <input type="radio" name="correo" class="custom-control-input" id="correo01">
+                            <label class="custom-control-label" for="correo01">1234</label>
+                          </div>
+                        </th>
+                        <td><a href="../correos/detalle.html">Confirmación de Inscripción</a></td>
+                        <td>Correo que se envía a todos los asistentes válidos para confirmar la inscripción.</td>
+                        <td class="border-left-success">Enviado 20/10/2020</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="custom-control custom-radio">
+                            <input type="radio" name="correo" class="custom-control-input" id="correo02">
+                            <label class="custom-control-label" for="correo02">1235</label>
+                          </div>
+                        </th>
+                        <td><a href="../correos/detalle.html">Aviso Comienzo de Curso</a></td>
+                        <td>Correo que se envía a todos los asistentes que han confirmado para avisar del comienzo de curso.</td>
+                        <td>No Enviado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#collapseCardPaso3" class="btn btn-primary mx-auto" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                Siguiente
+              </a>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="card shadow my-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
+                <h6 class="col-9 m-0 font-weight-bold text-dark">Paso 2: <small class="muted">Seleccionar destinatarios</small></h6>
+            </div>
+            <div class="card-body">
+              <!-- Selección automática -->
+              <div class="row mb-4 pl-3">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-light">Añadir / Quitar</button>
+                  <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                    <a class="dropdown-item" href="#"><i class="fas fa-check-circle"></i> Todos</a>
+                    <a class="dropdown-item" href="#">No confirmados</a>
+                    <a class="dropdown-item" href="#">ECTS final</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="table-responsive tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <table class="table table-bordered table-sm" id="dataTable">
+                  <thead>
+                    <tr>
+                      <th>Asistente</th>
+                      <th>email</th>
+                      <th>Facultad</th>
+                      <th>Categoría</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" name="destinatario" class="custom-control-input" id="destinatario01">
+                          <label class="custom-control-label" for="destinatario01"><a href="../asistentes/detalle.html">José Menese</a></label>
+                        </div>
+                      </th>
+                      <td><a href="#">jose.menese@uam.es</a></td>
+                      <td>Profesorado</td>
+                      <td>PDI</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" name="destinatario" class="custom-control-input" id="destinatario02">
+                          <label class="custom-control-label" for="destinatario02"><a href="../asistentes/detalle.html">Marina Heredia</a></label>
+                        </div>
+                      </th>
+                      <td><a href="#">marina.heredia@uam.es</a></td>
+                      <td>Filosofía y Letras</td>
+                      <td>PAS</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p><small><a href="#">Ver 70 destinatarios seleccionados</a></small></p>
+            </div>
+            <div class="card-footer">
+              <a href="#collapseCardPaso3" class="btn btn-primary mx-auto" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                Siguiente
+              </a>
+            </div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="card shadow my-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
+              <h6 class="col-9 m-0 font-weight-bold text-dark">Paso 3: <small class="muted">Revisar</small></h6>
+            </div>
+            <div class="card-body">
+              <dl class="row">
+                <dt class="col-sm-2">Asunto</dt>
+                <dd class="col-sm-10">
+                  <div class="p-2 rounded border bg-light">
+                    Confirmación de inscripción para el curso Bases para la creación de equipos de trabajo efectivos
+                  </div>
+                </dd>
+                <dt class="col-sm-2">Cuerpo del mensaje</dt>
+                <dd class="col-sm-10">
+                  <div class="p-2 rounded border bg-light">
+                    <p>Hola <b>John Doe</b>. </p>
+                    <p>Necesitamos confirmar tu inscripción para el curso Bases para la creación de equipos de trabajo efectivos que comenzará el día 01/01/2021</p>
+                    <p>Por favor <a class="btn btn-link disabled p-0" href="#">pincha aquí</a> para confirmar tu inscripción</p>
+                  </div>
+                  <small><a href="#">Ver cuerpo del mensaje genérico (sin datos de destinatario)</a></small>
+                </dd>
+                <dt class="col-sm-2">Adjuntos</dt>
+                <dd class="col-sm-10">
+                  <em class="text-muted">Sin adjuntos</em>
+                </dd>
+                <dt class="col-sm-2">Destinatarios <span class="badge badge-secondary badge-counter">70</span></dt>
+                <dd class="col-sm-10">Jesus.robles@uam.es ; felixdaniel.martinez@uam.es ; javier.fraile@uam.es ; beatriz.mendez@uam.es ; laura.andresd@uam.es ; sara.higueras@uam.es ; rosamaria.esteban@uam.es ; jorge.tomas@uam.es ; nadia.pinedo@uam.es ; elisa.carrasco@uam.es ; ana.gonzalezn@uam.es ; yolanda.garcia@uam.es ; sara.cembellin@uam.es ; pablo.navarro@uam.es ; luis.gordo@uam.es ; irene.megia@uam.es ; laila.taouati@uam.es ; guillermo.ponz@uam.es ; mar.alonso@uam.es ; alberto.sanchezgonzalez@uam.es ; manuel.quintana@uam.es ; esmeralda.alonso@uam.es ; miguel.rebollo@uam.es ; mercedes.rodriguez@uam.es ; miriam.marco@uam.es ; luis.toledo@uam.es ; lucia.beltran@uam.es ; anna.tudela@uam.es ; rgutierrezgonzalez@salud.madrid.org ; eva.villaver@uam.es ; jorge.bedia@uam.es ; carolina.belver@uam.es ; pedro.romero@uam.es ; mariat.mateo@uam.es ; anaisabel.gonzalez@uam.es ; angeles.sanchez@uam.es ; claudia.benito@uam.es ; josemaria.moya@uam.es ; luisa.antonpacheco@uam.es ; alicia.montero@uam.es ; gladis.pereira@uam.es ; jaime.carbajo@uam.es ; pablo.lopezj@uam.es ; gemma.gordo@uam.es ; mjose.alvarez@uam.es ; monica.camacho@uam.es ; marta.felis@uam.es ; carlos.fernandez@uam.es ; tamara.esquivel@uam.es ; fernando.escribanom@uam.es ; elena.pereze@uam.es ; nieves.marin@uam.es ; sofia.pastor@uam.es ; ines.merino@uam.es ; laura.torres@uam.es ; joseluis.torrecilla@uam.es ; carmen.minuesa@uam.es ; irene.morenom@uam.es ; raquel.fornieles@uam.es ; cristina.bravo@uam.es ; marta.quintanilla@uam.es ; juan.velarde@inv.uam.es ; boris.vazquez@uam.es ; pablo.baladron@uam.es ; julia.yago@uam.es ; elena.solesio@uam.es ; jorge.agullo@uam.es ; rafael.innigo@estudiante.uam.es ; isabel.perezs@uam.es ; clara.alvarez@uam.es ;</dd>
+              </dl>
+            </div>
+            <div class="card-footer">
+              <a href="#collapseCardPaso3" class="btn btn-primary mx-auto" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                Enviar
+              </a>
+            </div>
+          </div>
+          </form>
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="../../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../../../js/sb-admin-2.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../../../js/lauam__custom.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../../../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="../../../js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>

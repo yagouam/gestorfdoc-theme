@@ -29,7 +29,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -161,17 +161,23 @@
           <div class="card shadow mb-4">
             <div class="card-header py-3 mb-4 d-sm-flex align-items-center justify-content-between">
               <div class="d-inline-flex w-50 d-sm-flex">
-                <select class="custom-select mr-2">
-                  <option value="1">Formacion Predoctoral</option>
-                  <option value="2">Título de Experto</option>
-                  <option value="3">Formacion Inicial</option>
-                  <option value="4">Formacion Continua</option>
-                </select>
-                <select class="custom-select mr-2 w-25">
+                <select class="custom-select mx-2 w-25">
                   <option value="1">2020/21</option>
                   <option value="2">2019/20</option>
                   <option value="3">2018/19</option>
                 </select>
+                <!-- Nav bar para filtros -->
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-fdoc-tab" data-toggle="pill" href="#pills-fdoc" role="tab" aria-controls="pills-fdoc" aria-selected="true">FDOC</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-tedu-tab" data-toggle="pill" href="#pills-tedu" role="tab" aria-controls="pills-tedu" aria-selected="false">TEDU</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-tedmu-tab" data-toggle="pill" href="#pills-tedmu" role="tab" aria-controls="pills-tedmu" aria-selected="false">TEDMU</a>
+                  </li>
+                </ul>
               </div>
               <a href="crear.html" class="btn btn-primary btn-icon-split">
                 <span class="icon text-white-50">
@@ -188,169 +194,169 @@
                       <th>Código</th>
                       <th>Título</th>
                       <th>Comienza</th>
-                      <th><a href="#" data-toggle="tooltip" data-placement="left" title="Solicitudes / Confirmados / Asistentes">Asistencia</a></th>
+                      <th><a href="#" data-toggle="tooltip" data-placement="left" title="Solicitudes / Confirmados / Necesidad de Confirmación">Asistencia</a></th>
                       <th>Estado</th>
                       <th>Pagos</th>
-                      <th>Certificados</th>
+                      <th>Área</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">1369</th>
+                      <th scope="row">1369 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Competencia digital del profesorado universitario. Creación de R...</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Competencia digital del profesorado universitario. Creación de R...</a>
                       </td>
                       <td>03/04/2020</td>
-                      <td>588 / 588 / 0</td>
+                      <td>588/588/0</td>
                       <td class="border-left-success">En curso</td>
                       <td><span class="badge badge-success">Pagado</span></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-success">Competencia Digital</td>
                     </tr>
                     <tr>
-                      <th scope="row">1370</th>
+                      <th scope="row">1370 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Competencia digital del profesorado universitario. Creación de R...</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Competencia digital del profesorado universitario. Creación de R...</a>
                       </td>
                       <td>22/06/2020</td>
-                      <td>102 / 2 / 0</td>
+                      <td>102/2/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-danger">Desarrollo docente general e investigación</td>
                     </tr>
                     <tr>
-                      <th scope="row">1393</th>
+                      <th scope="row">1393 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a>
                       </td>
                       <td>24/06/2020</td>
-                      <td>31 / 3 / 0</td>
+                      <td>31/3/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-info">Especial Cursos Moodle</td>
                     </tr>
                     <tr>
-                      <th scope="row">1397</th>
+                      <th scope="row">1397 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Edición de recursos educativos audiovisuales: tratamiento de imagenes</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Edición de recursos educativos audiovisuales: tratamiento de imagenes</a>
                       </td>
                       <td>06/07/2020</td>
-                      <td>26 / 0 / 0</td>
+                      <td>26/0/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td><span class="badge badge-success">Pagado</span></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-secondary">Metodologías docentes</td>
                     </tr>
                     <tr>
-                      <th scope="row">1398</th>
+                      <th scope="row">1398 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Edición de recursos educativos audiovisuales: tratamiento de imagenes</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Edición de recursos educativos audiovisuales: tratamiento de imagenes</a>
                       </td>
                       <td>07/07/2020</td>
-                      <td>311 / 35 / 0</td>
+                      <td>311/35/0</td>
                       <td class="border-left-success">En curso</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-dark">Tecnologías educativas para la docencia</td>
                     </tr>
                     <tr>
-                      <th scope="row">1400</th>
+                      <th scope="row">1400 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Competencia digital del profesorado universitario. Herramientas digitales</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Competencia digital del profesorado universitario. Herramientas digitales</a>
                       </td>
                       <td>09/07/2020</td>
-                      <td>27 / 2 / 0</td>
+                      <td>27/2/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-dark">Tecnologías educativas para la docencia</td>
                     </tr>
                     <tr>
-                      <th scope="row">1401</th>
+                      <th scope="row">1401 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Competencia digital del profesorado universitario. Herramientas digitales</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Competencia digital del profesorado universitario. Herramientas digitales</a>
                       </td>
                       <td>09/07/2020</td>
-                      <td>427 / 424 / 0</td>
+                      <td>427/424/0</td>
                       <td class="border-left-success">En curso</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-secondary">Metodologías docentes</td>
                     </tr>
                     <tr>
-                      <th scope="row">1402</th>
+                      <th scope="row">1402 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Competencia digital del profesorado universitario. Herramientas digitales</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Competencia digital del profesorado universitario. Herramientas digitales</a>
                       </td>
                       <td>09/07/2020</td>
-                      <td>0 / 0 / 0</td>
+                      <td>0/0/0</td>
                       <td>Previsto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-info">Especial Cursos Moodle</td>
                     </tr>
                     <tr>
-                      <th scope="row">1392</th>
+                      <th scope="row">1392 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Evaluación con cuestionarios en Moodle. CURSO ON-LINE</a>
                       </td>
                       <td>22/07/2020</td>
-                      <td>237 / 227 / 0</td>
+                      <td>237/227/0</td>
                       <td class="border-left-success">En curso</td>
                       <td><span class="badge badge-success">Pagado</span></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-danger">Desarrollo docente general e investigación</td>
                     </tr>
                     <tr>
-                      <th scope="row">1405</th>
+                      <th scope="row">1405 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Gestión Inteligente del Tiempo para Docentes. (Plataforma Teams)</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Gestión Inteligente del Tiempo para Docentes. (Plataforma Teams)</a>
                       </td>
                       <td>15/09/2020</td>
-                      <td>73 / 0 / 0</td>
+                      <td>73/0/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-danger">Desarrollo docente general e investigación</td>
                     </tr>
                     <tr>
-                      <th scope="row">1403</th>
+                      <th scope="row">1403 <span class="badge badge-secondary">20</span> </th>
                       <td>
-                        <a href="detalle.html">Docencia en línea y propiedad intelectual: aspectos prácticos</a>
+                        <a href="detalle.html" class="lauam_courseListAlias">Docencia en línea y propiedad intelectual: aspectos prácticos</a>
                       </td>
                       <td>18/09/2020</td>
-                      <td>30 / 0 / 0</td>
+                      <td>30/0/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-success">Competencia Digital</td>
                     </tr>
                     <tr>
-                      <th scope="row">1407</th>
-                      <td><a href="detalle.html">¿Funcionan bien mis actividades docentes? Bases para el análisis</a></td>
+                      <th scope="row">1407 <span class="badge badge-secondary">20</span> </th>
+                      <td><a href="detalle.html" class="lauam_courseListAlias">¿Funcionan bien mis actividades docentes? Bases para el análisis</a></td>
                       <td>22/09/2020</td>
-                      <td>56 / 0 / 0</td>
+                      <td>56/0/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-success">Competencia Digital</td>
                     </tr>
                     <tr>
-                      <th scope="row">1420</th>
-                      <td><a href="detalle.html">Collaborative learning. (On line classes with Teams)</a></td>
+                      <th scope="row">1420 <span class="badge badge-secondary">20</span> </th>
+                      <td><a href="detalle.html" class="lauam_courseListAlias">Collaborative learning. (On line classes with Teams)</a></td>
                       <td>22/09/2020</td>
-                      <td>29 / 0 / 0</td>
+                      <td>29/0/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-success">Competencia Digital</td>
                     </tr>
                     <tr>
-                      <th scope="row">1411</th>
-                      <td><a href="detalle.html">Iniciación a Moodle. (Curso presencial en aula)</a></td>
+                      <th scope="row">1411 <span class="badge badge-secondary">20</span> </th>
+                      <td><a href="detalle.html" class="lauam_courseListAlias">Iniciación a Moodle. (Curso presencial en aula)</a></td>
                       <td>29/09/2020</td>
-                      <td>5 / 0 / 0</td>
+                      <td>5/0/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-secondary">Metodologías docentes</td>
                     </tr>
                     <tr>
-                      <th scope="row">1412</th>
-                      <td><a href="detalle.html">Pon en marcha tu curso Moodle. (Curso presencial en aula)</a></td>
+                      <th scope="row">1412 <span class="badge badge-secondary">20</span> </th>
+                      <td><a href="detalle.html" class="lauam_courseListAlias">Pon en marcha tu curso Moodle. (Curso presencial en aula)</a></td>
                       <td>30/09/2020</td>
-                      <td>4 / 0 / 0</td>
+                      <td>4/0/0</td>
                       <td class="border-left-warning">Abierto</td>
                       <td></td>
-                      <td><span class="badge badge-danger">No Generado</a></span></td>
+                      <td class="border-left-secondary">Metodologías docentes</td>
                     </tr>
                   </tbody>
                 </table>
