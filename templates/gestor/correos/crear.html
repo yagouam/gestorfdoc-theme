@@ -191,7 +191,7 @@
             <div class="col-sm-12">
               <div class="card my-4">
                 <div class="card-header">
-                  Asunto y cuerpo del correo
+                  Correo Personalizado (con datos de usuario)
                 </div>
                 <div class="card-body">
                   <dl class="row">
@@ -214,14 +214,38 @@
                         </small>
                       </div>
                     </dd>
-                    <dt class="col-sm-2">Adjuntos</dt>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card my-4">
+                <div class="card-header">
+                  Correo Genérico (sin datos de usuario)
+                </div>
+                <div class="card-body">
+                  <dl class="row">
+                    <dt class="col-sm-2">Asunto</dt>
                     <dd class="col-sm-10">
-                      <a href="#" class="btn btn-primary btn-icon-split">
-                        <span class="icon text-white-50">
-                          <i class="fas fa-plus"></i>
-                        </span>
-                        <span class="text">Añadir Adjunto</span>
-                      </a>
+                      <div class="form-group">
+                        <input class="form-control" type="text" name="nombre" id="nombre">
+                        <small id="nombreExplanation" class="form-text text-muted">
+                          Máximo 50 caracteres
+                        </small>
+                      </div>
+                    </dd>
+                    <div class="w-100"></div>
+                    <dt class="col-sm-2">Cuerpo del mensaje</dt>
+                    <dd class="col-sm-10">
+                      <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <small id="nombreExplanation" class="form-text text-muted">
+                          Máximo 500 caracteres
+                        </small>
+                      </div>
                     </dd>
                   </dl>
                 </div>

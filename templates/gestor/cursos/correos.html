@@ -120,26 +120,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="detalle.html">Detalle</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ponentes.html">Ponentes</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="asistentes.html">Asistentes</a>
               </li>
-              <li class="nav-item dropdown no-arrow active">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="correos.html" role="button" aria-haspopup="true" aria-expanded="false">Correos</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="correos.html">Plantillas</a>
-                  <a class="dropdown-item" href="correos_envio.html">Realizar Envío</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gastos.html">Gastos</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="correos.html">Correos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="encuestas.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="detalle.html">Detalle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ponentes.html">Ponentes</a>
               </li>
             </ul>
             <button class="btn btn-light">
@@ -157,15 +150,15 @@
             <!-- Asistentes Filter -->
             <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
 
-              <h6>Lista de Plantillas de Correos</h6>
+              <h6>Envíos realizados</h6>
 
               <!-- Añadir Ponente -->
               <div class="button-group">
-                <a href="#" class="btn btn-primary btn-icon-split">
+                <a href="correos_envio.html" class="btn btn-primary btn-icon-split">
                   <span class="icon text-white-50">
-                  <i class="fas fa-user-plus"></i>
+                  <i class="fas fa-paper-plane"></i>
                   </span>
-                  <span class="text">Añadir Plantilla de Correo</span>
+                  <span class="text">Nuevo envío</span>
                 </a>
               </div>
             </div>
@@ -176,22 +169,36 @@
                     <tr>
                       <th>Código</th>
                       <th>Nombre</th>
-                      <th>Caso de uso</th>
-                      <th>Estado</th>
+                      <th>Destinatarios</th>
+                      <th>Fecha de envío</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row">1234</th>
                       <td><a href="../correos/detalle.html">Confirmación de Inscripción</a></td>
-                      <td>Correo que se envía a todos los asistentes válidos para confirmar la inscripción.</td>
-                      <td class="border-left-success">Enviado 20/10/2020</td>
+                      <td>
+                        <a class="btn btn-link" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Ver 3 destinatarios
+                        </a>
+                        <div class="collapse" id="collapseExample1">
+                          Jesus.robles@uam.es, felixdaniel.martinez@uam.es, javier.fraile@uam.es
+                        </div>
+                      </td>
+                      <td class="border-left-success">20/10/2020</td>
                     </tr>
                     <tr>
                       <th scope="row">1234</th>
                       <td><a href="../correos/detalle.html">Aviso Comienzo de Curso</a></td>
-                      <td>Correo que se envía a todos los asistentes que han confirmado para avisar del comienzo de curso.</td>
-                      <td>No Enviado</td>
+                      <td>
+                        <a class="btn btn-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Ver 70 destinatarios
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                          Jesus.robles@uam.es, felixdaniel.martinez@uam.es, javier.fraile@uam.es, beatriz.mendez@uam.es, laura.andresd@uam.es, sara.higueras@uam.es, rosamaria.esteban@uam.es, jorge.tomas@uam.es, nadia.pinedo@uam.es, elisa.carrasco@uam.es, ana.gonzalezn@uam.es, yolanda.garcia@uam.es, sara.cembellin@uam.es, pablo.navarro@uam.es, luis.gordo@uam.es, irene.megia@uam.es, laila.taouati@uam.es, guillermo.ponz@uam.es, mar.alonso@uam.es, alberto.sanchezgonzalez@uam.es, manuel.quintana@uam.es, esmeralda.alonso@uam.es, miguel.rebollo@uam.es, mercedes.rodriguez@uam.es, miriam.marco@uam.es, luis.toledo@uam.es, lucia.beltran@uam.es, anna.tudela@uam.es, rgutierrezgonzalez@salud.madrid.org, eva.villaver@uam.es, jorge.bedia@uam.es, carolina.belver@uam.es, pedro.romero@uam.es, mariat.mateo@uam.es, anaisabel.gonzalez@uam.es, angeles.sanchez@uam.es, claudia.benito@uam.es, josemaria.moya@uam.es, luisa.antonpacheco@uam.es, alicia.montero@uam.es, gladis.pereira@uam.es, jaime.carbajo@uam.es, pablo.lopezj@uam.es, gemma.gordo@uam.es, mjose.alvarez@uam.es, monica.camacho@uam.es, marta.felis@uam.es, carlos.fernandez@uam.es, tamara.esquivel@uam.es, fernando.escribanom@uam.es, elena.pereze@uam.es, nieves.marin@uam.es, sofia.pastor@uam.es, ines.merino@uam.es, laura.torres@uam.es, joseluis.torrecilla@uam.es, carmen.minuesa@uam.es, irene.morenom@uam.es, raquel.fornieles@uam.es, cristina.bravo@uam.es, marta.quintanilla@uam.es, juan.velarde@inv.uam.es, boris.vazquez@uam.es, pablo.baladron@uam.es, julia.yago@uam.es, elena.solesio@uam.es, jorge.agullo@uam.es, rafael.innigo@estudiante.uam.es, isabel.perezs@uam.es, clara.alvarez@uam.es
+                        </div>
+                      </td>
+                      <td class="border-left-success">20/12/2020</td>
                     </tr>
                   </tbody>
                 </table>

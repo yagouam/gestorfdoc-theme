@@ -185,7 +185,7 @@
             <div class="col-sm-12">
               <div class="card my-4">
                 <div class="card-header">
-                  Asunto y cuerpo del correo
+                  Correo personalizado (con datos de usuario)
                 </div>
                 <div class="card-body">
                   <dl class="row">
@@ -203,15 +203,40 @@
                         <p>Por favor <a href="#">pincha aquí</a> para confirmar tu inscripción</p>
                       </div>
                     </dd>
-                    <dt class="col-sm-2">Adjuntos</dt>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card my-4">
+                <div class="card-header">
+                  Correo genérico (sin datos de usuario)
+                </div>
+                <div class="card-body">
+                  <dl class="row">
+                    <dt class="col-sm-2">Asunto</dt>
                     <dd class="col-sm-10">
-                      <em class="text-muted">Sin adjuntos</em>
+                      <div class="p-2 rounded border bg-light">
+                        Confirmación de inscripción para el curso <b>%%nombre_curso%%</b>
+                      </div>
+                    </dd>
+                    <dt class="col-sm-2">Cuerpo del mensaje</dt>
+                    <dd class="col-sm-10">
+                      <div class="p-2 rounded border bg-light">
+                        <p>Hola.
+                        <p>Necesitamos confirmar tu inscripción para el curso <b>%%nombre_curso%%</b> que comenzará el día <b>%%start_date%%.</b></p>
+                        <p>Por favor <a href="#">pincha aquí</a> para confirmar tu inscripción</p>
+                      </div>
                     </dd>
                   </dl>
                 </div>
               </div>
             </div>
           </div>
+
         </form>
           
         </div>
