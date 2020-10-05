@@ -129,7 +129,7 @@
                 <a class="nav-link" href="encuestas.html">Feedback</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="detalle.html">Detalle</a>
+                <a class="nav-link" href="detalle.html">Detalle</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="ponentes.html">Ponentes</a>
@@ -143,70 +143,109 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-          
-          <!-- DataTales Example -->
+          <form>
+
+          <!-- Paso 1 -->
           <div class="card shadow my-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
+                <h6 class="col-9 m-0 font-weight-bold text-dark">Paso 1: <small class="muted">Seleccionar asistentes</small></h6>
+            </div>
+            <div class="card-body">
+              <!-- Selección automática -->
+              <div class="row">
+                <div class="col-md-2">
+                  <h6 class="text-dark">Filtros:</h6>
+                  <ul class="list-unstyled pl-2">
+                    <li><a class="text-secondary" href="#"><i class="fas fa-check-circle"></i>No seleccionados</a></li>
+                    <li><a class="text-secondary" href="#">No confirmados</a></li>
+                    <li><a class="text-secondary" href="#">ECTS</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-10">
 
-            <!-- Asistentes Filter -->
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
+                  <div class="table-responsive tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <table class="table table-bordered table-sm" id="dataTable">
+                      <thead>
+                        <tr>
+                          <th>Asistente</th>
+                          <th>email</th>
+                          <th>Facultad</th>
+                          <th>Categoría</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" name="destinatario" class="custom-control-input" id="destinatario01" checked>
+                              <label class="custom-control-label" for="destinatario01"><a href="../asistentes/detalle.html">José Menese</a></label>
+                            </div>
+                          </th>
+                          <td><a href="#">jose.menese@uam.es</a></td>
+                          <td>Profesorado</td>
+                          <td>PDI</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" name="destinatario" class="custom-control-input" id="destinatario02">
+                              <label class="custom-control-label" for="destinatario02"><a href="../asistentes/detalle.html">Marina Heredia</a></label>
+                            </div>
+                          </th>
+                          <td><a href="#">marina.heredia@uam.es</a></td>
+                          <td>Filosofía y Letras</td>
+                          <td>PAS</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
 
-              <!-- Nav bar para filtros -->
-              <ul class="nav nav-pills mb-3">
-                <li class="nav-item">
-                  <a class="nav-link active" href="asistentes.html">Datos Personales</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="asistentes_seleccion.html">Selección</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="asistentes_asistencia.html">Asistencia</a>
-                </li>
-              </ul>
+                  <small><a class="text-secondary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Ver 4 destinatarios seleccionados
+                  </a></small>
+                  <div class="collapse" id="collapseExample1">
+                    Alberto@uam.es, Jesus.robles@uam.es, felixdaniel.martinez@uam.es, javier.fraile@uam.es
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#collapseCardPaso3" class="btn btn-primary mx-auto" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                Siguiente
+              </a>
+            </div>
+          </div>
 
-              <!-- Inscribir Asistente -->
+          <!-- Paso 2 -->
+          <div class="card shadow my-4">
+            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between ">
+              <h6 class="col-9 m-0 font-weight-bold text-dark">Paso 2: <small class="muted">Revisar</small></h6>
+            </div>
+            <div class="card-body">
+              <dl class="row">
+                <dt class="col-sm-2">Inscripciones <span class="badge badge-secondary badge-counter">70</span></dt>
+                <dd class="col-sm-10">Jesus.robles@uam.es ; felixdaniel.martinez@uam.es ; javier.fraile@uam.es ; beatriz.mendez@uam.es ; laura.andresd@uam.es ; sara.higueras@uam.es ; rosamaria.esteban@uam.es ; jorge.tomas@uam.es ; nadia.pinedo@uam.es ; elisa.carrasco@uam.es ; ana.gonzalezn@uam.es ; yolanda.garcia@uam.es ; sara.cembellin@uam.es ; pablo.navarro@uam.es ; luis.gordo@uam.es ; irene.megia@uam.es ; laila.taouati@uam.es ; guillermo.ponz@uam.es ; mar.alonso@uam.es ; alberto.sanchezgonzalez@uam.es ; manuel.quintana@uam.es ; esmeralda.alonso@uam.es ; miguel.rebollo@uam.es ; mercedes.rodriguez@uam.es ; miriam.marco@uam.es ; luis.toledo@uam.es ; lucia.beltran@uam.es ; anna.tudela@uam.es ; rgutierrezgonzalez@salud.madrid.org ; eva.villaver@uam.es ; jorge.bedia@uam.es ; carolina.belver@uam.es ; pedro.romero@uam.es ; mariat.mateo@uam.es ; anaisabel.gonzalez@uam.es ; angeles.sanchez@uam.es ; claudia.benito@uam.es ; josemaria.moya@uam.es ; luisa.antonpacheco@uam.es ; alicia.montero@uam.es ; gladis.pereira@uam.es ; jaime.carbajo@uam.es ; pablo.lopezj@uam.es ; gemma.gordo@uam.es ; mjose.alvarez@uam.es ; monica.camacho@uam.es ; marta.felis@uam.es ; carlos.fernandez@uam.es ; tamara.esquivel@uam.es ; fernando.escribanom@uam.es ; elena.pereze@uam.es ; nieves.marin@uam.es ; sofia.pastor@uam.es ; ines.merino@uam.es ; laura.torres@uam.es ; joseluis.torrecilla@uam.es ; carmen.minuesa@uam.es ; irene.morenom@uam.es ; raquel.fornieles@uam.es ; cristina.bravo@uam.es ; marta.quintanilla@uam.es ; juan.velarde@inv.uam.es ; boris.vazquez@uam.es ; pablo.baladron@uam.es ; julia.yago@uam.es ; elena.solesio@uam.es ; jorge.agullo@uam.es ; rafael.innigo@estudiante.uam.es ; isabel.perezs@uam.es ; clara.alvarez@uam.es ;</dd>
+              </dl>
+            </div>
+            <div class="card-footer">
               <div class="button-group">
-                <a href="asistentes_inscripcion_actualizar.html" class="btn btn-primary btn-icon-split">
+                <a href="#" class="btn btn-primary btn-icon-split mr-2">
                   <span class="icon text-white-50">
-                  <i class="fas fa-user-plus"></i>
+                    <i class="fas fa-edit"></i>
                   </span>
-                  <span class="text">Inscribir</span>
+                  <span class="text">Guardar</span>
+                </a>
+  
+                <a href="#" class="btn btn-danger btn-icon-split">
+                  <span class="icon text-white-50">
+                    <i class="fas fa-trash"></i>
+                  </span>
+                  <span class="text">Descartar</span>
                 </a>
               </div>
             </div>
-            <div class="card-body">
-              <!-- Datos Personales -->
-              <div class="table-responsive">
-                <table class="table table-bordered table-sm dataTable">
-                  <thead>
-                    <tr>
-                      <th>Asistente</th>
-                      <th>email</th>
-                      <th>Teléfono</th>
-                      <th>Facultad</th>
-                      <th>Categoría</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a href="../asistentes/detalle.html" title="jose.menese@uam.es 678901230" data-toggle="tooltip">José Menese</a></td>
-                      <td><a href="#">jose.menese@uam.es</a></td>
-                      <td><a href="tel:+"><i class="fas fa-phone"></i> 678901230</a></td>
-                      <td>Profesorado</td>
-                      <td>PDI</td>
-                    </tr>
-                    <tr>
-                      <td><a href="../asistentes/detalle.html" title="marina.heredia@uam.es 678901230" data-toggle="tooltip">Marina Heredia</a></td>
-                      <td><a href="#">marina.heredia@uam.es</a></td>
-                      <td><a href="tel:+"><i class="fas fa-phone"></i> 678123456</a></td>
-                      <td>Filosofía y Letras</td>
-                      <td>PAS</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
           </div>
-          
+          </form>
         </div>
         <!-- /.container-fluid -->
 

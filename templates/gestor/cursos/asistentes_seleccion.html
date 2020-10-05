@@ -153,10 +153,10 @@
               <!-- Nav bar para filtros -->
               <ul class="nav nav-pills mb-3">
                 <li class="nav-item">
-                  <a class="nav-link active" href="asistentes.html">Datos Personales</a>
+                  <a class="nav-link" href="asistentes.html">Datos Personales</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="asistentes_seleccion.html">Selección</a>
+                  <a class="nav-link active" href="asistentes_seleccion.html">Selección</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="asistentes_asistencia.html">Asistencia</a>
@@ -165,41 +165,56 @@
 
               <!-- Inscribir Asistente -->
               <div class="button-group">
-                <a href="asistentes_inscripcion_actualizar.html" class="btn btn-primary btn-icon-split">
+                <a href="asistentes_seleccion_modificar.html" class="btn btn-primary btn-icon-split">
                   <span class="icon text-white-50">
-                  <i class="fas fa-user-plus"></i>
+                  <i class="fas fa-exchange-alt"></i>
                   </span>
-                  <span class="text">Inscribir</span>
+                  <span class="text">Modificar</span>
                 </a>
               </div>
             </div>
             <div class="card-body">
-              <!-- Datos Personales -->
+
+              <h6 class="float-right mb-4"><span class="badge badge-secondary">Inscritos: 100</span> <span class="badge badge-warning">Seleccionados: 30</span> <span class="badge badge-success">Confirmados: 20</span> <span class="badge badge-danger">Sin confirmar: 10​</span></h6>
+
+              <!-- Selected -->
               <div class="table-responsive">
                 <table class="table table-bordered table-sm dataTable">
                   <thead>
                     <tr>
                       <th>Asistente</th>
-                      <th>email</th>
-                      <th>Teléfono</th>
-                      <th>Facultad</th>
                       <th>Categoría</th>
+                      <th>Seleccionado</th>
+                      <th>Confirmado</th>
+                      <th>Otras Ediciones</th>
+                      <th><a href="#" data-toggle="tooltip" title="Obtenido / Metodología">ECTS</a></th>
+                      <th><a href="#" data-toggle="tooltip" title="Realizadas / Seleccionadas">Inscripciones</a></th>
+                      <th><a href="#" data-toggle="tooltip" title="TEDU / TEMDU">Títulos propios</a></th>
+                      <th>Último curso</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td><a href="../asistentes/detalle.html" title="jose.menese@uam.es 678901230" data-toggle="tooltip">José Menese</a></td>
-                      <td><a href="#">jose.menese@uam.es</a></td>
-                      <td><a href="tel:+"><i class="fas fa-phone"></i> 678901230</a></td>
-                      <td>Profesorado</td>
                       <td>PDI</td>
+                      <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+                      <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+                      <td></td>
+                      <td>11.00 / 7.5</td>
+                      <td>47 / 20</td>
+                      <td><span class="badge badge-success">Sí</span> / <span class="badge badge-danger">No</span></td>
+                      <td>1</td>
                     </tr>
                     <tr>
                       <td><a href="../asistentes/detalle.html" title="marina.heredia@uam.es 678901230" data-toggle="tooltip">Marina Heredia</a></td>
-                      <td><a href="#">marina.heredia@uam.es</a></td>
-                      <td><a href="tel:+"><i class="fas fa-phone"></i> 678123456</a></td>
-                      <td>Filosofía y Letras</td>
                       <td>PAS</td>
+                      <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+                      <td class="text-center"><i class="fas fa-times-circle text-danger"></i></td>
+                      <td>En Espera (-994-1138-)</td>
+                      <td>16.00 / 13.00</td>
+                      <td>105 / 32</td>
+                      <td><span class="badge badge-success">Sí</span> / <span class="badge badge-success">Sí</span></td>
+                      <td>0</td>
                     </tr>
                   </tbody>
                 </table>

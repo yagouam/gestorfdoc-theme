@@ -153,53 +153,61 @@
               <!-- Nav bar para filtros -->
               <ul class="nav nav-pills mb-3">
                 <li class="nav-item">
-                  <a class="nav-link active" href="asistentes.html">Datos Personales</a>
+                  <a class="nav-link" href="asistentes.html">Datos Personales</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="asistentes_seleccion.html">Selección</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="asistentes_asistencia.html">Asistencia</a>
+                  <a class="nav-link active" href="asistentes_asistencia.html">Asistencia</a>
                 </li>
               </ul>
 
               <!-- Inscribir Asistente -->
               <div class="button-group">
-                <a href="asistentes_inscripcion_actualizar.html" class="btn btn-primary btn-icon-split">
+                <a href="asistentes_asistencia_modificar.html" class="btn btn-primary btn-icon-split">
                   <span class="icon text-white-50">
-                  <i class="fas fa-user-plus"></i>
+                  <i class="fas fa-exchange-alt"></i>
                   </span>
-                  <span class="text">Inscribir</span>
+                  <span class="text">Modificar</span>
                 </a>
               </div>
             </div>
             <div class="card-body">
-              <!-- Datos Personales -->
+              <!-- Tab Asistencia -->
               <div class="table-responsive">
                 <table class="table table-bordered table-sm dataTable">
                   <thead>
                     <tr>
                       <th>Asistente</th>
-                      <th>email</th>
-                      <th>Teléfono</th>
-                      <th>Facultad</th>
-                      <th>Categoría</th>
+                      <th>Asistencia</th>
+                      <th>A. Final</th>
+                      <th>Tarea ECTS</th>
+                      <th>Estado Final</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td><a href="../asistentes/detalle.html" title="jose.menese@uam.es 678901230" data-toggle="tooltip">José Menese</a></td>
-                      <td><a href="#">jose.menese@uam.es</a></td>
-                      <td><a href="tel:+"><i class="fas fa-phone"></i> 678901230</a></td>
-                      <td>Profesorado</td>
-                      <td>PDI</td>
+                      <td>
+                        <div class="progress">
+                          <div class="progress-bar bg-success w-100" aria-valuemin="0" aria-valuemax="100">4/4</div>
+                        </div>
+                      </td>
+                      <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+                      <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+                      <td class="border-left-success">Realizado</td>
                     </tr>
                     <tr>
                       <td><a href="../asistentes/detalle.html" title="marina.heredia@uam.es 678901230" data-toggle="tooltip">Marina Heredia</a></td>
-                      <td><a href="#">marina.heredia@uam.es</a></td>
-                      <td><a href="tel:+"><i class="fas fa-phone"></i> 678123456</a></td>
-                      <td>Filosofía y Letras</td>
-                      <td>PAS</td>
+                      <td>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">3/4</div>
+                        </div>
+                      </td>
+                      <td class="text-center"><i class="fas fa-times-circle text-danger"></i></td>
+                      <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+                      <td class="border-left-danger">No Realizado</td>
                     </tr>
                   </tbody>
                 </table>
