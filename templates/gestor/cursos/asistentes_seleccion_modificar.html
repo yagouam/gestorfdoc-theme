@@ -220,10 +220,15 @@
                       </td>
                       <td>PDI</td>
                       <td class="text-center">
-                        <div class="custom-control custom-switch">
-                          <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                          <label class="custom-control-label" for="customSwitch1"></label>
-                        </div>
+                        <select name="seleccion21" class="custom-select">
+                          <option value="Si" selected>Si</option>
+                          <option value="No">No</option>
+                          <option value="En espera">En espera</option>
+                          <option value="De baja">De baja</option>
+                          <option value="Nuevos">Nuevos</option>
+                          <option value="Repesca">Repesca</option>
+                          <option value="No disponible">No disponible</option>
+                        </select>
                       </td>
                       <td class="text-center">
                         <div class="custom-control custom-switch">
@@ -246,10 +251,15 @@
                       </td>
                       <td>PAS</td>
                       <td class="text-center">
-                        <div class="custom-control custom-switch">
-                          <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
-                          <label class="custom-control-label" for="customSwitch3"></label>
-                        </div>
+                        <select name="seleccion12" class="custom-select">
+                          <option value="Si" selected>Si</option>
+                          <option value="No">No</option>
+                          <option value="En espera">En espera</option>
+                          <option value="De baja">De baja</option>
+                          <option value="Nuevos">Nuevos</option>
+                          <option value="Repesca">Repesca</option>
+                          <option value="No disponible">No disponible</option>
+                        </select>
                       </td>
                       <td class="text-center">
                         <div class="custom-control custom-switch">
@@ -327,13 +337,24 @@
         </div>
         <div class="modal-body">
           <form class="form" >
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch00">
-              <label class="custom-control-label" for="customSwitch00">Seleccionado</label>
+            <div class="form-group row mx-4">
+              <label for="seleccion" class="col-sm-6 col-form-label">Seleccionado</label>
+              <select name="seleccion" class="col-sm-6 custom-select">
+                <option value="Si" selected>Si</option>
+                <option value="No">No</option>
+                <option value="En espera">En espera</option>
+                <option value="De baja">De baja</option>
+                <option value="Nuevos">Nuevos</option>
+                <option value="Repesca">Repesca</option>
+                <option value="No disponible">No disponible</option>
+              </select>
             </div>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch000">
-              <label class="custom-control-label" for="customSwitch000">Confirmado</label>
+            <div class="form-group row mx-4">
+              <span class="col-sm-6">Confirmado</span>
+              <div class="col-sm-6 custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch000">
+                <label class="custom-control-label" for="customSwitch000"></label>
+              </div>
             </div>
           </form>
         </div>
