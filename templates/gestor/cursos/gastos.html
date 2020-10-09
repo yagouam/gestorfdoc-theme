@@ -134,6 +134,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="ponentes.html">Ponentes</a>
               </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="gastos.html">Gastos</a>
+              </li>
             </ul>
             <button class="btn btn-light">
               <i class="fas fa-fw fa-clone"></i> Replicar Curso
@@ -143,10 +146,25 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-          <!-- Popuesta de Gastos -->
+          
+          <!-- Listado Ponentes -->
           <div class="card shadow my-4">
             <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
-              <h6>Propuesta de Gastos</h6>
+
+              <!-- Nav bar para filtros -->
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="pills-propuesta-tab" data-toggle="pill" href="#pills-propuesta" role="tab" aria-controls="pills-propuesta" aria-selected="false">Propuestas Gasto</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-transporte-tab" data-toggle="pill" href="#pills-transporte" role="tab" aria-controls="pills-transporte" aria-selected="false">Gastos Transporte</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-empresa-tab" data-toggle="pill" href="#pills-empresa" role="tab" aria-controls="pills-empresa" aria-selected="false">Gastos Empresa</a>
+                </li>
+              </ul>
+
+              <!-- Añadir Ponente -->
               <div class="button-group">
                 <a href="#" class="btn btn-primary btn-icon-split">
                   <span class="icon text-white-50">
@@ -156,120 +174,91 @@
                 </a>
               </div>
             </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Código</th>
-                      <th>Ponente</th>
-                      <th>Fecha</th>
-                      <th>Importe</th>
-                      <th>Estado</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row"><a href="#">841</a></th>
-                      <td><a href="#">Gabriela Sandoval Pantoja</a></td>
-                      <td>2018/04/29</td>
-                      <td>200€</td>
-                      <td>
-                        <span class="badge badge-success">Pagado</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+
+            <div class="card-body tab-content" id="pills-tabContent">
+
+          <!-- Popuesta de Gastos -->
+          <div class="table-responsive tab-pane fade show active" id="pills-propuesta" role="tabpanel" aria-labelledby="pills-propuesta-tab">
+            <table class="table table-bordered dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Ponente</th>
+                  <th>Fecha</th>
+                  <th>Importe</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="#">841</a></th>
+                  <td><a href="#">Gabriela Sandoval Pantoja</a></td>
+                  <td>2018/04/29</td>
+                  <td>200€</td>
+                  <td>
+                    <span class="badge badge-success">Pagado</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <!-- Gastos de Transporte y Manutención -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
-              <h6>Gastos de Transporte y Manutención</h6>
-              <div class="button-group">
-                <a href="#" class="btn btn-primary btn-icon-split">
-                  <span class="icon text-white-50">
-                  <i class="fas fa-donate"></i>
-                  </span>
-                  <span class="text">Añadir Gasto</span>
-                </a>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Código</th>
-                      <th>Ponente</th>
-                      <th>Fecha</th>
-                      <th>Concepto</th>
-                      <th>Importe</th>
-                      <th>Estado</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row"><a href="#">841</a></th>
-                      <td><a href="#">Ernesto de los Reyes López</a></td>
-                      <td>2018/10/17</td>
-                      <td>Habitación uso individual día 16 octubre(nº factura MF8S002686)</td>
-                      <td>109€</td>
-                      <td>
-                        <span class="badge badge-danger">No Pagado</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+          <div class="table-responsive tab-pane fade" id="pills-transporte" role="tabpanel" aria-labelledby="pills-transporte-tab">
+            <table class="table table-bordered dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Ponente</th>
+                  <th>Fecha</th>
+                  <th>Concepto</th>
+                  <th>Importe</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="#">841</a></th>
+                  <td><a href="#">Ernesto de los Reyes López</a></td>
+                  <td>2018/10/17</td>
+                  <td>Habitación uso individual día 16 octubre(nº factura MF8S002686)</td>
+                  <td>109€</td>
+                  <td>
+                    <span class="badge badge-danger">No Pagado</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           
           <!-- Gastos de Empresa -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3 mb-4 d-sm-flex  align-items-center justify-content-between">
-              <h6>Gastos de Empresa</h6>
-              <div class="button-group">
-                <a href="#" class="btn btn-primary btn-icon-split">
-                  <span class="icon text-white-50">
-                  <i class="fas fa-donate"></i>
-                  </span>
-                  <span class="text">Añadir Gasto</span>
-                </a>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Código</th>
-                      <th>Ponente</th>
-                      <th>Fecha</th>
-                      <th>Concepto</th>
-                      <th>Importe</th>
-                      <th>Estado</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row"><a href="#">841</a></th>
-                      <td><a href="#">Ernesto de los Reyes López</a></td>
-                      <td>2018/10/17</td>
-                      <td>Habitación uso individual día 16 octubre(nº factura MF8S002686)</td>
-                      <td>109€</td>
-                      <td>
-                        <span class="badge badge-danger">No Pagado</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+          <div class="table-responsive tab-pane fade" id="pills-empresa" role="tabpanel" aria-labelledby="pills-empresa-tab">
+            <table class="table table-bordered dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Ponente</th>
+                  <th>Fecha</th>
+                  <th>Concepto</th>
+                  <th>Importe</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="#">841</a></th>
+                  <td><a href="#">Ernesto de los Reyes López</a></td>
+                  <td>2018/10/17</td>
+                  <td>Pago gastos uso de software propietario</td>
+                  <td>10€</td>
+                  <td>
+                    <span class="badge badge-danger">No Pagado</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          
+          </div>
         </div>
         <!-- /.container-fluid -->
 
